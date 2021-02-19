@@ -1,6 +1,6 @@
 
 
-from gramatica.verbos.infinitivo import verbs_inf, verbs_inf_keys
+from gramatica.adjetivos.adjetivos import adjectives, adjectives_keys
 from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores.cores import colors
@@ -25,50 +25,50 @@ while True:
     box_words_translations = []
     box_target_translation = []
 
-    ""  # verb_inf_chosen_key = 'to continue'
-    verb_inf_chosen_key = choice(verbs_inf_keys)
-    # print(f'{verb_inf_chosen_key = }')
+    ""  # adjective_chosen_key = 'clear'
+    adjective_chosen_key = choice(adjectives_keys)
+    # print(f'{adjective_chosen_key = }')
 
-    ""  # verb_inf_chosen_values = ('to continue', 'continuar')
-    verb_inf_chosen_values = verbs_inf[verb_inf_chosen_key]
-    # print(f'{verb_inf_chosen_values = }')
+    ""  # adjective_chosen_values = ('clear', 'claro/evidente')
+    adjective_chosen_values = adjectives[adjective_chosen_key]
+    # print(f'{adjective_chosen_values = }')
 
-    ""  # verb_inf_chosen = 'to continue'
-    verb_inf_chosen = verb_inf_chosen_values[0]
-    # print(f'{verb_inf_chosen = }')
+    ""  # adjective_chosen = 'clear'
+    adjective_chosen = adjective_chosen_values[0]
+    # print(f'{adjective_chosen = }')
 
-    ""  # verb_inf_chosen_meaning = 'continuar'
-    verb_inf_chosen_meaning = verb_inf_chosen_values[1]
-    # print(f'{verb_inf_chosen_meaning = }')
+    ""  # adjective_chosen_meaning = 'claro/evidente'
+    adjective_chosen_meaning = adjective_chosen_values[1]
+    # print(f'{adjective_chosen_meaning = }')
 
-    ""  # box_words = ['to continue']
-    box_words.append(verb_inf_chosen)
+    ""  # box_words = ['clear']
+    box_words.append(adjective_chosen)
     # print(f'{box_words = }')
 
-    ""  # box_target_translation = ['continuar']
-    box_target_translation.append(verb_inf_chosen_meaning)
+    ""  # box_target_translation = ['claro/evidente']
+    box_target_translation.append(adjective_chosen_meaning)
     # print(f'{box_target_translation = }')
 
 
-    def create_verbs_infinitive():
+    def create_adjectives():
         """"""
         while len(box_words) < 5:
 
-            new_verbs_inf_key = choice(verbs_inf_keys)
-            # print(f'{new_verbs_inf_key = }')
-            new_verbs_inf_values = verbs_inf[new_verbs_inf_key]
-            # print(f'{new_verbs_inf_values = }')
-            new_verbs_inf_chosen = new_verbs_inf_values[0]
-            # print(f'{new_verbs_inf_chosen = }')
-            new_verbs_inf_meaning = new_verbs_inf_values[1]
-            # print(f'{new_verbs_inf_meaning = }')
+            new_adjective_key = choice(adjectives_keys)
+            # print(f'{new_adjective_key = }')
+            new_adjective_values = adjectives[new_adjective_key]
+            # print(f'{new_adjective_values = }')
+            new_adjective_chosen = new_adjective_values[0]
+            # print(f'{new_adjective_chosen = }')
+            new_adjective_meaning = new_adjective_values[1]
+            # print(f'{new_adjective_meaning = }')
 
-            box_words.append(new_verbs_inf_chosen)
-            box_words_translations.append(new_verbs_inf_meaning)
+            box_words.append(new_adjective_chosen)
+            box_words_translations.append(new_adjective_meaning)
 
-    create_verbs_infinitive()
+    create_adjectives()
 
-    def scan_for_repeated_verbs_infinitive():
+    def scan_for_repeated_adjectives():
         """"""
         check_repeated_data = []
 
@@ -79,30 +79,30 @@ while True:
             if data != 1:
                 box_words.clear()
                 box_words_translations.clear()
-                box_words.append(verb_inf_chosen)
+                box_words.append(adjective_chosen)
                 # box_words_translations.append(noun_chosen_meaning)
-                create_verbs_infinitive()
+                create_adjectives()
 
-    scan_for_repeated_verbs_infinitive()
+    scan_for_repeated_adjectives()
 
-    box_words_translations.append(verb_inf_chosen_meaning)
+    box_words_translations.append(adjective_chosen_meaning)
 
     shuffle(box_words_translations)
 
-    ""  # box_words = ['to continue', 'to happen', 'to suggest', 'to try', 'to see']
+    ""  # box_words = ['clear', 'marvelous', 'possible', 'strong', 'obnoxiously']
     # print(f'{box_words = }')
 
-    ""  # box_words_translations = ['sugerir', 'experimentar/tentar', 'ver', 'continuar', 'acontecer/ocorrer']
+    ""  # box_words_translations = ['detestável', 'forte', 'possível', 'claro/evidente', 'maravilhoso(a)']
     # print(f'{box_words_translations = }')
 
-    greetings = welcome('treino de verbos no infinitivo', prefix=3, prefix2=7)
+    greetings = welcome('treino de adjetivos', prefix=3, prefix2=7)
 
     print(indent, greetings)
 
     answer = get_input_int(
         text=f"""
         {bricks}
-        O QUE É {yellow}{verb_inf_chosen}{paint} ?
+        O QUE É {yellow}{adjective_chosen}{paint} ?
         {bricks}
         1 - {box_words_translations[0]}
         2 - {box_words_translations[1]}

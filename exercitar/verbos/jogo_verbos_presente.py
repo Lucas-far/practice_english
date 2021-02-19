@@ -1,6 +1,6 @@
 
 
-from gramatica.verbos.infinitivo import verbs_inf, verbs_inf_keys
+from gramatica.verbos.presente import pst, pst_keys
 from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores.cores import colors
@@ -25,50 +25,50 @@ while True:
     box_words_translations = []
     box_target_translation = []
 
-    ""  # verb_inf_chosen_key = 'to continue'
-    verb_inf_chosen_key = choice(verbs_inf_keys)
-    # print(f'{verb_inf_chosen_key = }')
+    ""  # pst_chosen_key = 'system'
+    pst_chosen_key = choice(pst_keys)
+    # print(f'{pst_chosen_key = }')
 
-    ""  # verb_inf_chosen_values = ('to continue', 'continuar')
-    verb_inf_chosen_values = verbs_inf[verb_inf_chosen_key]
-    # print(f'{verb_inf_chosen_values = }')
+    ""  # pst_chosen_values = ('system', 'systems', 'sistema', 'sistemas')
+    pst_chosen_values = pst[pst_chosen_key]
+    # print(f'{pst_chosen_values = }')
 
-    ""  # verb_inf_chosen = 'to continue'
-    verb_inf_chosen = verb_inf_chosen_values[0]
-    # print(f'{verb_inf_chosen = }')
+    ""  # pst_chosen = 'system'
+    pst_chosen = choice(pst_chosen_values[:2])
+    # print(f'{pst_chosen = }')
 
-    ""  # verb_inf_chosen_meaning = 'continuar'
-    verb_inf_chosen_meaning = verb_inf_chosen_values[1]
-    # print(f'{verb_inf_chosen_meaning = }')
+    ""  # pst_chosen_meaning = 'sistema'
+    pst_chosen_meaning = [pst_chosen_values[2] if pst_chosen == pst_chosen_values[0] else pst_chosen_values[3]][0]
+    # print(f'{pst_chosen_meaning = }')
 
-    ""  # box_words = ['to continue']
-    box_words.append(verb_inf_chosen)
+    ""  # box_words = ['system']
+    box_words.append(pst_chosen)
     # print(f'{box_words = }')
 
-    ""  # box_target_translation = ['continuar']
-    box_target_translation.append(verb_inf_chosen_meaning)
+    ""  # box_target_translation = ['sistema']
+    box_target_translation.append(pst_chosen_meaning)
     # print(f'{box_target_translation = }')
 
 
-    def create_verbs_infinitive():
+    def create_verbs_present():
         """"""
         while len(box_words) < 5:
 
-            new_verbs_inf_key = choice(verbs_inf_keys)
-            # print(f'{new_verbs_inf_key = }')
-            new_verbs_inf_values = verbs_inf[new_verbs_inf_key]
-            # print(f'{new_verbs_inf_values = }')
-            new_verbs_inf_chosen = new_verbs_inf_values[0]
-            # print(f'{new_verbs_inf_chosen = }')
-            new_verbs_inf_meaning = new_verbs_inf_values[1]
-            # print(f'{new_verbs_inf_meaning = }')
+            new_pst_key = choice(pst_keys)
+            # print(f'{new_pst_key = }')
+            new_pst_values = pst[new_pst_key]
+            # print(f'{new_pst_values = }')
+            new_pst_chosen = choice(new_pst_values[:2])
+            # print(f'{new_pst_chosen = }')
+            new_pst_meaning = [new_pst_values[2] if new_pst_chosen == new_pst_values[0] else new_pst_values[3]][0]
+            # print(f'{new_pst_meaning = }')
 
-            box_words.append(new_verbs_inf_chosen)
-            box_words_translations.append(new_verbs_inf_meaning)
+            box_words.append(new_pst_chosen)
+            box_words_translations.append(new_pst_meaning)
 
-    create_verbs_infinitive()
+    create_verbs_present()
 
-    def scan_for_repeated_verbs_infinitive():
+    def scan_for_repeated_verbs_present():
         """"""
         check_repeated_data = []
 
@@ -79,30 +79,30 @@ while True:
             if data != 1:
                 box_words.clear()
                 box_words_translations.clear()
-                box_words.append(verb_inf_chosen)
-                # box_words_translations.append(noun_chosen_meaning)
-                create_verbs_infinitive()
+                box_words.append(pst_chosen)
+                # box_words_translations.append(pst_chosen_meaning)
+                create_verbs_present()
 
-    scan_for_repeated_verbs_infinitive()
+    scan_for_repeated_verbs_present()
 
-    box_words_translations.append(verb_inf_chosen_meaning)
+    box_words_translations.append(pst_chosen_meaning)
 
     shuffle(box_words_translations)
 
-    ""  # box_words = ['to continue', 'to happen', 'to suggest', 'to try', 'to see']
+    ""  # box_words = ['system', 'works', 'states', 'other', 'waters']
     # print(f'{box_words = }')
 
-    ""  # box_words_translations = ['sugerir', 'experimentar/tentar', 'ver', 'continuar', 'acontecer/ocorrer']
+    ""  # box_words_translations = ['estados', 'águas', 'sistema', 'trabalhos', 'outro(a)']
     # print(f'{box_words_translations = }')
 
-    greetings = welcome('treino de verbos no infinitivo', prefix=3, prefix2=7)
+    greetings = welcome('treino de verbos no presente', prefix=3, prefix2=7)
 
     print(indent, greetings)
 
     answer = get_input_int(
         text=f"""
         {bricks}
-        O QUE É {yellow}{verb_inf_chosen}{paint} ?
+        O QUE É {yellow}{pst_chosen}{paint} ?
         {bricks}
         1 - {box_words_translations[0]}
         2 - {box_words_translations[1]}

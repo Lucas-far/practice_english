@@ -124,7 +124,9 @@ pst = {
     'to select': ('select', 'selects', 'selecionam', 'seleciona'),
     'to click': ('click', 'clicks', 'clicam', 'clica'),
 }                                           # 'to say': ('say', 'says', 'dizem/falam', 'diz/fala')
+
 pst_keys = [word for word in pst.keys()]              # 'to say'
+
 pst_keys_index0 = [word[0] for word in pst.values()]  # 'say'
 pst_keys_index1 = [word[1] for word in pst.values()]  # 'says'
 pst_keys_index2 = [word[2] for word in pst.values()]  # 'dizem/falam'

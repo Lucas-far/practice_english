@@ -1,5 +1,7 @@
 
 
+""""""
+"---------------------------------------------------- ADVÉRBIOS LY ----------------------------------------------------"
 adv_ly = {
     'accidentally': ('accidentally', 'acidentalmente'),
     'actually': ('actually', 'na verdade'),
@@ -110,15 +112,38 @@ adv_ly_keys = [word for word in adv_ly]  # 'accidentally'
 adv_ly_keys_index0 = [word[0] for word in adv_ly.values()]  # 'accidentally'
 adv_ly_keys_index1 = [word[1] for word in adv_ly.values()]  # 'acidentalmente'
 
-adv_frequency = [
-    'always', 'eventually', 'frequently', 'hourly', 'never', 'occasionally',
-    'often', 'rarely', 'regularly', 'seldom', 'sometimes', 'usually', 'weekly', 'yearly'
-]
+"----------------------------------------------- ADVÉRBIOS DE FREQUÊNCIA ----------------------------------------------"
+adv_frequency = {
+    'always': ('always', 'sempre'),
+    'eventually': ('eventually', 'eventualmente'),
+    'frequently': ('frequently', 'frequentemente'),
+    'hourly': ('hourly', 'de hora em hora/por hora'),
+    'never': ('never', 'nunca'),
+    'occasionally': ('occasionally', 'ocasionalmente'),
+    'often': ('often', 'com frequência'),
+    'rarely': ('rarely', 'raramente'),
+    'regularly': ('regularly', 'regularmente'),
+    'seldom': ('seldom', 'com raridade'),
+    'sometimes': ('sometimes', 'às vezes'),
+    'usually': ('usually', 'normalmente'),
+    'weekly': ('weekly', 'semanalmente'),
+    'yearly': ('yearly', 'anualmente')
+}
 
-adv_frequency_pt_br = [
-    'sempre', 'eventualmente', 'frequentemente', 'de hora em hora/por hora', 'nunca', 'ocasionalmente',
-    'frequentemente', 'raramente', 'regularmente', 'raramente', 'às vezes', 'normalmente', 'semanalmente', 'anualmente'
-]
+adv_frequency_keys = [word for word in adv_frequency]  #
+
+adv_frequency_keys_index0 = [word[0] for word in adv_ly.values()]  #
+adv_frequency_keys_index1 = [word[1] for word in adv_ly.values()]  #
+
+# adv_frequency = [
+#     'always', 'eventually', 'frequently', 'hourly', 'never', 'occasionally',
+#     'often', 'rarely', 'regularly', 'seldom', 'sometimes', 'usually', 'weekly', 'yearly'
+# ]
+#
+# adv_frequency_pt_br = [
+#     'sempre', 'eventualmente', 'frequentemente', 'de hora em hora/por hora', 'nunca', 'ocasionalmente',
+#     'frequentemente', 'raramente', 'regularmente', 'raramente', 'às vezes', 'normalmente', 'semanalmente', 'anualmente'
+# ]
 
 adv_action = ['promptly', 'quickly', 'rapidly', 'slowly', 'speedily', 'tediously']
 

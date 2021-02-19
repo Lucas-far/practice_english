@@ -1,6 +1,6 @@
 
 
-from gramatica.verbos.passado import past, past_keys, past_keys_index0
+from gramatica.adverbios.adverbios import adv_ly, adv_ly_keys
 from metodos.banco_de_dados import *
 from random import choice
 from cores.cores import colors
@@ -18,7 +18,7 @@ quiz_format = """
     3 - {}
     4 - {}
     5 - {}
-
+    
     Digite de 1 a 5, para fornecer sua resposta
     Digite após a seta -> """
 
@@ -52,9 +52,7 @@ negative_score = 0
 
 
 while True:
-
     try:
-
         box_words = set({})
         box_words_translations = set({})
         box_target_translation = []
@@ -63,19 +61,18 @@ while True:
         def create_word():
             """"""
             while len(box_words) < 5:
-                new_key = choice(past_keys)
-                new_key_values = past[new_key]
-                chosen = new_key_values[0]
-                value_meaning = new_key_values[1]
 
+                new_key = choice(adv_ly_keys)
                 # print(f'{new_key = }')
+                new_key_values = adv_ly[new_key]
                 # print(f'{new_key_values = }')
+                chosen = new_key_values[0]
                 # print(f'{chosen = }')
+                value_meaning = new_key_values[1]
                 # print(f'{value_meaning = }')
 
                 box_words.add(chosen)
                 box_words_translations.add(value_meaning)
-
 
         create_word()
 
@@ -83,13 +80,13 @@ while True:
 
         box_words_translations = list(box_words_translations)
 
-        chosen_value = choice(box_words)                         # 'watched'
+        chosen_key = choice(box_words)
 
-        index_of_the_key = past_keys_index0.index(chosen_value)  # past_keys_index0.index('knew') == 58
+        values_chosen_key = adv_ly[chosen_key]
 
-        chosen_key = past_keys[index_of_the_key]                 # past_keys[58] == 'to know'
+        chosen_value = values_chosen_key[0]
 
-        chosen_value_meaning = past[chosen_key][1]               # chosen_value_meaning = past['to know'][1] == 'sabia'
+        chosen_value_meaning = values_chosen_key[1]
 
         box_target_translation.append(chosen_value_meaning)
 
@@ -99,26 +96,25 @@ while True:
             print(f"{box_words = }")
             print(f"{box_words_translations = }")
             print(f'{chosen_key = }')
-            print(f'{chosen_key = }')
-            # print(f'{chosen_value = }')
+            print(f'{values_chosen_key = }')
+            print(f'{chosen_value = }')
             print(f'{chosen_value_meaning = }')
             print(f'{box_target_translation = }')
             print(f'{box_words = }')
             print(f'{box_words_translations = }')
 
+        see_variables()
 
-        # see_variables()
-
-        greetings = welcome('treino de verbos no passado', prefix=3, prefix2=7)
+        greetings = welcome('treino de advérbios de frequência', prefix=3, prefix2=7)
 
         print(greetings)
 
         answer = get_input_int(
             text=quiz_format.format(
-                bricks,
-                yellow, chosen_value, ink,
-                bricks,
-                *box_words_translations),
+                                    bricks,
+                                    yellow, chosen_value, ink,
+                                    bricks,
+                                    *box_words_translations),
             start=1,
             limit=5
         )
@@ -142,7 +138,9 @@ while True:
                 green, ink, positive_score + negative_score,
                 yellow, ink, blue, ink, positive_score, negative_score, red, ink
             ))
+
         else:
+
             negative_score += 1
             print(failure.format(
                 red, ink,
@@ -153,6 +151,5 @@ while True:
 
         input(controller.format(cyan, ink))
         sleep(1)
-
     except IndexError as error:
         print(set_error.format(red, ink))

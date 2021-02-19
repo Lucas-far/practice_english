@@ -31,7 +31,7 @@ verbs_inf = {
     'to become': ('to become', 'tornar-se'),
     'to leave': ('to leave', 'abandonar/deixar/sair'),
     'to put': ('to put', 'colocar/pôr'),
-    'to mean': ('to mean', 'significar'),
+    'to mean': ('to mean', 'querer dizer/significar'),
     'to keep': ('to keep', 'continuar/guardar/manter'),
     'to let': ('to let', 'deixar/permitir'),
     'to begin': ('to begin', 'começar/iniciar'),

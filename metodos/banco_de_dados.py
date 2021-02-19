@@ -6,6 +6,8 @@ from gramatica.verbos.presente import pst_keys
 from gramatica.verbos.futuro import fut_keys
 
 
+from time import sleep
+
 def check_length(*args):
     """"""
     box = []
@@ -28,20 +30,17 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
         '\033[1:30m', '\033[1:31m', '\033[1:32m', '\033[1:33m', '\033[1:34m', '\033[1:35m', '\033[1:36m', '\033[m'
     )
 
-    indent = '    '
-    red, paint = pallet[1], pallet[7]
-    error_label = f'\n{indent * 2}==================== ERRO ===================='
+    red, ink = pallet[1], pallet[7]
     warning = '\nAperte ENTER ou qualquer outra tecla para continuar...'
-    delimiter = '=' * len(error_label)
 
-    integer_out_of_range = f"""
-        {red}{error_label}{paint}
-        As opções são números entre {start} até {limit} :)
+    integer_out_of_range = """
+        {}==================== ERRO ===================={}
+        As opções são números entre {} até {} :)
         """
 
-    integer_unused = f"""
-        {red}{error_label}{paint}
-        Você não está usando números. Use números entre {start} até {limit} :)
+    integer_unused = """
+        {}==================== ERRO ===================={}
+        Você não está usando números. Use números entre {} até {} :)
         """
 
     while the_input <= start or the_input > limit:
@@ -50,11 +49,13 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
             if the_input in range(start, limit + 1):
                 break
             else:
-                print(integer_out_of_range)
+                print(integer_out_of_range.format(red, ink, start, limit))
                 input(warning)
+                sleep(1)
         except ValueError:
-            print(integer_unused)
+            print(integer_unused.format(red, ink, start, limit))
             input(warning)
+            sleep(1)
 
     return the_input
 
@@ -120,9 +121,9 @@ def welcome(algorithm_name: str = 'Name of the algorithm', prefix: int = 0, pref
     )
 
     return f"""
-        {bricks}
-        Bem-vindo ao {pallet[prefix]}{algorithm_name.upper()}{pallet[prefix2]}
-        {bricks}"""
+    {bricks}
+    Bem-vindo ao {pallet[prefix]}{algorithm_name.upper()}{pallet[prefix2]}
+    {bricks}"""
 
 
 if __name__ == '__main__':

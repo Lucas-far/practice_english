@@ -31,7 +31,7 @@ past = {
     'to become': ('became', 'me tornei'),
     'to leave': ('left', 'abandonei/deixei/sai'),
     'to put': ('put', 'coloquei/pus'),
-    'to mean': ('meant', 'signifiquei'),
+    'to mean': ('meant', 'quis dizer/signifiquei'),
     'to keep': ('kept', 'continuei/guardei/mantive'),
     'to let': ('let', 'deixei/permiti'),
     'to begin': ('began', 'começei/iniciei'),
@@ -123,7 +123,8 @@ past = {
     'to guess': ('guessed', 'adivinhei/supus'),
     'to select': ('selected', 'selecionei'),
     'to click': ('clicked', 'cliquei'),
-}                                            # 'to say': ('said', 'disse/falei')
+}  # 'to say': ('said', 'disse/falei')
+
 past_keys = [word for word in past]                     # 'to say'
 past_keys_index0 = [word[0] for word in past.values()]  # 'said'
 past_keys_index1 = [word[1] for word in past.values()]  # 'disse/falei'
@@ -144,7 +145,7 @@ past_irregular = {
     'to feel': ('felt', 'senti'),
     'to become': ('became', 'me tornei'),
     'to leave': ('left', 'abandonei/deixei/sai'),
-    'to mean': ('meant', 'signifiquei'),
+    'to mean': ('meant', 'quis dizer/signifiquei'),
     'to keep': ('kept', 'continuei/guardei/mantive'),
     'to hear': ('heard', 'escutei/ouvi'),
     'to run': ('ran', 'corri'),
@@ -176,55 +177,7 @@ past_irregular = {
 past_irregular_keys = [word for word in past_irregular]                     # 'to say'
 past_irregular_keys_index0 = [word[0] for word in past_irregular.values()]  # 'said'
 past_irregular_keys_index1 = [word[1] for word in past_irregular.values()]  # 'disse/falei'
-# # 'was', 'were', 'had', 'did',
-# past = [
-#     'said', 'went',
-#     'got', 'made', 'knew', 'thought', 'took', 'saw',
-#     'came', 'wanted', 'looked', 'used', 'found', 'gave', 'told',
-#     'worked', 'called', 'tried', 'asked', 'needed',
-#     'felt', 'became', 'left', 'put', 'meant', 'kept',
-#     'let', 'began', 'seemed', 'helped', 'talked', 'turned',
-#     'started', 'showed', 'heard', 'played', 'ran', 'moved', 'liked',
-#     'lived', 'believed', 'held', 'brought', 'happened', 'wrote',
-#     'provided', 'sat', 'stood', 'lost', 'paid', 'met',
-#     'included', 'continued', 'set', 'learned', 'changed', 'led',
-#
-#     'understood', 'watched', 'followed',
-#     'stopped', 'created', 'spoke', 'read', 'allowed', 'added', 'spent',
-#     'grew', 'opened', 'walked', 'won', 'offered', 'remembered',
-#     'loved', 'considered', 'appeared', 'bought', 'waited', 'served', 'died', 'sent',
-#     'expected', 'built', 'stayed', 'fell', 'cut', 'reached', 'killed',
-#     'remained', 'suggested', 'rose', 'passed', 'sold', 'required',
-#     'reported', 'decided', 'pulled', 'broke', 'acquired', 'realized',
-#     'managed', 'developed', 'trusted', 'imagined', 'stepped', 'regreted', 'manipulated',
-#     'dreamed', 'discussed', 'drank', 'ate', 'skept', 'saw', 'repeated', 'knew',
-#     'guessed', 'selected', 'clicked',
-# ]
-#
-# # 'era/estava/fiquei', 'eram/estavam/ficaram', 'possui/tive', 'fiz',
-# past_pt_br = [
-#     'disse/falei', 'fui',
-#     'adquiri/consegui/obtive/peguei', 'criei/fiz', 'conheci/sabia', 'achei/pensei', 'levei/peguei/tomei', 'vi',
-#     'cheguei/vim', 'pretendia/queria', 'olhei/vi', 'usei', 'achei/encontrei', 'dei', 'contei/disse',
-#     'funcionei/trabalhei', 'chamei/telefonei', 'experimentei/tentei', 'pedi/perguntei', 'necessitei/precisei',
-#     'senti', 'me tornei', 'abandonei/deixei/sai', 'coloquei/pus', 'signifiquei', 'continuei/guardei/mantive',
-#     'deixei/permiti', 'começei/iniciei', 'pareci', 'ajudei/auxiliei', 'conversei/falei', 'transformei/virei',
-#     'começei/iniciei', 'apresentei/mostrei', 'escutei/ouvi', 'joguei/toquei', 'corri', 'movi/mexi', 'gostei',
-#     'morei/vivi', 'acreditei/cri', 'mantive/segurei', 'trouxe', 'aconteci/ocorri', 'escrevi',
-#     'forneci/proporcionei', 'sentei', 'levantei/permaneci', 'perdi', 'paguei', 'conheci/encontrei/reuni',
-#     'inclui', 'continuei', 'configurei/defini/estabeleci/pus', 'aprendi', 'alterei/mudei', 'conduzi/liderei',
-#
-#     'compreender/entender', 'olhar/observar/ver', 'acompanhar/seguir',
-#     'impedir/parar', 'criar', 'conversar/falar', 'ler', 'autorizar/permitir', 'acrescentar/adicionar', 'gastar/passar',
-#     'aumentar/crescer', 'abrir', 'andar/caminhar', 'ganhar/vencer', 'oferecer/propor', 'lembrar/recordar',
-#     'adorar/amar', 'considerar', 'aparecer', 'comprar', 'esperar', 'servir', 'falecer/morrer', 'enviar/mandar',
-#     'esperar', 'construir', 'ficar/permanecer', 'cair', 'cortar', 'alcançar/atingir/chegar a', 'matar',
-#     'ficar/permanecer', 'sugerir', 'aumentar/criar alguém,algo/levantar', 'passar', 'vender', 'exigir/necessitar',
-#     'relatar/reportar', 'decidir', 'puxar', 'romper/quebrar', 'adquirir/comprar/obter', 'perceber/realizar',
-#     'administrar/gerir', 'crescer/desenvolver', 'confiar', 'imaginar', 'pisar', 'arrepender/lamentar', 'manipular',
-#     'sonhar', 'debater/discutir', 'beber', 'comer', 'pular/saltar', 'ver', 'repetir', 'conhecer/saber',
-#     'adivinhar/supor', 'selecionar', 'clicar',
-# ]
+
 
 if __name__ == '__main__':
     bricks = '=' * 100

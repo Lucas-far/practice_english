@@ -1,9 +1,9 @@
 
 
-from gramatica.verbos.infinitivo import verbs_inf_keys
-from gramatica.verbos.passado import past_keys
-from gramatica.verbos.presente import pst_keys
-from gramatica.verbos.futuro import fut_keys
+# from gramatica.verbos.infinitivo import verbs_inf_keys
+# from gramatica.verbos.passado import past_keys
+# from gramatica.verbos.presente import pst_keys
+# from gramatica.verbos.futuro import fut_keys
 
 
 from time import sleep

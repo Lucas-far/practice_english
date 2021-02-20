@@ -1,12 +1,14 @@
 
 
-from gramatica.adjetivos.adjetivos import adjectives, adjectives_keys
+from substantivos.bdd_substantivos import nouns, nouns_pt_br
 from metodos.banco_de_dados import *
 from random import choice
 from cores.cores import colors
 
 # TOOLS
-black, red, green, yellow, blue, purple, cyan, ink = colors[0], colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7]
+black, red, green, yellow, blue, purple, cyan, ink = \
+    colors[0], colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7]
+
 bricks = '=' * 20
 
 quiz_format = """
@@ -46,87 +48,70 @@ set_error = """
 O conjunto não foi capaz de gerar todos os dados de um jogo
 """
 
-# VARIABLES TO DETERMINE THE PLAYER'S EFFICACY
 positive_score = 0
 negative_score = 0
-
 
 while True:
 
     try:
 
-        box_words = set({})
-        box_words_translations = set({})
-        box_target_translation = []
+        five_words = set({})
+
 
         def create_word():
             """"""
-            while len(box_words) < 5:
-
-                new_key = choice(adjectives_keys)
-                new_key_values = adjectives[new_key]
-                chosen = new_key_values[0]
-                value_meaning = new_key_values[1]
-
-                # print(f'{new_key = }')
-                # print(f'{new_key_values = }')
-                # print(f'{chosen = }')
-                # print(f'{value_meaning = }')
-
-                box_words.add(chosen)
-                box_words_translations.add(value_meaning)
+            while len(five_words) < 5:
+                five_words.add(choice(nouns))
 
         create_word()
 
-        box_words = list(box_words)
+        five_words = sorted(list(five_words))
 
-        box_words_translations = list(box_words_translations)
+        five_indexes = [nouns.index(word) for word in five_words]
 
-        chosen_key = choice(box_words)
+        five_translations = [nouns_pt_br[index] for index in five_indexes]
 
-        values_chosen_key = adjectives[chosen_key]
+        chosen_word = choice(five_words)
 
-        chosen_value = values_chosen_key[0]
+        chosen_word_index = five_words.index(chosen_word)
 
-        chosen_value_meaning = values_chosen_key[1]
+        chosen_word_translation = five_translations[chosen_word_index]
 
-        box_target_translation.append(chosen_value_meaning)
+        the_target_translation = [chosen_word_translation]
 
         def see_variables():
             """"""
-            print(f"{box_words = }")
-            print(f"{box_words_translations = }")
-            print(f'{chosen_key = }')
-            print(f'{values_chosen_key = }')
-            print(f'{chosen_value = }')
-            print(f'{chosen_value_meaning = }')
-            print(f'{box_target_translation = }')
-            print(f'{box_words = }')
-            print(f'{box_words_translations = }')
+            print(f"{five_words = }")
+            print(f"{five_indexes = }")
+            print(f"{five_translations = }")
+            print(f"{chosen_word = }")
+            print(f"{chosen_word_index = }")
+            print(f"{chosen_word_translation = }")
+            print(f"{the_target_translation = }")
 
         # see_variables()
 
-        greetings = welcome('treino de adjetivos', prefix=3, prefix2=7)
+        greetings = welcome('treino de substantivos', prefix=3, prefix2=7)
 
         print(greetings)
 
         answer = get_input_int(
             text=quiz_format.format(
                 bricks,
-                yellow, chosen_value, ink,
+                yellow, chosen_word, ink,
                 bricks,
-                *box_words_translations),
+                *five_translations),
             start=1,
             limit=5
         )
 
         # ONE OF THEM IS CORRECT, THE ONLY CORRECT WILL RETURN A NUMBER LESSER THAN 10
         conditions = [
-            *[1 if box_words_translations[0] in box_target_translation else 10],
-            *[2 if box_words_translations[1] in box_target_translation else 11],
-            *[3 if box_words_translations[2] in box_target_translation else 12],
-            *[4 if box_words_translations[3] in box_target_translation else 13],
-            *[5 if box_words_translations[4] in box_target_translation else 14],
+            *[1 if five_translations[0] in the_target_translation else 10],
+            *[2 if five_translations[1] in the_target_translation else 11],
+            *[3 if five_translations[2] in the_target_translation else 12],
+            *[4 if five_translations[3] in the_target_translation else 13],
+            *[5 if five_translations[4] in the_target_translation else 14],
         ]
 
         # THE ONLY NUMBER LESSER THAN 10 IS PLACED AS INDEX 0
@@ -143,7 +128,7 @@ while True:
             negative_score += 1
             print(failure.format(
                 red, ink,
-                blue, ink, box_target_translation[0],
+                blue, ink, the_target_translation[0],
                 green, ink, positive_score + negative_score,
                 yellow, ink, blue, ink, positive_score, negative_score, red, ink
             ))

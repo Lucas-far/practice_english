@@ -30,8 +30,8 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
         '\033[1:30m', '\033[1:31m', '\033[1:32m', '\033[1:33m', '\033[1:34m', '\033[1:35m', '\033[1:36m', '\033[m'
     )
 
-    red, ink = pallet[1], pallet[7]
-    warning = '\nAperte ENTER ou qualquer outra tecla para continuar...'
+    red, cyan, ink = pallet[1], pallet[6], pallet[7]
+    warning = '\n{}Aperte ENTER ou qualquer outra tecla para continuar...{}'
 
     integer_out_of_range = """
         {}==================== ERRO ===================={}
@@ -50,11 +50,11 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
                 break
             else:
                 print(integer_out_of_range.format(red, ink, start, limit))
-                input(warning)
+                input(warning.format(cyan, ink))
                 sleep(1)
         except ValueError:
             print(integer_unused.format(red, ink, start, limit))
-            input(warning)
+            input(warning.format(cyan, ink))
             sleep(1)
 
     return the_input

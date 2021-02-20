@@ -1,6 +1,6 @@
 
 
-from substantivos.bdd_substantivos import nouns, nouns_pt_br
+from adverbios.bdd_adverbios import adv_ly, adv_ly_pt_br
 from metodos.banco_de_dados import *
 from random import choice
 from cores.cores import colors
@@ -61,15 +61,15 @@ while True:
         def create_word():
             """"""
             while len(five_words) < 5:
-                five_words.add(choice(nouns))
+                five_words.add(choice(adv_ly))
 
         create_word()
 
         five_words = sorted(list(five_words))
 
-        five_indexes = [nouns.index(word) for word in five_words]
+        five_indexes = [adv_ly.index(word) for word in five_words]
 
-        five_translations = [nouns_pt_br[index] for index in five_indexes]
+        five_translations = [adv_ly_pt_br[index] for index in five_indexes]
 
         chosen_word = choice(five_words)
 
@@ -91,7 +91,7 @@ while True:
 
         # see_variables()
 
-        greetings = welcome('treino de substantivos', prefix=3, prefix2=7)
+        greetings = welcome('treino de advérbios com ly', prefix=3, prefix2=7)
 
         print(greetings)
 

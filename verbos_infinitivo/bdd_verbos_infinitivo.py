@@ -1,7 +1,7 @@
 
 
 # 'to be', 'to have', 'to do',
-verbs_inf = [
+verbs_infinitive = [
     'to say', 'to go', 'to get', 'to make', 'to know', 'to think', 'to take', 'to see', 'to come', 'to want', 'to look',
     'to use', 'to find', 'to give', 'to tell', 'to work', 'to call', 'to try', 'to ask', 'to need',
 
@@ -27,7 +27,7 @@ verbs_inf = [
 ]
 
 # 'ser/estar/ficar', 'possuir/ter', 'fazer',
-verbs_inf_pt_br = [
+verbs_infinitive_pt_br = [
     'dizer/falar', 'ir', 'adquirir/conseguir/obter/pegar', 'criar/fazer', 'conhecer/saber', 'achar/pensar',
     'levar/pegar/tomar', 'ver', 'chegar/vir', 'pretender/querer', 'olhar/ver', 'usar', 'achar/encontrar', 'dar',
     'contar/dizer', 'funcionar/trabalhar', 'chamar/telefonar', 'experimentar/tentar', 'pedir/perguntar',
@@ -61,8 +61,8 @@ verbs_inf_pt_br = [
 
 if __name__ == '__main__':
     print('\n')
-    print(f"{len(verbs_inf)}")
-    print(f"{len(verbs_inf_pt_br)}")
+    print(f"{len(verbs_infinitive)}")
+    print(f"{len(verbs_infinitive_pt_br)}")
     print('\n')
-    for words in zip(verbs_inf, verbs_inf_pt_br):
+    for words in zip(verbs_infinitive, verbs_infinitive_pt_br):
         print(words)

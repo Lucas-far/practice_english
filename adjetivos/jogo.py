@@ -1,9 +1,22 @@
 
 
 from adjetivos.bdd_adjetivos import adjectives, adjectives_pt_br
-from metodos.banco_de_dados import *
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
+
+# todo
+from metodos.bdd import sentence_maker as _
+from adverbios.bdd_adverbios import adv_ly, adv_frequency, adv_others
+from pronomes.bdd_pronomes import pro
+from pronomes_demonstrativos.bdd_pronomes_demonstrativos import pro_be_gl_u, pro_be_gl_l
+from substantivos.bdd_substantivos import nouns
+from verbos_be.bdd_presente import be_pst
+from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive
+from verbos_passado.bdd_verbos_passado import past
+from verbos_presente.bdd_verbos_presente import present
+from verbos_futuro.bdd_verbos_futuro import future
+# todo
 
 # TOOLS
 black, red, green, yellow, blue, purple, cyan, ink = \
@@ -55,6 +68,25 @@ while True:
 
     try:
 
+        # todo
+        element = _(adv_ly)
+        element2 = _(adv_frequency)
+        element3 = _(adv_others)
+        element4 = _(pro)
+        element5 = _(pro_be_gl_u)
+        element6 = _(pro_be_gl_l)
+        element7 = _(nouns)
+        element8 = _(verbs_infinitive)
+        element9 = _(past)
+        element10 = _(present)
+        element11 = _(future)
+        element_box = [
+            element, element2, element3, element4, element5, element6, element7, element8, element9,
+            element10, element11
+        ]
+        print(element_box)
+        # todo
+
         five_words = set({})
 
 
@@ -78,6 +110,7 @@ while True:
         chosen_word_translation = five_translations[chosen_word_index]
 
         the_target_translation = [chosen_word_translation]
+
 
         def see_variables():
             """"""

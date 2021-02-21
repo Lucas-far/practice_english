@@ -1,7 +1,7 @@
 
 
-from verbos_presente.bdd_verbos_presente import pst, pst_pt_br
-from metodos.banco_de_dados import *
+from verbos_presente.bdd_verbos_presente import present, present_pt_br
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
 
@@ -61,15 +61,15 @@ while True:
         def create_word():
             """"""
             while len(five_words) < 5:
-                five_words.add(choice(pst))
+                five_words.add(choice(present))
 
         create_word()
 
         five_words = sorted(list(five_words))
 
-        five_indexes = [pst.index(word) for word in five_words]
+        five_indexes = [present.index(word) for word in five_words]
 
-        five_translations = [pst_pt_br[index] for index in five_indexes]
+        five_translations = [present_pt_br[index] for index in five_indexes]
 
         chosen_word = choice(five_words)
 

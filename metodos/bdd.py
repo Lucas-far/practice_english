@@ -7,6 +7,13 @@
 
 
 from time import sleep
+from random import choice, randint
+
+from artigos.bdd_artigos import the_u, the_l
+from pronomes.bdd_pronomes import pro_pl_u
+from verbos_have.bdd_have import the_have_l
+from substantivos.bdd_substantivos import nouns_sgl, nouns_pl
+from verbos_be.bdd_presente import is_l, is_u
 
 def check_length(*args):
     """"""
@@ -58,6 +65,16 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
             sleep(1)
 
     return the_input
+
+
+def sentence_maker(*args):  # removed parameter: example
+    """"""
+    sentence = []
+
+    for word in args:
+        sentence.append(choice(word))
+        # print(f'{colors[4]}{choice(word)}{colors[7]}', end='')
+    return "".join(sentence)
 
 
 def verify(*args, database: list):
@@ -127,4 +144,6 @@ def welcome(algorithm_name: str = 'Name of the algorithm', prefix: int = 0, pref
 
 
 if __name__ == '__main__':
-    pass
+    x = '  '
+    # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
+    print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))

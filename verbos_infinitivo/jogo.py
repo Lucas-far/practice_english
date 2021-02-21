@@ -1,7 +1,7 @@
 
 
-from verbos_infinitivo.bdd_verbos_infinitivo import verbs_inf, verbs_inf_pt_br
-from metodos.banco_de_dados import *
+from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive, verbs_infinitive_pt_br
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
 
@@ -61,15 +61,15 @@ while True:
         def create_word():
             """"""
             while len(five_words) < 5:
-                five_words.add(choice(verbs_inf))
+                five_words.add(choice(verbs_infinitive))
 
         create_word()
 
         five_words = sorted(list(five_words))
 
-        five_indexes = [verbs_inf.index(word) for word in five_words]
+        five_indexes = [verbs_infinitive.index(word) for word in five_words]
 
-        five_translations = [verbs_inf_pt_br[index] for index in five_indexes]
+        five_translations = [verbs_infinitive_pt_br[index] for index in five_indexes]
 
         chosen_word = choice(five_words)
 

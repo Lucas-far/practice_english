@@ -34,7 +34,7 @@ adjectives_pt_br = [
 
     'gratuito(a)/livre', 'militar', 'verdadeiro(a)', 'federal', 'internacional', 'cheio/completo', 'especial', 'fácil',
     'claro/evidente', 'recente', 'certo(a)', 'pessoal', 'aberto(a)', 'vermelho(a)', 'difícil', 'disponível', 'provável',
-    'curto(a)', 'solteiro(a)/único(a)', 'médico(a)',
+    'baixo(a)/curto(a)', 'solteiro(a)/único(a)', 'médico(a)',
 
     'atual', 'errado(a)', 'privado(a)', 'passado', 'estrangeiro(a)', 'bom(a)/excelente', 'comum', 'pobre', 'natural',
     'significativo', 'semelhante/similar/parecido', 'quente', 'morto(a)', 'central', 'feliz', 'sério(a)', 'pronto(a)',

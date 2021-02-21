@@ -7,15 +7,21 @@ from cores.cores import colors
 
 # todo
 from metodos.bdd import sentence_maker as _
-from adverbios.bdd_adverbios import adv_ly, adv_frequency, adv_others
-from pronomes.bdd_pronomes import pro
-from pronomes_demonstrativos.bdd_pronomes_demonstrativos import pro_be_gl_u, pro_be_gl_l
+from adjetivos_possessivos.bdd_adjetivos_possessivos import possessive_adjectives_global
+from adverbios.bdd_adverbios import adverbs_ly, adverbs_frequency, adverb_others
+from preposicoes.bdd_preposicoes import prepositions, prepositions_direction_place
+from pronomes.bdd_pronomes import pronouns, pronouns_pt_br
+# from pronomes_demonstrativos.bdd_pronomes_demonstrativos import pro_be_gl_u, pro_be_gl_l
+# from pronomes_possessivos.bdd_pronomes_possessivos import pro_pos
 from substantivos.bdd_substantivos import nouns
-from verbos_be.bdd_presente import be_pst
-from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive
-from verbos_passado.bdd_verbos_passado import past
-from verbos_presente.bdd_verbos_presente import present
-from verbos_futuro.bdd_verbos_futuro import future
+# from wh.bdd_wh import wh_gl
+# from verbos_be.bdd_presente import be_pst
+# from verbos_can.bdd_verbos_can import can
+# from verbos_do.bdd_verbos_do import do
+# from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive
+# from verbos_passado.bdd_verbos_passado import past
+# from verbos_presente.bdd_verbos_presente import present
+# from verbos_futuro.bdd_verbos_futuro import future
 # todo
 
 # TOOLS
@@ -69,22 +75,28 @@ while True:
     try:
 
         # todo
-        element = _(adv_ly)
-        element2 = _(adv_frequency)
-        element3 = _(adv_others)
-        element4 = _(pro)
-        element5 = _(pro_be_gl_u)
-        element6 = _(pro_be_gl_l)
-        element7 = _(nouns)
-        element8 = _(verbs_infinitive)
-        element9 = _(past)
-        element10 = _(present)
-        element11 = _(future)
+        pronoun = _(pronouns)
+        pronoun_t = pronouns_pt_br[pronouns.index(pronoun)]
+        possessive_adjective = _(possessive_adjectives_global)
+        noun = _(nouns)
+        adverb = _(adverbs_ly)
+        adverb2 = _(adverbs_frequency)
+        adverb3 = _(adverb_others)
+        preposition = _(prepositions)
+        preposition_direction = _(prepositions_direction_place)
+
         element_box = [
-            element, element2, element3, element4, element5, element6, element7, element8, element9,
-            element10, element11
+            pronoun, possessive_adjective, noun, adverb, adverb2, adverb3, preposition, preposition_direction
         ]
-        print(element_box)
+        print('\n')
+        print(f"Pronome: {blue}{element_box[0]}{ink} -> {yellow}{pronoun_t}{ink}")
+        print(f"Adjetivo possessivo: {blue}{element_box[1]}{ink}")
+        print(f"Substantivo: {blue}{element_box[2]}{ink}")
+        print(f"Advérbio ly: {blue}{element_box[3]}{ink}")
+        print(f"Advérbio de frequência: {blue}{element_box[4]}{ink}")
+        print(f"Advérbio: {blue}{element_box[5]}{ink}")
+        print(f"Preposição: {blue}{element_box[6]}{ink}")
+        print(f"Preposição de direção: {blue}{element_box[7]}{ink}")
         # todo
 
         five_words = set({})

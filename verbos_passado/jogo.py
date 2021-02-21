@@ -1,7 +1,7 @@
 
 
 from verbos_passado.bdd_verbos_passado import past, past_pt_br
-from metodos.banco_de_dados import *
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
 

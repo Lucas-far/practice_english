@@ -2,34 +2,6 @@
 
 pro_demo = ['this', 'these', 'that', 'those', 'This', 'These', 'That', 'Those']
 
-pro_be_gl_u = [
-    'This is', "This is not", "This isn't",
-    'That is', "That is not", "That isn't",
-    'These are', "These are not", "These aren't",
-    'Those are', "Those are not", "Those aren't"
-]
-
-pro_be_gl_l = [
-    'this is', "this is not", "this isn't",
-    'that is', "that is not", "that isn't",
-    'these are', "these are not", "these aren't",
-    'those are', "those are not", "those aren't"
-]
-
-pro_be_u = ['This is', 'That is', 'These are', 'Those are']
-
-pro_be_l = ['this is', 'that is', 'these are', 'those are']
-
-pro_be_not_u = [
-    "This is not", "This isn't", "That is not", "That isn't", "These are not", "These aren't",
-    "Those are not", "Those aren't"
-]
-
-pro_be_not_l = [
-    "this is not", "this isn't", "that is not", "that isn't", "these are not", "these aren't",
-    "those are not", "those aren't"
-]
-
 pro_demo_u = ['This', 'These', 'That', 'Those']
 
 pro_demo_l = ['this', 'these', 'that', 'those']
@@ -67,3 +39,34 @@ these_ = ['these', 'esses(as)']
 that_ = ['that', 'aquele(a)']
 
 those_ = ['those', 'aqueles(as)']
+
+
+pro_be_gl_u = [
+    'This is', "This is not", "This isn't",
+    'That is', "That is not", "That isn't",
+    'These are', "These are not", "These aren't",
+    'Those are', "Those are not", "Those aren't"
+]
+
+pro_be_gl_l = [
+    'this is', "this is not", "this isn't",
+    'that is', "that is not", "that isn't",
+    'these are', "these are not", "these aren't",
+    'those are', "those are not", "those aren't"
+]
+
+pro_be_u = ['This is', 'That is', 'These are', 'Those are']
+
+pro_be_l = ['this is', 'that is', 'these are', 'those are']
+
+pro_be_not_u = [
+    "This is not", "This isn't", "That is not", "That isn't", "These are not", "These aren't",
+    "Those are not", "Those aren't"
+]
+
+pro_be_not_l = [
+    "this is not", "this isn't", "that is not", "that isn't", "these are not", "these aren't",
+    "those are not", "those aren't"
+]
+
+

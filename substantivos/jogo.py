@@ -1,7 +1,7 @@
 
 
 from substantivos.bdd_substantivos import nouns, nouns_pt_br
-from metodos.banco_de_dados import *
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
 

@@ -1,7 +1,7 @@
 
 
-from adverbios.bdd_adverbios import adv_frequency, adv_frequency_pt_br
-from metodos.banco_de_dados import *
+from adverbios.bdd_adverbios import adverbs_frequency, adverbs_frequency_pt_br
+from metodos.bdd import *
 from random import choice
 from cores.cores import colors
 
@@ -61,15 +61,15 @@ while True:
         def create_word():
             """"""
             while len(five_words) < 5:
-                five_words.add(choice(adv_frequency))
+                five_words.add(choice(adverbs_frequency))
 
         create_word()
 
         five_words = sorted(list(five_words))
 
-        five_indexes = [adv_frequency.index(word) for word in five_words]
+        five_indexes = [adverbs_frequency.index(word) for word in five_words]
 
-        five_translations = [adv_frequency_pt_br[index] for index in five_indexes]
+        five_translations = [adverbs_frequency_pt_br[index] for index in five_indexes]
 
         chosen_word = choice(five_words)
 

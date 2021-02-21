@@ -1,31 +1,31 @@
 
 
-pro = [
+pronouns = [
     'I', 'you', 'he', 'she', 'it', 'we', 'you', 'they',
     'I', 'You', 'He', 'She', 'It', 'We', 'You', 'They',
 ]
 
-pro_u = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
+pronouns_u = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
 
-pro_l = ['I', 'you', 'he', 'she', 'it', 'we', 'you', 'they']
+pronouns_l = ['I', 'you', 'he', 'she', 'it', 'we', 'you', 'they']
 
-pro_pt_br = ['eu', 'tu/você', 'ele', 'ela', 'isso', 'nós', 'vós/vocês', 'eles(as)']
+pronouns_pt_br = ['eu', 'tu/você', 'ele', 'ela', 'isso', 'nós', 'vós/vocês', 'eles(as)']
 
-pro_sgl_u = ['I', 'He', 'She', 'It']
+pronouns_sgl_u = ['I', 'He', 'She', 'It']
 
-pro_sgl_l = ['I', 'he', 'she', 'it']
+pronouns_sgl_l = ['I', 'he', 'she', 'it']
 
-pro_sgl_is_u = ['He', 'She', 'It']
+pronouns_sgl_is_u = ['He', 'She', 'It']
 
-pro_sgl_is_l = ['he', 'she', 'it']
+pronouns_sgl_is_l = ['he', 'she', 'it']
 
-pro_pl_u = ['We', 'You', 'They']
+pronouns_pl_u = ['We', 'You', 'They']
 
-pro_pl_l = ['we', 'you', 'they']
+pronouns_pl_l = ['we', 'you', 'they']
 
-pro_pl_others_u = ['I', 'We', 'You', 'They']
+pronouns_pl_others_u = ['I', 'We', 'You', 'They']
 
-pro_pl_others_l = ['I', 'we', 'you', 'they']
+pronouns_pl_others_l = ['I', 'we', 'you', 'they']
 
 i_u, you_u, he_u, she_u, it_u, we_u, they_u = \
     ['I'], ['You'], ['He'], ['She'], ['It'], ['We'], ['They']

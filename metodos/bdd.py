@@ -23,6 +23,13 @@ def check_length(*args):
     return box
 
 
+def do_translation(text, target_language):
+    """"""
+    from textblob import TextBlob
+    sentence_translated = TextBlob(text).translate(to=target_language)
+    return sentence_translated
+
+
 def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start: int = 1, limit: int = 9999) -> int:
     """
     To treat improper data while a proper integer number is not being provided.

@@ -7,18 +7,22 @@ from cores.cores import colors
 
 # todo
 from metodos.bdd import sentence_maker as _
-from adjetivos_possessivos.bdd_adjetivos_possessivos import possessive_adjectives_global
+
+from pronomes.bdd_pronomes import (pronouns_l, pronouns_pt_br)
+from adjetivos_possessivos.bdd_adjetivos_possessivos import (possessive_adjectives_l, possessive_adjectives_pt_br)
+from pronomes_demonstrativos.bdd_pronomes_demonstrativos import (demonstrative_pronouns_l, demonstrative_pronouns_pt_br)
+from substantivos.bdd_substantivos import (nouns, nouns_pt_br)
+
+from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive, verbs_infinitive_pt_br
+from verbos_be.bdd_presente import be_present_l, be_present_l_pt_br
+
 from adverbios.bdd_adverbios import adverbs_ly, adverbs_frequency, adverb_others
 from preposicoes.bdd_preposicoes import prepositions, prepositions_direction_place
-from pronomes.bdd_pronomes import pronouns, pronouns_pt_br
-# from pronomes_demonstrativos.bdd_pronomes_demonstrativos import pro_be_gl_u, pro_be_gl_l
 # from pronomes_possessivos.bdd_pronomes_possessivos import pro_pos
-from substantivos.bdd_substantivos import nouns
 # from wh.bdd_wh import wh_gl
-# from verbos_be.bdd_presente import be_pst
 # from verbos_can.bdd_verbos_can import can
 # from verbos_do.bdd_verbos_do import do
-# from verbos_infinitivo.bdd_verbos_infinitivo import verbs_infinitive
+
 # from verbos_passado.bdd_verbos_passado import past
 # from verbos_presente.bdd_verbos_presente import present
 # from verbos_futuro.bdd_verbos_futuro import future
@@ -51,6 +55,20 @@ success = """
     ===================================================
     """
 
+# todo
+sentence_creation = """
+    Sabendo que {}{}{} significa {}{}{}, tente criar uma frase
+    
+    ========== DICAS ==========
+    Pronome:                 -> {}{}{} -> {}{}{}
+    Adjetivo possessivo:     -> {}{}{} -> {}{}{}
+    Pronome demonstrativo:   -> {}{}{} -> {}{}{}
+    Substantivo:             -> {}{}{} -> {}{}{}
+    Verbo no infinitivo:     -> {}{}{} -> {}{}{}
+    Verbo to be no presente: -> {}{}{} -> {}{}{}
+    """
+# todo
+
 failure = """ 
     ==================== RELATÓRIO ====================
     {}Resposta incorreta{}
@@ -73,31 +91,6 @@ negative_score = 0
 while True:
 
     try:
-
-        # todo
-        pronoun = _(pronouns)
-        pronoun_t = pronouns_pt_br[pronouns.index(pronoun)]
-        possessive_adjective = _(possessive_adjectives_global)
-        noun = _(nouns)
-        adverb = _(adverbs_ly)
-        adverb2 = _(adverbs_frequency)
-        adverb3 = _(adverb_others)
-        preposition = _(prepositions)
-        preposition_direction = _(prepositions_direction_place)
-
-        element_box = [
-            pronoun, possessive_adjective, noun, adverb, adverb2, adverb3, preposition, preposition_direction
-        ]
-        print('\n')
-        print(f"Pronome: {blue}{element_box[0]}{ink} -> {yellow}{pronoun_t}{ink}")
-        print(f"Adjetivo possessivo: {blue}{element_box[1]}{ink}")
-        print(f"Substantivo: {blue}{element_box[2]}{ink}")
-        print(f"Advérbio ly: {blue}{element_box[3]}{ink}")
-        print(f"Advérbio de frequência: {blue}{element_box[4]}{ink}")
-        print(f"Advérbio: {blue}{element_box[5]}{ink}")
-        print(f"Preposição: {blue}{element_box[6]}{ink}")
-        print(f"Preposição de direção: {blue}{element_box[7]}{ink}")
-        # todo
 
         five_words = set({})
 
@@ -140,12 +133,42 @@ while True:
 
         print(greetings)
 
+        # todo
+        hints = """"""
+
+        pronoun = _(pronouns_l)
+        pronoun_tr = pronouns_pt_br[pronouns_l.index(pronoun)]
+
+        possessive_adjective = _(possessive_adjectives_l)
+        possessive_adjective_tr = possessive_adjectives_pt_br[possessive_adjectives_l.index(possessive_adjective)]
+
+        demonstrative_pronoun = _(demonstrative_pronouns_l)
+        demonstrative_pronoun_tr = demonstrative_pronouns_pt_br[demonstrative_pronouns_l.index(demonstrative_pronoun)]
+
+        noun = _(nouns)
+        noun_tr = nouns_pt_br[nouns.index(noun)]
+
+        verb_infinitive = _(verbs_infinitive)
+        verb_infinitive_tr = verbs_infinitive_pt_br[verbs_infinitive.index(verb_infinitive)]
+
+        be_present = _(be_present_l)
+        be_present_tr = be_present_l_pt_br[be_present_l.index(be_present)]
+
+        # adverb = _(adverbs_ly)
+        # adverb2 = _(adverbs_frequency)
+        # adverb3 = _(adverb_others)
+        # preposition = _(prepositions)
+        # preposition_direction = _(prepositions_direction_place)
+
+        # print(f"Advérbio ly: {blue}{element_box[3]}{ink}")
+        # print(f"Advérbio de frequência: {blue}{element_box[4]}{ink}")
+        # print(f"Advérbio: {blue}{element_box[5]}{ink}")
+        # print(f"Preposição: {blue}{element_box[6]}{ink}")
+        # print(f"Preposição de direção: {blue}{element_box[7]}{ink}")
+        # todo
+
         answer = get_input_int(
-            text=quiz_format.format(
-                bricks,
-                yellow, chosen_word, ink,
-                bricks,
-                *five_translations),
+            text=quiz_format.format(bricks, yellow, chosen_word, ink, bricks, *five_translations),
             start=1,
             limit=5
         )
@@ -169,6 +192,25 @@ while True:
                 green, ink, positive_score + negative_score,
                 yellow, ink, blue, ink, positive_score, negative_score, red, ink
             ))
+
+            # todo
+            print(sentence_creation.format(
+                blue, chosen_word, ink, yellow, the_target_translation[0], ink,
+                blue, pronoun, ink, yellow, pronoun_tr, ink,
+                blue, possessive_adjective, ink, yellow, possessive_adjective_tr, ink,
+                blue, demonstrative_pronoun, ink, yellow, demonstrative_pronoun_tr, ink,
+                blue, noun, ink, yellow, noun_tr, ink,
+                blue, verb_infinitive, ink, yellow, verb_infinitive_tr, ink,
+                blue, be_present, ink, yellow, be_present_tr, ink
+            ))
+
+            sentence = input('Clique após a seta e tente criar sua frase -> ')
+            # sentence_translation = do_translation(sentence, 'pt')  # comentar, caso API falhe
+            with open('frases.txt', 'a') as txt_file:
+                # txt_file.write(f"{sentence} -> {sentence_translation}\n")  # comentar, caso API falhe
+                txt_file.write(f"{sentence}\n")  # comentar, caso API falhe
+            # todo
+
         else:
             negative_score += 1
             print(failure.format(
@@ -177,6 +219,24 @@ while True:
                 green, ink, positive_score + negative_score,
                 yellow, ink, blue, ink, positive_score, negative_score, red, ink
             ))
+
+            # todo
+            print(sentence_creation.format(
+                blue, chosen_word, ink, yellow, the_target_translation[0], ink,
+                blue, pronoun, ink, yellow, pronoun_tr, ink,
+                blue, possessive_adjective, ink, yellow, possessive_adjective_tr, ink,
+                blue, demonstrative_pronoun, ink, yellow, demonstrative_pronoun_tr, ink,
+                blue, noun, ink, yellow, noun_tr, ink,
+                blue, verb_infinitive, ink, yellow, verb_infinitive_tr, ink,
+                blue, be_present, ink, yellow, be_present_tr, ink
+            ))
+
+            sentence = input('Clique após a seta e tente criar sua frase -> ')
+            # sentence_translation = do_translation(sentence, 'pt')  # comentar, caso API falhe
+            with open('frases.txt', 'a') as txt_file:
+                # txt_file.write(f"{sentence} -> {sentence_translation}\n")  # comentar, caso API falhe
+                txt_file.write(f"{sentence}\n")  # comentar, caso API falhe
+            # todo
 
         input(controller.format(cyan, ink))
         sleep(1)

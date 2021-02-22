@@ -10,18 +10,23 @@ average = [
     'my', 'your', 'his', 'her', 'its', 'our', 'their'
 ]
 "-------------------------------------------------------- VARS --------------------------------------------------------"
-possessive_adjectives_global = [
-    'My', 'Your', 'His', 'Her', 'Its', 'Our', 'Their',
-    'my', 'your', 'his', 'her', 'its', 'our', 'their'
+possessive_adjectives = [
+    'My', 'Your', 'His', 'Her', 'Its', 'Our', 'Your', 'Their',
+    'my', 'your', 'his', 'her', 'its', 'our', 'your', 'their'
+]
+
+possessive_adjectives_pt_br = [
+    'Meu(s)/Minha(s)', 'Seu/Sua', 'Dele', 'Dela', 'Desse/Disso', 'Nosso(s)/Nossa(s)', 'Seus/Suas', 'Deles/Delas/Desses',
+    'meu(s)/minha(s)', 'seu/sua', 'dele', 'dela', 'desse/disso', 'nosso(s)/nossa(s)', 'seus/suas', 'deles/delas/desses'
 ]
 
 # adjectives_possessive_upper = [index.replace(index[0], index[0].upper()) for index in adjectives_possessive_lower]
-adj_pos_u = ['My', 'Your', 'His', 'Her', 'Its', 'Our', 'Their']
+possessive_adjectives_u = ['My', 'Your', 'His', 'Her', 'Its', 'Our', 'Your', 'Their']
 
-adj_pos_l = ['my', 'your', 'his', 'her', 'its', 'our', 'their']
+possessive_adjectives_l = ['my', 'your', 'his', 'her', 'its', 'our', 'Your', 'their']
 
-adj_pos_pt_br = [
-    'meu(s)/minha(s)', 'seu(s)/sua(s)', 'dele(s)', 'dela(s)', 'dele(s)/dela(s)', 'nosso(s)/nossa(s)s', 'dele(s)/dela(s)'
+possessive_adjectives_pt_br = [
+    'meu(s)/minha(s)', 'seu/sua', 'dele', 'dela', 'desse/disso', 'nosso(s)/nossa(s)', 'seus/suas', 'deles/delas/desses'
 ]
 
 my_ = ['my', 'meu(s)/minha(s)']

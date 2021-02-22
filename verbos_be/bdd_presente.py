@@ -26,7 +26,17 @@ be_pst = [
 be_pst_u = ["Am", "Is", "Are", "Am not", "Is not", "Are not", "Isn't", "Aren't"]
 
 # global -> cacha baixa
-be_pst_l = ["am", "is", "are", "am not", "is not", "are not", "isn't", "aren't"]
+be_present_l = [
+    "am", "am not",
+    "is", "is not", "isn't",
+    "are", "are not", "aren't"
+]
+
+be_present_l_pt_br = [
+    'sou/estou', 'não sou/estou',
+    'é/está', 'não é/está', 'não é/está',
+    'são/estão', 'não são/estão', 'não são/estão'
+]
 
 am_is_are_u = ['Am', 'Is', 'Are']
 

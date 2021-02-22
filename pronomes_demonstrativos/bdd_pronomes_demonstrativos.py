@@ -1,20 +1,20 @@
 
 
-pro_demo = ['this', 'these', 'that', 'those', 'This', 'These', 'That', 'Those']
+demonstrative_pronouns = ['this', 'these', 'that', 'those', 'This', 'These', 'That', 'Those']
 
-pro_demo_u = ['This', 'These', 'That', 'Those']
+demonstrative_pronouns_u = ['This', 'These', 'That', 'Those']
 
-pro_demo_l = ['this', 'these', 'that', 'those']
+demonstrative_pronouns_l = ['this', 'these', 'that', 'those']
 
-pro_demo_pt_br = ['esse(a)', 'esses(as)', 'aquele(a)', 'aqueles(as)']
+demonstrative_pronouns_pt_br = ['esse(a)', 'esses(as)', 'aquele(a)', 'aqueles(as)']
 
-pro_demo_sgl_u = ['This', 'That']
+demonstrative_pronouns_sgl_u = ['This', 'That']
 
-pro_demo_sgl_l = ['this', 'that']
+demonstrative_pronouns_sgl_l = ['this', 'that']
 
-pro_demo_pl_u = ['These', 'Those']
+demonstrative_pronouns_pl_u = ['These', 'Those']
 
-pro_demo_pl_l = ['these', 'those']
+demonstrative_pronouns_pl_l = ['these', 'those']
 
 this_u = ['This']
 

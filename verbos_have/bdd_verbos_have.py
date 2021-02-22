@@ -7,6 +7,13 @@ have = [
     "Have", "Have not", "Haven't",
 ]
 
+have_present_l = [
+    'has', 'does not have', "doesn't have",
+    'have', 'do not have', "don't have",
+]
+
+have_present_l_pt_br = ['tem', 'não tem', 'não tem', 'tem', 'não tem', 'não tem']
+
 have_u = ["Has", "Has not", "Hasn't", "Have", "Have not", "Haven't"]
 have_l = ["has", "has not", "hasn't", "have", "have not", "haven't"]
 

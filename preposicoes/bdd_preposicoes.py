@@ -17,21 +17,9 @@ prepositions_pt_br = [
     'ao redor/em volta/por aí', 'como', 'em (sem contato)', 'diante de/perante', 'atrás/detrás', 'abaixo/sob',
     'entre/no meio de', 'junto a/perto de/por', 'abaixo', 'durante', 'para/por/durante', 'de/do/desde/a partir de',
     'em (contato dentro)', 'em frente a/na frente de', 'em/dentro/para dentro', 'como', 'ao lado de/próximo de', 'de',
-    'em (contato fora)', 'para fora/fora', 'acima/sobre (contato)', 'a partir de/desde', 'através de', 'para',
+    'em (contato fora)', 'fora/para fora', 'acima/sobre (contato)', 'a partir de/desde', 'através de', 'para',
     'em direção a', 'debaixo/embaixo/por baixo', 'embaixo/por baixo de/sob', 'até', 'acima/em cima/para cima', 'com',
     'sem'
-]
-"------------------------------------------------------- COMUNS -------------------------------------------------------"
-prepositions_main = [
-    'below', 'under', 'above', 'over',
-    'behind', 'in front of', 'next to', 'between',
-    'in', 'on', 'at'
-]
-
-prepositions_main_pt_br = [
-    'abaixo/sob', 'debaixo/embaixo/por baixo', 'acima/sobre (sem contato)', 'acima/sobre (contato)',
-    'atrás/detrás', 'em frente a/na frente de', 'ao lado de/próximo de', 'entre/no meio de',
-    'em (contato dentro)', 'em (contato fora)', 'em (sem contato)'
 ]
 "------------------------------------------------------ DIREÇÃO -------------------------------------------------------"
 prepositions_direction_place = [
@@ -50,24 +38,22 @@ prepositions_direction_place_pt_br = [
 "-------------------------------------------------------- TEMPO -------------------------------------------------------"
 prepositions_time = [
     'on', 'ago', 'at', 'before', 'by', 'for',
-    'from', 'in', 'since', 'to', 'until'
+    'from', 'in', 'since', 'to', 'until', 'after'
 ]
 
 prepositions_time_pt_br = [
     'em (contato fora)', 'atrás', 'em (sem contato)', 'diante de/perante', 'junto a/perto de/por', 'para/por/durante',
-    'de/do/desde/a partir de', 'em (contato dentro)', 'a partir de/desde', 'para', 'até'
+    'de/do/desde/a partir de', 'em (contato dentro)', 'a partir de/desde', 'para', 'até', 'depois'
 ]
 "------------------------------------------------------- CURTAS -------------------------------------------------------"
-prepositions_short = [
-    'at', 'by', 'down', 'for', 'from',
-    'in', 'into', 'like', 'of', 'on', 'out',
-    'over', 'to', 'up', 'with'
+preposition_others = [
+    'like', 'out', 'around', 'into', 'as', 'without', 'of', 'during', 'with', 'next to',
+    'underneath', 'against', 'about'
 ]
 
-prepositions_short_pt_br = [
-    'em (sem contato)', 'junto a/perto de/por', 'abaixo', 'para/por/durante', 'de/do/desde/a partir de',
-    'em (contato dentro)', 'em/dentro/para dentro', 'como', 'de', 'em (contato fora)', 'para fora/fora',
-    'acima/sobre (contato)', 'para', 'acima/em cima/para cima', 'com'
+preposition_others_pt_br = [
+    'como', 'para fora/fora', 'ao redor/em volta/por aí', 'em/dentro/para dentro', 'como', 'sem', 'de', 'durante',
+    'com', 'ao lado de/próximo de', 'embaixo/por baixo de/sob', 'contra', 'sobre/acerca de'
 ]
 "------------------------------------------------------- FRASAIS ------------------------------------------------------"
 # preposititons_phrasal_upper = [index.replace(index, index[0].upper() + index[1:]) for index in preposititons_phrasal_lower]
@@ -131,6 +117,9 @@ without_ = ['without', 'sem']
 if __name__ == '__main__':
 
     print('\n')
+    var = set(prepositions_time).intersection(set(preposition_others))
+    print(var)
+
     # print(bricks)
     #
     # print(f'{len(prep) = }')
@@ -139,17 +128,26 @@ if __name__ == '__main__':
     # print(f'{len(prep_main) = }')
     # print(f'{len(prep_main_pt_br) = }')
     # print(bricks)
-    # print(f'{len(prep_direction_place) = }')
-    # print(f'{len(prep_direction_place_pt_br) = }')
-    # print(bricks)
-    # print(f'{len(prep_time) = }')
-    # print(f'{len(prep_time_pt_br) = }')
-    # print(bricks)
+    print(f'{len(prepositions_direction_place) = }')
+    print(f'{len(prepositions_direction_place_pt_br) = }')
+
+    print('\n')
+    print(f'{len(prepositions_time) = }')
+    print(f'{len(prepositions_time_pt_br) = }')
+
+    print('\n')
+    print(f'{len(preposition_others) = }')
+    print(f'{len(preposition_others_pt_br) = }')
+
+    var = {*prepositions_direction_place, *prepositions_time, *preposition_others}
+    print(len(var))
+    print(var)
+
+    for word in prepositions:
+        print(f"{word} = {word in prepositions_gl}")
     # print(f'{len(prep_short) = }')
     # print(f'{len(prep_short_pt_br) = }')
     # print(bricks)
-    # print(f'{len(prep_others) = }')
-    # print(f'{len(prep_others_pt_br) = }')
     # print(bricks)
     # print(f'{len(prep_phrasal_u) = }')
     # print(f'{len(prep_phrasal_l) = }')
@@ -174,11 +172,11 @@ if __name__ == '__main__':
     # print('\n')
     # for word in zip(prep_short, prep_short_pt_br):
     #     print(word)
-    #
+
     # print('\n')
-    # for word in zip(prep_others, prep_others_pt_br):
+    # for word in zip(preposition_others, preposition_others_pt_br):
     #     print(word)
-    #
+
     # print('\n')
     # for word in zip(prep_phrasal_l, prep_phrasal_pt_br):
     #     print(word)

@@ -6,20 +6,20 @@ adverbs_ly = [
     'deliberately', 'devotedly',
 
     'directly', 'doubtfully', 'dramatically', 'dutifully', 'eagerly', 'early', 'elegantly', 'enormously', 'especially',
-    'evenly', 'eventually', 'exactly', 'faithfully', 'finally', 'foolishly', 'fortunately', 'frequently', 'gleefully',
+    'evenly', 'exactly', 'faithfully', 'finally', 'foolishly', 'fortunately', 'gleefully',
     'gracefully', 'happily',
 
-    'hastily', 'honestly', 'hopelessly', 'hourly', 'hungrily', 'innocently', 'inquisitively', 'irritably', 'jealously',
+    'hastily', 'honestly', 'hopelessly', 'hungrily', 'innocently', 'inquisitively', 'irritably', 'jealously',
     'justly', 'kindly', 'lazily', 'loosely', 'madly', 'merrily', 'mortally', 'mysteriously', 'nearly', 'nervously',
     'normally',
 
-    'obediently', 'occasionally', 'particularly', 'perfectly', 'politely', 'poorly', 'powerfully', 'probably',
-    'promptly', 'quickly', 'rapidly', 'rarely', 'really', 'recently', 'regularly', 'rudely', 'safely', 'selfishly',
+    'obediently', 'particularly', 'perfectly', 'politely', 'poorly', 'powerfully', 'probably',
+    'promptly', 'quickly', 'rapidly', 'really', 'recently', 'rudely', 'safely', 'selfishly',
     'seriously', 'shakily',
 
     'sharply', 'silently', 'simply', 'slowly', 'solemnly', 'speedily', 'sternly', 'suddenly', 'technically',
-    'tediously', 'unexpectedly', 'usually', 'victoriously', 'vivaciously', 'warmly', 'wearily', 'weekly',
-    'wildly', 'yearly', 'consequently',
+    'tediously', 'unexpectedly', 'victoriously', 'vivaciously', 'warmly', 'wearily',
+    'wildly', 'consequently',
 
     'subsequently', 'similarly',
 ]
@@ -30,24 +30,23 @@ adverbs_ly_pt_br = [
     'timidamente', 'loucamente (doido)', 'desafiadoramente', 'habilmente', 'deliberadamente', 'devotadamente',
 
     'diretamente', 'duvidosamente', 'dramaticamente', 'obedientemente', 'ansiosamente', 'cedo', 'elegantemente',
-    'enormemente', 'especialmente', 'uniformemente', 'eventualmente', 'exatamente', 'fielmente', 'finalmente',
-    'tolamente', 'felizmente', 'frequentemente', 'alegremente', 'graciosamente', 'felizmente',
+    'enormemente', 'especialmente', 'uniformemente', 'exatamente', 'fielmente', 'finalmente',
+    'tolamente', 'felizmente', 'alegremente', 'graciosamente', 'felizmente',
 
     'apressadamente/precipitadamente', 'honestamente', 'desesperadamente/desesperançosamente',
-    'de hora em hora/por hora', 'avidamente/famintamente', 'inocentemente', 'inquisitivamente', 'irritantemente',
+    'avidamente/famintamente', 'inocentemente', 'inquisitivamente', 'irritantemente',
     'ciumentamente', 'justamente', 'gentilmente', 'preguiçosamente', 'folgadamente/livremente/vagamente',
     'loucamente (louco)', 'alegremente', 'mortalmente', 'misteriosamente', 'aproximadamente/quase', 'nervosamente',
     'normalmente',
 
-    'obedientemente', 'ocasionalmente', 'particularmente', 'perfeitamente', 'educadamente',
+    'obedientemente', 'particularmente', 'perfeitamente', 'educadamente',
     'deficientemente/pobremente', 'poderosamente', 'provavelmente', 'imediatamente/prontamente', 'rapidamente',
-    'rapidamente', 'raramente', 'realmente', 'recentemente', 'regularmente', 'rudemente', 'com segurança',
+    'rapidamente', 'realmente', 'recentemente', 'rudemente', 'com segurança',
     'egoisticamente', 'seriamente', 'tremulamente',
 
     'bruscamente/nitidamente/rispidamente', 'silenciosamente', 'simplesmente', 'lentamente', 'solenemente',
-    'rapidamente', 'severamente', 'repentinamente', 'tecnicamente', 'tediosamente', 'inesperadamente', 'geralmente',
-    'vitorioso', 'vivazmente', 'calorosamente', 'cansativamente', 'semanalmente', 'descontroladamente', 'anualmente',
-    'consequentemente',
+    'rapidamente', 'severamente', 'repentinamente', 'tecnicamente', 'tediosamente', 'inesperadamente', 'vitorioso',
+    'vivazmente', 'calorosamente', 'cansativamente', 'descontroladamente', 'consequentemente',
 
     'subsequentemente', 'semelhantemente/similarmente'
 ]
@@ -96,55 +95,58 @@ adv_positivity_pt_br = [
 ]
 
 adverb_others = [
-    'about', 'again', 'ago', 'ahead', 'almost', 'alone', 'also', 'always', 'anyway', 'around', 'as', 'back', 'before',
-    'besides', 'certainly', 'consequently', 'else', 'elsewhere', 'enough', 'even',
+    'about', 'again', 'ago', 'ahead', 'almost', 'alone', 'also', 'anyway', 'around', 'as', 'back', 'before',
+    'besides', 'else', 'elsewhere', 'enough', 'even',
 
     'ever', 'fast', 'forward', 'furthermore', 'hard', 'here', 'how', 'in', 'in fact', 'indeed', 'instead', 'just',
     'later', 'least', 'less', 'likewise', 'maybe', 'meanwhile', 'more', 'most',
 
-    'much', 'never', 'nevertheless', 'nonetheless', 'now', 'off', 'often', 'once', 'otherwise', 'out', 'over',
-    'perhaps', 'quite', 'seldom', 'similarly', 'so', 'sometimes', 'soon', 'still', 'subsequently',
+    'much', 'nevertheless', 'nonetheless', 'now', 'off', 'once', 'otherwise', 'out', 'over',
+    'perhaps', 'quite', 'so', 'soon', 'still',
 
     'then', 'there', 'therefore', 'thus', 'together', 'tonight', 'up', 'when', 'where', 'yet'
 ]
 
 adverb_others_pt_br = [
     'acerca/aproximadamente', 'de novo/novamente/outra vez', 'atrás', 'adiante/à frente', 'por pouco/quase',
-    'apenas/só', 'também', 'sempre', 'em todo o caso/de qualquer maneira', 'ao redor/em torno/em volta', 'como',
-    'de volta/para trás', 'antes/anteriormente', 'além de/além disso/também', 'certamente', 'conseqüentemente', 'outro',
-    'em outro lugar', 'bastante/suficiente', 'até/mesmo',
+    'apenas/só', 'também', 'em todo o caso/de qualquer maneira', 'ao redor/em torno/em volta', 'como',
+    'de volta/para trás', 'antes/anteriormente', 'além de/além disso/também', 'do contrário', 'em outro lugar',
+    'bastante/suficiente', 'até/mesmo',
 
     'já/sempre/nunca/jamais', 'rapidamente/velozmente',
     'adiante/para a frente', 'ademais/além disso', 'duramente', 'aqui, cá', 'como/quão', 'dentro', 'de fato/na verdade',
     'de fato/realmente', 'em vez/em vez disso', 'somente', 'mais tarde', 'menos', 'menos', 'igualmente/também',
     'talvez', 'enquanto isso/entretanto', 'mais', 'mais',
 
-    'muito', 'jamais/nunca', 'ainda assim/mesmo assim/porém/todavia', 'apesar disso', 'agora/já', 'fora',
-    'frequentemente', 'outrora/uma vez', 'de outro modo', 'fora', 'através/sobre', 'talvez', 'bastante/muito',
-    'raramente', 'similarmente', 'assim/tão/então/portanto', 'às vezes/por vez', 'em breve/logo/rapidamente', 'ainda',
-    'subsequentemente',
+    'muito', 'ainda assim/mesmo assim/porém/todavia', 'apesar disso', 'agora/já', 'fora',
+    'outrora/uma vez', 'de outro modo', 'fora', 'através/sobre', 'talvez', 'bastante/muito',
+    'assim/tão/então/portanto', 'em breve/logo/rapidamente', 'ainda',
 
     'depois/então', 'ali/lá', 'por isso/portanto', 'assim/portanto/deste modo', 'junto(s)/justamente',
-    'hoje à noite/esta noite', 'em cima/para cima', 'quando', 'aonde/onde', 'ainda'
+    'hoje à noite/esta noite', 'em cima/para cima', 'quando', 'aonde/onde', 'ainda (final de frase)'
 ]
 
 if __name__ == '__main__':
     print('\n')
 
-    # print(f"{len(adv_ly)}")
-    # print(f"{len(adv_ly_pt_br)}")
+    print(f"{len(adverbs_ly) = }")
+    print(f"{len(adverbs_ly_pt_br) = }")
+    print(f"{len(adverbs_frequency) = }")
+    print(f"{len(adverbs_frequency_pt_br) = }")
+    print(f"{len(adverb_others) = }")
+    print(f"{len(adverb_others_pt_br) = }")
+
     # print('\n')
-    # for words in zip(adv_ly, adv_ly_pt_br):
+    # for words in zip(adverbs_ly, adverbs_ly_pt_br):
     #     print(words)
 
-    # print(f"{len(adv_frequency)}")
-    # print(f"{len(adv_frequency_pt_br)}")
     # print('\n')
-    # for words in zip(adv_frequency, adv_frequency_pt_br):
+    # for words in zip(adverbs_frequency, adverbs_frequency_pt_br):
     #     print(words)
 
-    # print(f"{len(adv_others)}")
-    # print(f"{len(adv_others_pt_br)}")
     # print('\n')
-    # for words in zip(adv_others, adv_others_pt_br):
+    # for words in zip(adverb_others, adverb_others_pt_br):
     #     print(words)
+
+    # var = set(adverbs_frequency).intersection(set(adverbs_ly))
+    # print(var)

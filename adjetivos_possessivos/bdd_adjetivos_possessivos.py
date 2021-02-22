@@ -23,9 +23,9 @@ possessive_adjectives_pt_br = [
 # adjectives_possessive_upper = [index.replace(index[0], index[0].upper()) for index in adjectives_possessive_lower]
 possessive_adjectives_u = ['My', 'Your', 'His', 'Her', 'Its', 'Our', 'Your', 'Their']
 
-possessive_adjectives_l = ['my', 'your', 'his', 'her', 'its', 'our', 'Your', 'their']
+possessive_adjectives_l = ['my', 'your', 'his', 'her', 'its', 'our', 'your', 'their']
 
-possessive_adjectives_pt_br = [
+possessive_adjectives_l_pt_br = [
     'meu(s)/minha(s)', 'seu/sua', 'dele', 'dela', 'desse/disso', 'nosso(s)/nossa(s)', 'seus/suas', 'deles/delas/desses'
 ]
 

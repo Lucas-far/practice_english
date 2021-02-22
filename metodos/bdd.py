@@ -74,6 +74,31 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
     return the_input
 
 
+def painter(color: str = 'blue', text: str = 'texto'):
+    """"""
+    black, red, green, yellow, blue, purple, cyan, ink = \
+        '\033[1:30m', '\033[1:31m', '\033[1:32m', '\033[1:33m', '\033[1:34m', '\033[1:35m', '\033[1:36m', '\033[m'
+
+    if color == 'black':
+        text = black + text + ink
+        return text
+    elif color == 'red':
+        text = red + text + ink
+        return text
+    elif color == 'green':
+        text = green + text + ink
+        return text
+    elif color == 'yellow':
+        text = yellow + text + ink
+        return text
+    elif color == 'purple':
+        text = purple + text + ink
+        return text
+    elif color == 'cyan':
+        text = cyan + text + ink
+        return text
+
+
 def sentence_maker(*args):  # removed parameter: example
     """"""
     sentence = []
@@ -154,3 +179,5 @@ if __name__ == '__main__':
     x = '  '
     # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
     # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
+    # var = painter('cyan', 'python')
+    # print(var)

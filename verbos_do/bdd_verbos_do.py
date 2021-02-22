@@ -8,7 +8,9 @@ do = [
 ]
 
 do_u = ["Does", "Does not", "Doesn't", "Do", "Do not", "Don't"]
-do_l = ["does", "does not", "doesn't", "do", "do not", "don't"]
+
+do_present_l = ["does", "does not", "doesn't", "do", "do not", "don't"]
+do_present_l_pt_br = ['de fato', 'não', 'não', 'de fato', 'não', 'não']
 
 does_l = ["does"]
 does_not_l = ["does not"]

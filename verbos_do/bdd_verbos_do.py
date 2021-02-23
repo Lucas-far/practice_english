@@ -10,7 +10,7 @@ do = [
 do_u = ["Does", "Does not", "Doesn't", "Do", "Do not", "Don't"]
 
 do_present_l = ["does", "does not", "doesn't", "do", "do not", "don't"]
-do_present_l_pt_br = ['de fato', 'não', 'não', 'de fato', 'não', 'não']
+do_present_l_pt_br = ['faço', 'não', 'não', 'faz', 'não', 'não']
 
 does_l = ["does"]
 does_not_l = ["does not"]
@@ -27,3 +27,20 @@ do_not_short_l = ["don't"]
 the_do_u = ["Do"]
 do_not_u = ["Do not"]
 do_not_short_u = ["Don't"]
+
+
+"------------------------------------------------ VERBO DO NO PASSADO -------------------------------------------------"
+do_past_l = ["did", "did not", "didn't"]
+do_past_l_pt_br = ['fazia', 'não', 'não']
+
+did_l = ["does"]
+did_not_l = ["does not"]
+did_not_short_l = ["doesn't"]
+
+"------------------------------------------------- VERBO DO NO FUTURO -------------------------------------------------"
+do_future_l = ["will do", "will not do", "won't do"]
+do_future_l_pt_br = ['farei', 'não farei', 'não farei']
+
+will_do_l = ["will do"]
+will_not_do_l = ["does not"]
+will_not_do_l = ["doesn't"]

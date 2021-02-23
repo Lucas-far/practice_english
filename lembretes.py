@@ -6,33 +6,18 @@ tres = 'Criar frases nos jogos, baseados nas respostas'
 quatro = "Verbos como NEED, HAVE, CAN, funcionam mesclados com a maioria dos verbos no infinitivo"
 cinco = 'Eu estou no algoritmo de adjetivos, e o último elemento adicionado foi: verbo no infinitivo'
 
-exemplo_frases = """
-needs + vi
-need + vi
-does not need + vi
-doesn't need + vi
-do not need + vi
-don't need + vi
+need_to_have = 'need to have'
+needs_to_have = 'needs to have'
+does_not_need_to_have = 'does not need to have'
+do_not_need_to_have = 'do not need to have'
 
-has + vi
-have + vi
-does not have + vi
-doesn't have + vi
-do not have + vi
-don't have + vi
+has_infinitive = 'has to know'
+have_infinitive = 'have to know'
+does_not_have_infinitive = 'does not have to know'
 
+can_verbo_presente = 'can know'
+can_not_verbo_presente = 'cannot know'
+could_verbo_presente = 'could know'
+could_not_verbo_presente = 'could not know'
 
-can + vp
-cannot + vp
-can't + vp
-could + vp
-could not + vp
-couldn't + vp 
-
-doesn't + vp
-don't + vp
-"""
-
-seis = 'Verbo to do no presente'
-sete = 'Verbo to have no presente'
-oito = 'Verbo can no presente'  # estou aqui
+obs = 'estou no verbo "have", no presente'

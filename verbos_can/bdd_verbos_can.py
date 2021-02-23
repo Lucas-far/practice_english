@@ -23,15 +23,11 @@ can = [
 
 can_u = ["Can", "Cannot", "Can't", "Could", "Could not", "Couldn't"]
 
-can_present_l = [
-    "can", "cannot", "can't",
-    "could", "could not", "couldn't"
-]
+can_present_l = ["can", "cannot", "can't"]
+can_present_l_pt_br = ['consigo/posso', 'não consigo/posso', 'não consigo/posso']
 
-can_present_l_pt_br = [
-    'consigo/posso', 'não consigo/posso', 'não consigo/posso',
-    'conseguia/podia/poderia', 'não conseguia/podia/poderia', 'não conseguia/podia/poderia'
-]
+could_past_l = ["could", "could not", "couldn't"]
+could_past_l_pt_br = ['conseguia/podia/poderia', 'não conseguia/podia/poderia', 'não conseguia/podia/poderia']
 
 the_can_u = ["Can"]
 the_can_l = ["can"]

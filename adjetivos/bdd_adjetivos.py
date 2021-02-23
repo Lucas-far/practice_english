@@ -47,7 +47,7 @@ adjectives_pt_br = [
 
     'estúpido', 'irrelevante', 'doce', 'com raiva/irritado(a)/zangado(a)', 'ambicioso(a)', 'indiferente',
     'maravilhoso(a)', 'idêntico(a)', 'esperto(a)/inteligente', 'entusiasmado(a)', 'vibrante', 'afirmativo(a)',
-    'negativo', 'abrangente', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'estranho(a)',
+    'negativo', 'compreensivo(a)', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'estranho(a)',
     'digno(a)', 'flexível',
 
     'detestável', 'ligeiro(a)/rápido(a)', 'dourado(a)', 'fechado(a)'

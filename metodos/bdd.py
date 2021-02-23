@@ -91,6 +91,9 @@ def painter(color: str = 'blue', text: str = 'texto'):
     elif color == 'yellow':
         text = yellow + text + ink
         return text
+    elif color == 'blue':
+        text = blue + text + ink
+        return text
     elif color == 'purple':
         text = purple + text + ink
         return text
@@ -177,7 +180,14 @@ def welcome(algorithm_name: str = 'Name of the algorithm', prefix: int = 0, pref
 
 if __name__ == '__main__':
     x = '  '
+    from pronomes.bdd_pronomes import (pronouns_l, pronouns_pt_br)
+    pronoun = sentence_maker(pronouns_l)
+    print(pronoun)
+    pronoun_inked = painter('blue', pronoun)
+    print(pronoun_inked)
     # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
     # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
     # var = painter('cyan', 'python')
     # print(var)
+    # var2 = 'Eu programo em {}'.format(var)
+    # print(var2)

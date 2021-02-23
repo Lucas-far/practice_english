@@ -32,3 +32,7 @@ have_not_short_l = ["haven't"]
 the_have_u = ["Have"]
 have_not_u = ["Have not"]
 have_not_short_u = ["Haven't"]
+
+have_past_l = ['had', 'did not have', "didn't have"]
+
+have_past_l_pt_br = ['tinha', 'não tinha(m)', 'não tinha(m)']

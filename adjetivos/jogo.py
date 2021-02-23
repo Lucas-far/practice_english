@@ -21,9 +21,16 @@ from adverbios.bdd_adverbios import (
 
 from substantivos.bdd_substantivos import (nouns, nouns_pt_br)
 
-from verbos_be.bdd_verbos_be import (be_present_l, be_present_l_pt_br)
-from verbos_can.bdd_verbos_can import (can_present_l, can_present_l_pt_br)
+from verbos_be.bdd_verbos_be_simples import (be_past_l, be_past_l_pt_br)
+from verbos_be.bdd_verbos_be_simples import (be_present_l, be_present_l_pt_br)
+from verbos_be.bdd_verbos_be_simples import (be_future_l, be_future_l_pt_br)
+
+from verbos_can.bdd_verbos_can import (could_past_l, could_past_l_pt_br, can_present_l, can_present_l_pt_br)
+
 from verbos_do.bdd_verbos_do import (do_present_l, do_present_l_pt_br)
+from verbos_do.bdd_verbos_do import (do_past_l, do_past_l_pt_br)
+
+from verbos_have.bdd_verbos_have import (have_past_l, have_past_l_pt_br)
 from verbos_have.bdd_verbos_have import (have_present_l, have_present_l_pt_br)
 
 from verbos_infinitivo.bdd_verbos_infinitivo import (verbs_infinitive, verbs_infinitive_pt_br)
@@ -69,19 +76,23 @@ sentence_creation = """
     Sabendo que {}{}{} significa {}{}{}, tente criar uma frase
     
     ==================== DICAS =====================
-    Pronome:                 {} {}   
-    Adjetivo possessivo:     {} {}
-    Pronome demonstrativo:   {} {}         
-    Preposição:              {} {}   
-    Advérbios:               {} {} -> {} {} -> {} {}   
-    Substantivo:             {} {}
-    Verbo to be no presente: {} {}
+    Pronome:               {} {}   
+    Adjetivo possessivo:   {} {}
+    Pronome demonstrativo: {} {}         
+    Preposição:            {} {}   
+    Advérbios:             {} {} -> {} {} -> {} {}   
+    Substantivo:           {} {} -> {} {} -> {} {}
+    
+    ==================== VERBOS SIMPLES: PASSADO/PRESENTE/FUTURO  =====================
+    infinitivo:       {} {}
+    passado:          {} {}
+    presente:         {} {}
+    futuro:           {} {}
+    to be:            {} {} -> {} {} -> {} {}
+    can:              {} {} -> {} {}
+    to do (auxiliar): {} {} -> {} {}
+    to have:          {} {} -> {} {}
     """
-
-    # [  ]   [ {}Verbo can para presente:{} {}{}{} {}{}{} ]
-    # [ {}Verbo to do no presente:{} {}{}{} {}{}{} ]   [ {}Verbo to have no presente:{} {}{}{} {}{}{} ]
-    # [ {}Verbo no infinitivo:{} {}{}{} {}{}{} ]   [ {}Verbo no passado:{} {}{}{} {}{}{} ]
-    # [ {}Verbo no presente:{} {}{}{} {}{}{} ]   [ {}Verbo no futuro:{} {}{}{} {}{}{} ]
 # todo
 
 failure = """ 
@@ -150,69 +161,118 @@ while True:
 
         # todo
         pronoun = _(pronouns_l)
+        pronoun_inked = painter('blue', pronoun)
         pronoun_tr = pronouns_pt_br[pronouns_l.index(pronoun)]
-        pronoun_inked = f"{blue}{pronoun}{ink}"
-        pronoun_tr_inked = f"{yellow}{pronoun_tr}{ink}"
+        pronoun_tr_inked = painter('yellow', pronoun_tr)
 
         possessive_adjective = _(possessive_adjectives_l)
+        possessive_adjective_inked = painter('blue', possessive_adjective)
         possessive_adjective_tr = possessive_adjectives_l_pt_br[possessive_adjectives_l.index(possessive_adjective)]
-        possessive_adjective_inked = f"{blue}{possessive_adjective}{ink}"
-        possessive_adjective_tr_inked = f"{yellow}{possessive_adjective_tr}{ink}"
+        possessive_adjective_tr_inked = painter('yellow', possessive_adjective_tr)
 
         demonstrative_pronoun = _(demonstrative_pronouns_l)
+        demonstrative_pronoun_inked = painter('blue', demonstrative_pronoun)
         demonstrative_pronoun_tr = demonstrative_pronouns_pt_br[demonstrative_pronouns_l.index(demonstrative_pronoun)]
-        demonstrative_pronoun_inked = f"{blue}{demonstrative_pronoun}{ink}"
-        demonstrative_pronoun_inked_tr = f"{yellow}{demonstrative_pronoun_tr}{ink}"
+        demonstrative_pronoun_tr_inked = painter('yellow', demonstrative_pronoun_tr)
 
         preposition = _(prepositions)
+        preposition_inked = painter('blue', preposition)
         preposition_tr = prepositions_pt_br[prepositions.index(preposition)]
-        preposition_inked = f"{blue}{preposition}{ink}"
-        preposition_tr_inked = f"{yellow}{preposition_tr}{ink}"
+        preposition_tr_inked = painter('yellow', preposition_tr)
 
         adverb = _(adverbs_frequency)
+        adverb_inked = painter('blue', adverb)
         adverb2 = _(adverb_others)
+        adverb2_inked = painter('blue', adverb2)
         adverb3 = _(adverbs_ly)
-        adverb_inked = f"{blue}{adverb}{ink}"
-        adverb2_inked = f"{blue}{adverb2}{ink}"
-        adverb3_inked = f"{blue}{adverb3}{ink}"
+        adverb3_inked = painter('blue', adverb3)
 
         adverb_tr = adverbs_frequency_pt_br[adverbs_frequency.index(adverb)]
+        adverb_tr_inked = painter('yellow', adverb_tr)
         adverb2_tr = adverb_others_pt_br[adverb_others.index(adverb2)]
+        adverb2_tr_inked = painter('yellow', adverb2_tr)
         adverb3_tr = adverbs_ly_pt_br[adverbs_ly.index(adverb3)]
-        adverb_tr_inked = f"{yellow}{adverb_tr}{ink}"
-        adverb2_tr_inked = f"{yellow}{adverb2_tr}{ink}"
-        adverb3_tr_inked = f"{yellow}{adverb3_tr}{ink}"
+        adverb3_tr_inked = painter('yellow', adverb3_tr)
 
         noun = _(nouns)
+        noun_inked = painter('blue', noun)
         noun_tr = nouns_pt_br[nouns.index(noun)]
-        noun_inked = f"{blue}{noun}{ink}"
-        noun_tr_inked = f"{yellow}{noun_tr}{ink}"
+        noun_tr_inked = painter('yellow', noun_tr)
+
+        noun2 = _(nouns)
+        noun2_inked = painter('blue', noun2)
+        noun2_tr = nouns_pt_br[nouns.index(noun2)]
+        noun2_tr_inked = painter('yellow', noun2_tr)
+
+        noun3 = _(nouns)
+        noun3_inked = painter('blue', noun3)
+        noun3_tr = nouns_pt_br[nouns.index(noun3)]
+        noun3_tr_inked = painter('yellow', noun3_tr)
 
         be_present = _(be_present_l)
+        be_present_inked = painter('blue', be_present)
         be_present_tr = be_present_l_pt_br[be_present_l.index(be_present)]
-        be_present_inked = f"{blue}{be_present}{ink}"
-        be_present_tr_inked = f"{yellow}{be_present_tr}{ink}"
+        be_present_tr_inked = painter('yellow', be_present_tr)
+
+        be_past = _(be_past_l)
+        be_past_inked = painter('blue', be_past)
+        be_past_tr = be_past_l_pt_br[be_past_l.index(be_past)]
+        be_past_tr_inked = painter('yellow', be_past_tr)
+
+        be_future = _(be_future_l)
+        be_future_inked = painter('blue', be_future)
+        be_future_tr = be_future_l_pt_br[be_future_l.index(be_future)]
+        be_future_tr_inked = painter('yellow', be_future_tr)
+
+        could_past = _(could_past_l)
+        could_past_inked = painter('blue', could_past)
+        could_past_tr = could_past_l_pt_br[could_past_l.index(could_past)]
+        could_past_tr_inked = painter('yellow', could_past_tr)
 
         can_present = _(can_present_l)
+        can_present_inked = painter('blue', can_present)
         can_present_tr = can_present_l_pt_br[can_present_l.index(can_present)]
+        can_present_tr_inked = painter('yellow', can_present_tr)
+
+        do_past = _(do_past_l)
+        do_past_inked = painter('blue', do_past)
+        do_past_tr = do_past_l_pt_br[do_past_l.index(do_past)]
+        do_past_tr_inked = painter('yellow', do_past_tr)
 
         do_present = _(do_present_l)
+        do_present_inked = painter('blue', do_present)
         do_present_tr = do_present_l_pt_br[do_present_l.index(do_present)]
+        do_present_tr_inked = painter('yellow', do_present_tr)
+
+        have_past = _(have_past_l)
+        have_past_inked = painter('blue', have_past)
+        have_past_tr = have_past_l_pt_br[have_past_l.index(have_past)]
+        have_past_tr_inked = painter('yellow', have_past_tr)
 
         have_present = _(have_present_l)
+        have_present_inked = painter('blue', have_present)
         have_present_tr = have_present_l_pt_br[have_present_l.index(have_present)]
+        have_present_tr_inked = painter('yellow', have_present_tr)
 
         verb_infinitive = _(verbs_infinitive)
+        verb_infinitive_inked = painter('blue', verb_infinitive)
         verb_infinitive_tr = verbs_infinitive_pt_br[verbs_infinitive.index(verb_infinitive)]
+        verb_infinitive_tr_inked = painter('yellow', verb_infinitive_tr)
 
         verb_past = _(past)
+        verb_past_inked = painter('blue', verb_past)
         verb_past_tr = past_pt_br[past.index(verb_past)]
+        verb_past_tr_inked = painter('yellow', verb_past_tr)
 
         verb_present = _(present)
+        verb_present_inked = painter('blue', verb_present)
         verb_present_tr = present_pt_br[present.index(verb_present)]
+        verb_present_tr_inked = painter('yellow', verb_present_tr)
 
         verb_future = _(future)
+        verb_future_inked = painter('blue', verb_future)
         verb_future_tr = future_pt_br[future.index(verb_future)]
+        verb_future_tr_inked = painter('yellow', verb_future_tr)
         # todo
 
         answer = get_input_int(
@@ -246,11 +306,25 @@ while True:
                 blue, chosen_word, ink, yellow, the_target_translation[0], ink,
                 pronoun_inked, pronoun_tr_inked,
                 possessive_adjective_inked, possessive_adjective_tr_inked,
-                demonstrative_pronoun_inked, demonstrative_pronoun_inked_tr,
+                demonstrative_pronoun_inked, demonstrative_pronoun_tr_inked,
                 preposition_inked, preposition_tr_inked,
                 adverb_inked, adverb_tr_inked, adverb2_inked, adverb2_tr_inked, adverb3_inked, adverb3_tr_inked,
                 noun_inked, noun_tr_inked,
+                noun2_inked, noun2_tr_inked,
+                noun3_inked, noun3_tr_inked,
+                verb_infinitive_inked, verb_infinitive_tr_inked,
+                verb_past_inked, verb_past_tr_inked,
+                verb_present_inked, verb_present_tr_inked,
+                verb_future_inked, verb_future_tr_inked,
                 be_present_inked, be_present_tr_inked,
+                be_past_inked, be_past_tr_inked,
+                be_future_inked, be_future_tr_inked,
+                could_past_inked, could_past_tr_inked,
+                can_present_inked, can_present_tr_inked,
+                do_past_inked, do_past_tr_inked,
+                do_present_inked, do_present_tr_inked,
+                have_past_inked, have_past_tr_inked,
+                have_present_inked, have_present_tr_inked,
             ))
 
             sentence = input(input_message.format(green, ink))
@@ -274,11 +348,25 @@ while True:
                 blue, chosen_word, ink, yellow, the_target_translation[0], ink,
                 pronoun_inked, pronoun_tr_inked,
                 possessive_adjective_inked, possessive_adjective_tr_inked,
-                demonstrative_pronoun_inked, demonstrative_pronoun_inked_tr,
+                demonstrative_pronoun_inked, demonstrative_pronoun_tr_inked,
                 preposition_inked, preposition_tr_inked,
                 adverb_inked, adverb_tr_inked, adverb2_inked, adverb2_tr_inked, adverb3_inked, adverb3_tr_inked,
                 noun_inked, noun_tr_inked,
+                noun2_inked, noun2_tr_inked,
+                noun3_inked, noun3_tr_inked,
+                verb_infinitive_inked, verb_infinitive_tr_inked,
+                verb_past_inked, verb_past_tr_inked,
+                verb_present_inked, verb_present_tr_inked,
+                verb_future_inked, verb_future_tr_inked,
                 be_present_inked, be_present_tr_inked,
+                be_past_inked, be_past_tr_inked,
+                be_future_inked, be_future_tr_inked,
+                could_past_inked, could_past_tr_inked,
+                can_present_inked, can_present_tr_inked,
+                do_past_inked, do_past_tr_inked,
+                do_present_inked, do_present_tr_inked,
+                have_past_inked, have_past_tr_inked,
+                have_present_inked, have_present_tr_inked,
             ))
 
             sentence = input(input_message.format(green, ink))

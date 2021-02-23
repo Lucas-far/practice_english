@@ -1,5 +1,7 @@
 
 
+from metodos.bdd import data_collector as _, painter
+
 pronouns = [
     'I', 'you', 'he', 'she', 'it', 'we', 'you', 'they',
     'I', 'You', 'He', 'She', 'It', 'We', 'You', 'They',
@@ -42,19 +44,29 @@ we_ = ['we', 'nós']
 you__ = ['you', 'vós/vocês']
 they_ = ['they', 'eles(as)']
 
+pronoun = _(pronouns_l)
+pronoun_inked = painter('blue', pronoun)
+pronoun_tr = pronouns_pt_br[pronouns_l.index(pronoun)]
+pronoun_tr_inked = painter('red', pronoun_tr)
+
 
 if __name__ == '__main__':
-    bricks = '=' * 100
+    print(pronoun)
+    print(pronoun_inked)
+    print(pronoun_tr)
+    print(pronoun_tr_inked)
 
-    print('\n')
-
-    print(bricks)
-    print(f'{len(pro_l) = }')
-    print(f'{len(pro_pt_br) = }')
-
-    print('\n')
-    for word in zip(pro_l, pro_pt_br):
-        print(word)
+    # bricks = '=' * 100
+    #
+    # print('\n')
+    #
+    # print(bricks)
+    # print(f'{len(pro_l) = }')
+    # print(f'{len(pro_pt_br) = }')
+    #
+    # print('\n')
+    # for word in zip(pro_l, pro_pt_br):
+    #     print(word)
 
     # counter = 0
     # while counter < len(pro_l):

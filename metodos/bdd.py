@@ -23,6 +23,13 @@ def check_length(*args):
     return box
 
 
+def create_set(set_var: set, data_length: int, extraction_from: list, extract_from=False):
+    """"""
+    while len(set_var) < data_length:
+        set_var.add(choice(extraction_from))
+    return set_var
+
+
 def do_translation(text, target_language):
     """"""
     from textblob import TextBlob
@@ -76,30 +83,30 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
 
 def painter(color: str = 'blue', text: str = 'texto'):
     """"""
-    black, red, green, yellow, blue, purple, cyan, ink = \
-        '\033[1:30m', '\033[1:31m', '\033[1:32m', '\033[1:33m', '\033[1:34m', '\033[1:35m', '\033[1:36m', '\033[m'
+    # keys = conditions / values = actions of the conditions
+    colors = {
+        'black': '\033[1:30m' + text + '\033[m', 'red': '\033[1:31m' + text + '\033[m',
+        'green': '\033[1:32m' + text + '\033[m', 'yellow': '\033[1:33m' + text + '\033[m',
+        'blue': '\033[1:34m' + text + '\033[m', 'purple': '\033[1:35m' + text + '\033[m',
+        'cyan': '\033[1:36m' + text + '\033[m'
+    }
 
-    if color == 'black':
-        text = black + text + ink
-        return text
-    elif color == 'red':
-        text = red + text + ink
-        return text
-    elif color == 'green':
-        text = green + text + ink
-        return text
-    elif color == 'yellow':
-        text = yellow + text + ink
-        return text
-    elif color == 'blue':
-        text = blue + text + ink
-        return text
-    elif color == 'purple':
-        text = purple + text + ink
-        return text
-    elif color == 'cyan':
-        text = cyan + text + ink
-        return text
+    for key in colors:
+        if color == key:
+            return colors[key]
+
+
+def var_printer(list_var_names: str, list_var_values: list):  # parameters as str are, for me, more maintainable
+    """"""
+    box = []
+    names = list_var_names.split()
+    counter = 0
+
+    while counter < len(names):
+        box.append(f"{names[counter]} = {list_var_values[counter]}")
+        counter += 1
+
+    return box
 
 
 def sentence_maker(*args):  # removed parameter: example
@@ -110,6 +117,13 @@ def sentence_maker(*args):  # removed parameter: example
         sentence.append(choice(word))
         # print(f'{colors[4]}{choice(word)}{colors[7]}', end='')
     return "".join(sentence)
+
+
+def data_collector(database):  # removed parameter: example
+    """"""
+    the_data = choice(database)
+    return the_data
+
 
 
 def verify(*args, database: list):

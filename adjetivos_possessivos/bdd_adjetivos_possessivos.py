@@ -2,6 +2,8 @@
 
 """"""
 
+from metodos.bdd import data_collector as _, painter
+
 "-------------------------------------------------------- JOGO --------------------------------------------------------"
 easy = ['my', 'your', 'his', 'her', 'its', 'our', 'their']
 
@@ -37,3 +39,14 @@ its_ = ['its', 'dele(s)/dela(s)']
 our_ = ['our', 'nosso(s)/nossa(s)s']
 your__ = ['your', 'seu(s)/sua(s)']
 their_ = ['their', 'dele(s)/dela(s)']
+
+possessive_adjective = _(possessive_adjectives_l)
+possessive_adjective_inked = painter('blue', possessive_adjective)
+possessive_adjective_tr = possessive_adjectives_l_pt_br[possessive_adjectives_l.index(possessive_adjective)]
+possessive_adjective_tr_inked = painter('red', possessive_adjective_tr)
+
+if __name__ == '__main__':
+    print(possessive_adjective)
+    print(possessive_adjective_inked)
+    print(possessive_adjective_tr)
+    print(possessive_adjective_tr_inked)

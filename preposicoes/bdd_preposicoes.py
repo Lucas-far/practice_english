@@ -1,6 +1,9 @@
 
 
 """"""
+
+from metodos.bdd import data_collector as _, painter
+
 "------------------------------------------------------- GLOBAL -------------------------------------------------------"
 prepositions = [
     'about', 'above', 'across', 'after', 'against', 'ago', 'among',
@@ -114,11 +117,19 @@ up_ = ['up', 'acima/em cima/para cima']
 with_ = ['with', 'com']
 without_ = ['without', 'sem']
 
-if __name__ == '__main__':
+preposition = _(prepositions)
+preposition_inked = painter('blue', preposition)
+preposition_tr = prepositions_pt_br[prepositions.index(preposition)]
+preposition_tr_inked = painter('red', preposition_tr)
 
+if __name__ == '__main__':
     print('\n')
-    var = set(prepositions_time).intersection(set(preposition_others))
-    print(var)
+    print(preposition)
+    print(preposition_inked)
+    print(preposition_tr)
+    print(preposition_tr_inked)
+    # var = set(prepositions_time).intersection(set(preposition_others))
+    # print(var)
 
     # print(bricks)
     #
@@ -143,8 +154,6 @@ if __name__ == '__main__':
     print(len(var))
     print(var)
 
-    for word in prepositions:
-        print(f"{word} = {word in prepositions_gl}")
     # print(f'{len(prep_short) = }')
     # print(f'{len(prep_short_pt_br) = }')
     # print(bricks)

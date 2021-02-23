@@ -1,5 +1,7 @@
 
 
+from metodos.bdd import data_collector as _, painter
+
 adverbs_ly = [
     'accidentally', 'actually', 'angrily', 'anxiously', 'awkwardly', 'badly', 'blindly', 'boastfully', 'boldly',
     'bravely', 'brightly', 'certainly', 'cheerfully', 'clearly', 'coyly', 'crazily', 'defiantly', 'deftly',
@@ -126,6 +128,20 @@ adverb_others_pt_br = [
     'hoje à noite/esta noite', 'em cima/para cima', 'quando', 'aonde/onde', 'ainda (final de frase)'
 ]
 
+adverb = _(adverbs_frequency)
+adverb_inked = painter('blue', adverb)
+adverb2 = _(adverb_others)
+adverb2_inked = painter('blue', adverb2)
+adverb3 = _(adverbs_ly)
+adverb3_inked = painter('blue', adverb3)
+
+adverb_tr = adverbs_frequency_pt_br[adverbs_frequency.index(adverb)]
+adverb_tr_inked = painter('red', adverb_tr)
+adverb2_tr = adverb_others_pt_br[adverb_others.index(adverb2)]
+adverb2_tr_inked = painter('red', adverb2_tr)
+adverb3_tr = adverbs_ly_pt_br[adverbs_ly.index(adverb3)]
+adverb3_tr_inked = painter('red', adverb3_tr)
+
 if __name__ == '__main__':
     print('\n')
 
@@ -135,6 +151,21 @@ if __name__ == '__main__':
     print(f"{len(adverbs_frequency_pt_br) = }")
     print(f"{len(adverb_others) = }")
     print(f"{len(adverb_others_pt_br) = }")
+
+    # print(adverb)
+    # print(adverb_inked)
+    # print(adverb_tr)
+    # print(adverb_tr_inked)
+    #
+    # print(adverb2)
+    # print(adverb2_inked)
+    # print(adverb2_tr)
+    # print(adverb2_tr_inked)
+    #
+    # print(adverb3)
+    # print(adverb3_inked)
+    # print(adverb3_tr)
+    # print(adverb3_tr_inked)
 
     # print('\n')
     # for words in zip(adverbs_ly, adverbs_ly_pt_br):

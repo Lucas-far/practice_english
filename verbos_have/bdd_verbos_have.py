@@ -34,5 +34,7 @@ have_not_u = ["Have not"]
 have_not_short_u = ["Haven't"]
 
 have_past_l = ['had', 'did not have', "didn't have"]
-
 have_past_l_pt_br = ['tinha', 'não tinha(m)', 'não tinha(m)']
+
+have_future_l = ['will have', 'will not have', "won't have"]
+have_future_l_pt_br = ['terei', 'não terei(ão)', 'não terei(ão)']

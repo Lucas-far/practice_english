@@ -1,8 +1,10 @@
 
 
-pro_pos = ['mine', 'yours', 'his', 'hers', 'its', 'ours', 'theirs']
+from metodos.bdd import data_collector as _, painter
 
-pro_pos_pt_br = ['meu/minha', 'seu(a)', 'dele', 'dela', 'disso', 'nosso', 'deles(as)']
+possessive_pronouns_l = ['mine', 'yours', 'his', 'hers', 'its', 'ours', 'yours', 'theirs']
+
+possessive_pronouns_l_pt_br = ['meu/minha', 'seu/sua', 'dele', 'dela', 'desse/dessa', 'nosso(a)', 'seus/suas', 'deles(as)/desses']
 
 mine_ = ['mine', 'meu/minha']
 yours_ = ['yours', 'seu(a)']
@@ -12,21 +14,28 @@ its_ = ['its', 'disso']
 ours_ = ['ours', 'nosso']
 theirs_ = ['theirs', 'deles(as)']
 
+possessive_pronoun = _(possessive_pronouns_l)
+possessive_pronoun_inked = painter('blue', possessive_pronoun)
+possessive_pronoun_tr = possessive_pronouns_l_pt_br[possessive_pronouns_l.index(possessive_pronoun)]
+possessive_pronoun_tr_inked = painter('red', possessive_pronoun_tr)
 
 if __name__ == '__main__':
-    bricks = '=' * 100
-
     print('\n')
-    print(bricks)
-    print(f'{len(pro_pos) = }')
-    print(f'{len(pro_pos_pt_br) = }')
+    print(possessive_pronoun)
+    print(possessive_pronoun_inked)
+    print(possessive_pronoun_tr)
+    print(possessive_pronoun_tr_inked)
+    # print(bricks)
+    # print(f'{len(possessive_pronouns_l) = }')
+    # print(f'{len(possessive_pronouns_l_pt_br) = }')
+    #
+    # print('\n')
+    # for word in zip(possessive_pronouns_l, possessive_pronouns_l_pt_br):
+    #     print(word[0])
+    #     print(word[1])
 
-    print('\n')
-    for word in zip(pro_pos, pro_pos_pt_br):
-        print(word)
-
-    print('\n')
-    counter = 0
-    while counter < len(pro_pos):
-        print(f"{pro_pos[counter]}_ = ['{pro_pos[counter]}', '{pro_pos_pt_br[counter]}']")
-        counter += 1
+    # print('\n')
+    # counter = 0
+    # while counter < len(possessive_pronouns_l):
+    #     print(f"{possessive_pronouns_l[counter]}_ = ['{possessive_pronouns_l[counter]}', '{possessive_pronouns_l_pt_br[counter]}']")
+    #     counter += 1

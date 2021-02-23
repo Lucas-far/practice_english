@@ -1,5 +1,7 @@
 
 
+from metodos.bdd import data_collector as _, painter
+
 # 'substantivo inglês no singular', 'substantivo inglês no plural'
 nouns = [
     'air', 'airs', 'area', 'areas', 'art', 'arts', 'body', 'bodies', 'book', 'books',
@@ -137,19 +139,44 @@ nouns_pl_pt_br = [
     'trabalhos', 'mundos', 'anos'
 ]
 
+noun = _(nouns)
+noun_inked = painter('blue', noun)
+noun_tr = nouns_pt_br[nouns.index(noun)]
+noun_tr_inked = painter('red', noun_tr)
+
+noun2 = _(nouns)
+noun2_inked = painter('blue', noun2)
+noun2_tr = nouns_pt_br[nouns.index(noun2)]
+noun2_tr_inked = painter('red', noun2_tr)
+
+noun3 = _(nouns)
+noun3_inked = painter('blue', noun3)
+noun3_tr = nouns_pt_br[nouns.index(noun3)]
+noun3_tr_inked = painter('red', noun3_tr)
+
 if __name__ == '__main__':
+    print(noun)
+    print(noun2)
+    print(noun3)
+    print(noun_inked)
+    print(noun2_inked)
+    print(noun3_inked)
+    print(noun_tr)
+    print(noun2_tr)
+    print(noun3_tr)
+    print(noun_tr_inked)
+    print(noun2_tr_inked)
+    print(noun3_tr_inked)
     # print(len(nouns))
     # print(len(nouns_pt_br))
     # print(len(nouns_sgl))
     # print(len(nouns_pl))
-    #
+
     # for words in zip(nouns, nouns_pt_br):
     #     print(words)
-    #
-    print(nouns_sgl[100 - 1])
 
-    x = 0
-    y = 1
+    # x = 0
+    # y = 1
 
     # while x < len(nouns_pt_br):
     #     print(f"'{nouns_pt_br[x]}',")

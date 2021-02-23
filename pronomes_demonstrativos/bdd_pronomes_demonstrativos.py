@@ -1,12 +1,14 @@
 
 
+from metodos.bdd import data_collector as _, painter
+
 demonstrative_pronouns = ['this', 'these', 'that', 'those', 'This', 'These', 'That', 'Those']
 
 demonstrative_pronouns_u = ['This', 'These', 'That', 'Those']
 
 demonstrative_pronouns_l = ['this', 'these', 'that', 'those']
 
-demonstrative_pronouns_pt_br = ['esse(a)', 'esses(as)', 'aquele(a)', 'aqueles(as)']
+demonstrative_pronouns_l_pt_br = ['esse(a)', 'esses(as)', 'aquele(a)', 'aqueles(as)']
 
 demonstrative_pronouns_sgl_u = ['This', 'That']
 
@@ -69,4 +71,14 @@ pro_be_not_l = [
     "those are not", "those aren't"
 ]
 
+demonstrative_pronoun = _(demonstrative_pronouns_l)
+demonstrative_pronoun_inked = painter('blue', demonstrative_pronoun)
+demonstrative_pronoun_tr = demonstrative_pronouns_l_pt_br[demonstrative_pronouns_l.index(demonstrative_pronoun)]
+demonstrative_pronoun_tr_inked = painter('red', demonstrative_pronoun_tr)
 
+if __name__ == '__main__':
+    pass
+    # print(demonstrative_pronoun)
+    # print(demonstrative_pronoun_inked)
+    # print(demonstrative_pronoun_tr)
+    # print(demonstrative_pronoun_tr_inked)

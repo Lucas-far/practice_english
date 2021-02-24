@@ -1,5 +1,8 @@
 
 
+from random import choice
+from metodos.bdd import painter
+
 past = [
     'said', 'went', 'got', 'made', 'knew', 'thought', 'took', 'saw', 'came', 'wanted', 'looked', 'used', 'found',
     'gave', 'told', 'worked', 'called', 'tried', 'asked', 'needed',
@@ -32,7 +35,7 @@ past_pt_br = [
     'morei/vivi',
 
     'acreditei/cri', 'mantive/segurei', 'trouxe', 'aconteci/ocorri', 'escrevi', 'forneci/proporcionei', 'sentei',
-    'levantei/permaneci', 'perdi', 'paguei', 'conheci/encontrei/reuni', 'inclui', 'continuei',
+    'fiquei/suportei', 'perdi', 'paguei', 'conheci/encontrei/reuni', 'inclui', 'continuei',
     'configurei/defini/estabeleci/pus', 'aprendi', 'alterei/mudei', 'conduzi/liderei', 'compreendi/entendi',
     'olhei/observei/vi', 'acompanhei/segui',
 
@@ -72,6 +75,18 @@ past_irregular_pt_br = [
     'bebi', 'comi', 'pulei/saltei'
 ]
 
+set_box_past = set({})
+
+while len(set_box_past) < 1:
+    set_box_past.add(choice(past))
+
+set_box_past = list(set_box_past)
+
+verb_past = set_box_past[0]
+verb_past_inked = painter('blue', verb_past)
+verb_past_tr = past_pt_br[past.index(verb_past)]
+verb_past_tr_inked = painter('red', verb_past_tr)
+
 if __name__ == '__main__':
     print('\n')
     print(f"{len(past) = }")
@@ -87,10 +102,13 @@ if __name__ == '__main__':
     for words in zip(past_irregular, past_irregular_pt_br):
         print(words)
 
+    print(verb_past)
+    print(verb_past_inked)
+    print(verb_past_tr)
+    print(verb_past_tr_inked)
+
     # for words in var.values():
     #     print(f"'{words[0]}',")
 
     # for words in var.values():
     #     print(f"'{words[1]}',")
-
-    print(past_irregular[40 - 1])

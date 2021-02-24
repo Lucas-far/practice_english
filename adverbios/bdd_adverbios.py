@@ -1,6 +1,7 @@
 
 
-from metodos.bdd import data_collector as _, painter
+from random import choice
+from metodos.bdd import painter
 
 adverbs_ly = [
     'accidentally', 'actually', 'angrily', 'anxiously', 'awkwardly', 'badly', 'blindly', 'boastfully', 'boldly',
@@ -128,17 +129,34 @@ adverb_others_pt_br = [
     'hoje à noite/esta noite', 'em cima/para cima', 'quando', 'aonde/onde', 'ainda (final de frase)'
 ]
 
-adverb = _(adverbs_frequency)
-adverb_inked = painter('blue', adverb)
-adverb2 = _(adverb_others)
-adverb2_inked = painter('blue', adverb2)
-adverb3 = _(adverbs_ly)
-adverb3_inked = painter('blue', adverb3)
+set_box = set({})
 
+while len(set_box) < 3:
+    set_box.add(choice(adverbs_frequency))
+    set_box.add(choice(adverb_others))
+    set_box.add(choice(adverbs_ly))
+    set_box = list(set_box)
+    ""  # there are repeated data among these three variables
+    ""  # in order to avoid any mistakes, we need to know if each data belongs to a different variable
+    see_if_repeats = [set_box[0] in adverbs_frequency, set_box[1] in adverb_others, set_box[2] in adverbs_ly]
+    if False in see_if_repeats:
+        set_box = set(set_box)
+        set_box.clear()
+
+set_box = list(set_box)
+
+adverb = set_box[0]
+adverb_inked = painter('blue', adverb)
 adverb_tr = adverbs_frequency_pt_br[adverbs_frequency.index(adverb)]
 adverb_tr_inked = painter('red', adverb_tr)
+
+adverb2 = set_box[1]
+adverb2_inked = painter('blue', adverb2)
 adverb2_tr = adverb_others_pt_br[adverb_others.index(adverb2)]
 adverb2_tr_inked = painter('red', adverb2_tr)
+
+adverb3 = set_box[2]
+adverb3_inked = painter('blue', adverb3)
 adverb3_tr = adverbs_ly_pt_br[adverbs_ly.index(adverb3)]
 adverb3_tr_inked = painter('red', adverb3_tr)
 
@@ -152,21 +170,22 @@ if __name__ == '__main__':
     print(f"{len(adverb_others) = }")
     print(f"{len(adverb_others_pt_br) = }")
 
-    # print(adverb)
-    # print(adverb_inked)
-    # print(adverb_tr)
-    # print(adverb_tr_inked)
-    #
-    # print(adverb2)
-    # print(adverb2_inked)
-    # print(adverb2_tr)
-    # print(adverb2_tr_inked)
-    #
-    # print(adverb3)
-    # print(adverb3_inked)
-    # print(adverb3_tr)
-    # print(adverb3_tr_inked)
+    print(adverb)
+    print(adverb_inked)
+    print(adverb_tr)
+    print(adverb_tr_inked)
 
+    print(adverb2)
+    print(adverb2_inked)
+    print(adverb2_tr)
+    print(adverb2_tr_inked)
+
+    print(adverb3)
+    print(adverb3_inked)
+    print(adverb3_tr)
+    print(adverb3_tr_inked)
+
+    print(set_box)
     # print('\n')
     # for words in zip(adverbs_ly, adverbs_ly_pt_br):
     #     print(words)

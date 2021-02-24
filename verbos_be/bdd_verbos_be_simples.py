@@ -2,6 +2,9 @@
 
 """"""
 
+from random import choice
+from metodos.bdd import painter
+
 "--------------------------------------------- VARS PARA PROJETO DE JOGO ----------------------------------------------"
 # fácil -> cacha baixa -> sem negação
 be_pst_easy = ['am', 'is', 'are']
@@ -121,3 +124,57 @@ will_not_u = ["Will not"]
 will_not_l = ["will not"]
 will_not_short_u = ["Won't"]
 will_not_short_l = ["won't"]
+
+"----------------------------------------------------------------------------------------------------------------------"
+set_box_past = set({})
+
+while len(set_box_past) < 1:
+    set_box_past.add(choice(be_past_l))
+
+set_box_past = list(set_box_past)
+
+be_past = set_box_past[0]
+be_past_inked = painter('blue', be_past)
+be_past_tr = be_past_l_pt_br[be_past_l.index(be_past)]
+be_past_tr_inked = painter('red', be_past_tr)
+"----------------------------------------------------------------------------------------------------------------------"
+set_box_present = set({})
+
+while len(set_box_present) < 1:
+    set_box_present.add(choice(be_present_l))
+
+set_box_present = list(set_box_present)
+
+be_present = set_box_present[0]
+be_present_inked = painter('blue', be_present)
+be_present_tr = be_present_l_pt_br[be_present_l.index(be_present)]
+be_present_tr_inked = painter('red', be_present_tr)
+"----------------------------------------------------------------------------------------------------------------------"
+set_box_future = set({})
+
+while len(set_box_future) < 1:
+    set_box_future.add(choice(be_future_l))
+
+set_box_future = list(set_box_future)
+
+be_future = set_box_future[0]
+be_future_inked = painter('blue', be_future)
+be_future_tr = be_future_l_pt_br[be_future_l.index(be_future)]
+be_future_tr_inked = painter('red', be_future_tr)
+
+if __name__ == '__main__':
+    # print(be_past)
+    # print(be_past_inked)
+    # print(be_past_tr)
+    # print(be_past_tr_inked)
+
+    # print(be_present)
+    # print(be_present_inked)
+    # print(be_present_tr)
+    # print(be_present_tr_inked)
+
+    # print(be_future)
+    # print(be_future_inked)
+    # print(be_future_tr)
+    # print(be_future_tr_inked)
+    pass

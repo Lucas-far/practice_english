@@ -6,98 +6,108 @@ from metodos.bdd import (create_set, get_input_int, var_printer, painter)
 
 from adjetivos.bdd_adjetivos import (adjectives, adjectives_pt_br)
 
-from pronomes.bdd_pronomes import (pronoun, pronoun_inked, pronoun_tr, pronoun_tr_inked)
+from pronomes.bdd_pronomes import (pronoun, pronoun_tr)
 
 from adjetivos_possessivos.bdd_adjetivos_possessivos import (
-    possessive_adjective, possessive_adjective_inked, possessive_adjective_tr, possessive_adjective_tr_inked
+    possessive_adjective, possessive_adjective_tr
 )
 
 from pronomes_possessivos.bdd_pronomes_possessivos import (
-    possessive_pronoun, possessive_pronoun_inked, possessive_pronoun_tr, possessive_pronoun_tr_inked
+    possessive_pronoun, possessive_pronoun_tr
 )
 
 from pronomes_demonstrativos.bdd_pronomes_demonstrativos import (
-    demonstrative_pronoun, demonstrative_pronoun_inked, demonstrative_pronoun_tr, demonstrative_pronoun_tr_inked
+    demonstrative_pronoun, demonstrative_pronoun_tr
 )
 
 from pronomes_reflexivos.bdd_pronomes_reflexivos import (
-    reflexive_pronoun, reflexive_pronoun_inked, reflexive_pronoun_tr, reflexive_pronoun_tr_inked
+    reflexive_pronoun, reflexive_pronoun_tr
 )
 
 from preposicoes.bdd_preposicoes import (
-    preposition, preposition_inked, preposition_tr, preposition_tr_inked
+    preposition, preposition_tr
 )
 
 from adverbios.bdd_adverbios import (
-    adverb, adverb_inked, adverb_tr, adverb_tr_inked,
-    adverb2, adverb2_inked, adverb2_tr, adverb2_tr_inked,
-    adverb3, adverb3_inked, adverb3_tr, adverb3_tr_inked,
+    adverb, adverb_tr,
+    adverb2, adverb2_tr,
+    adverb3, adverb3_tr,
 )
 
 from conjuncoes.bdd_conjuncoes import (
-    conjunction, conjunction_inked, conjunction_tr, conjunction_tr_inked,
-    conjunction2, conjunction2_inked, conjunction2_tr, conjunction2_tr_inked,
+    conjunction, conjunction_tr,
+    conjunction2, conjunction2_tr,
 )
 
 from substantivos.bdd_substantivos import (
-    noun, noun_inked, noun_tr, noun_tr_inked,
-    noun2, noun2_inked, noun2_tr, noun2_tr_inked,
-    noun3, noun3_inked, noun3_tr, noun3_tr_inked,
+    noun, noun_tr,
+    noun2, noun2_tr,
+    noun3, noun3_tr,
 )
 
-from wh.bdd_wh import (wh, wh_inked, wh_tr, wh_tr_inked)
+from wh.bdd_wh import (wh, wh_tr)
 
 from verbos_be.bdd_verbos_be_simples import (
-    be_present, be_present_inked, be_present_tr, be_present_tr_inked,
-    be_past, be_past_inked, be_past_tr, be_past_tr_inked,
-    be_future, be_future_inked, be_future_tr, be_future_tr_inked,
+    be_present, be_present_tr,
+    be_past, be_past_tr,
+    be_future, be_future_tr,
 )
 
 from verbos_can.bdd_verbos_can import (
-    could_past, could_past_inked, could_past_tr, could_past_tr_inked,
-    can_present, can_present_inked, can_present_tr, can_present_tr_inked,
+    could_past, could_past_tr,
+    can_present, can_present_tr,
 )
 
 from verbos_do.bdd_verbos_do import (
-    do_past, do_past_inked, do_past_tr, do_past_tr_inked,
-    do_present, do_present_inked, do_present_tr, do_present_tr_inked,
+    do_past, do_past_tr,
+    do_present, do_present_tr,
 )
 
 from verbos_have.bdd_verbos_have import (
-    have_past, have_past_inked, have_past_tr, have_past_tr_inked,
-    have_present, have_present_inked, have_present_tr, have_present_tr_inked,
-    have_future, have_future_inked, have_future_tr, have_future_tr_inked,
+    have_past, have_past_tr,
+    have_present, have_present_tr,
+    have_future, have_future_tr,
 )
 
 from verbos_infinitivo.bdd_verbos_infinitivo import (
-    verb_infinitive, verb_infinitive_inked, verb_infinitive_tr, verb_infinitive_tr_inked
+    verb_infinitive, verb_infinitive_tr
 )
 
 from verbos_passado.bdd_verbos_passado import (
-    verb_past, verb_past_inked, verb_past_tr, verb_past_tr_inked
+    verb_past, verb_past_tr
 )
 
 from verbos_presente.bdd_verbos_presente import (
-    verb_present, verb_present_inked, verb_present_tr, verb_present_tr_inked
+    verb_present, verb_present_tr
 )
 
 from verbos_futuro.bdd_verbos_futuro import (
-    verb_future, verb_future_inked, verb_future_tr, verb_future_tr_inked
+    verb_future, verb_future_tr
 )
 
 all_elements = [
-    pronoun_inked, pronoun_tr_inked, possessive_adjective_inked, possessive_adjective_tr_inked,
-    possessive_pronoun_inked, possessive_pronoun_tr_inked, demonstrative_pronoun_inked, demonstrative_pronoun_tr_inked,
-    reflexive_pronoun_inked, reflexive_pronoun_tr_inked, preposition_inked, preposition_tr_inked, adverb_inked,
-    adverb_tr_inked, adverb2_inked, adverb2_tr_inked, adverb3_inked, adverb3_tr_inked, conjunction_inked,
-    conjunction_tr_inked, conjunction2_inked, conjunction2_tr_inked, wh_inked, wh_tr_inked, noun_inked, noun_tr_inked,
-    noun2_inked, noun2_tr_inked, noun3_inked, noun3_tr_inked, verb_infinitive_inked, verb_infinitive_tr_inked,
-    verb_past_inked, verb_past_tr_inked, verb_present_inked, verb_present_tr_inked, verb_future_inked,
-    verb_future_tr_inked, be_present_inked, be_present_tr_inked, be_past_inked, be_past_tr_inked, be_future_inked,
-    be_future_tr_inked, could_past_inked, could_past_tr_inked, can_present_inked, can_present_tr_inked, do_past_inked,
-    do_past_tr_inked, do_present_inked, do_present_tr_inked, have_past_inked, have_past_tr_inked, have_present_inked,
-    have_present_tr_inked, have_future_inked, have_future_tr_inked
+    pronoun, pronoun_tr, possessive_adjective, possessive_adjective_tr,
+    possessive_pronoun, possessive_pronoun_tr, demonstrative_pronoun, demonstrative_pronoun_tr,
+    reflexive_pronoun, reflexive_pronoun_tr, preposition, preposition_tr, adverb,
+    adverb_tr, adverb2, adverb2_tr, adverb3, adverb3_tr, conjunction,
+    conjunction_tr, conjunction2, conjunction2_tr, wh, wh_tr, noun, noun_tr,
+    noun2, noun2_tr, noun3, noun3_tr, verb_infinitive, verb_infinitive_tr,
+    verb_past, verb_past_tr, verb_present, verb_present_tr, verb_future,
+    verb_future_tr, be_present, be_present_tr, be_past, be_past_tr, be_future,
+    be_future_tr, could_past, could_past_tr, can_present, can_present_tr, do_past,
+    do_past_tr, do_present, do_present_tr, have_past, have_past_tr, have_present,
+    have_present_tr, have_future, have_future_tr
 ]
+
+all_elements_inked = []
+
+for the_id, word in enumerate(all_elements):
+    if the_id % 2:
+        all_elements_inked.append(painter('yellow', word))
+    else:
+        # all_elements_inked.append(word)
+        all_elements_inked.append(painter('green', word))
+
 
 black, red, green, yellow, blue, purple, cyan, ink = inks[0], inks[1], inks[2], inks[3], inks[4], inks[5], inks[6], inks[7]
 
@@ -163,7 +173,7 @@ while True:
             input(input_message.format(green, ink))
 
             print(sentence_creation.format(
-                blue, chosen_word, ink, red, the_target_translation[0], ink, *all_elements
+                blue, chosen_word, ink, red, the_target_translation[0], ink, *all_elements_inked
             ))
 
             sentence = input(input_message2.format(green, ink))
@@ -187,7 +197,7 @@ while True:
             input(input_message.format(green, ink))
 
             print(sentence_creation.format(
-                blue, chosen_word, ink, red, the_target_translation[0], ink, *all_elements
+                blue, chosen_word, ink, red, the_target_translation[0], ink, *all_elements_inked
             ))
 
             sentence = input(input_message2.format(green, ink))
@@ -198,3 +208,4 @@ while True:
                 # txt_file.write(f"{sentence} -> {sentence_translation}\n")  # comentar, caso API falhe
     except IndexError as error:
         print(set_error.format(red, ink))
+

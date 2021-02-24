@@ -1,5 +1,8 @@
 
 
+from random import choice
+from metodos.bdd import painter
+
 # 'to be', 'to have', 'to do',
 verbs_infinitive = [
     'to say', 'to go', 'to get', 'to make', 'to know', 'to think', 'to take', 'to see', 'to come', 'to want', 'to look',
@@ -58,11 +61,27 @@ verbs_infinitive_pt_br = [
     'adivinhar/supor', 'selecionar', 'clicar',
 ]
 
+set_box_infinitive = set({})
+
+while len(set_box_infinitive) < 1:
+    set_box_infinitive.add(choice(verbs_infinitive))
+
+set_box_infinitive = list(set_box_infinitive)
+
+verb_infinitive = set_box_infinitive[0]
+verb_infinitive_inked = painter('blue', verb_infinitive)
+verb_infinitive_tr = verbs_infinitive_pt_br[verbs_infinitive.index(verb_infinitive)]
+verb_infinitive_tr_inked = painter('red', verb_infinitive_tr)
 
 if __name__ == '__main__':
     print('\n')
-    print(f"{len(verbs_infinitive)}")
-    print(f"{len(verbs_infinitive_pt_br)}")
-    print('\n')
-    for words in zip(verbs_infinitive, verbs_infinitive_pt_br):
-        print(words)
+    # print(verb_infinitive)
+    # print(verb_infinitive_inked)
+    # print(verb_infinitive_tr)
+    # print(verb_infinitive_tr_inked)
+
+    # print(f"{len(verbs_infinitive)}")
+    # print(f"{len(verbs_infinitive_pt_br)}")
+    # print('\n')
+    # for words in zip(verbs_infinitive, verbs_infinitive_pt_br):
+    #     print(words)

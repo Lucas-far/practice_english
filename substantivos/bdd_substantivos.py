@@ -1,6 +1,7 @@
 
 
-from metodos.bdd import data_collector as _, painter
+from random import choice
+from metodos.bdd import create_set, data_collector as _, painter
 
 # 'substantivo inglês no singular', 'substantivo inglês no plural'
 nouns = [
@@ -139,33 +140,40 @@ nouns_pl_pt_br = [
     'trabalhos', 'mundos', 'anos'
 ]
 
-noun = _(nouns)
+set_box = set({})
+
+while len(set_box) < 3:
+    set_box.add(choice(nouns))
+
+set_box = list(set_box)
+
+noun = set_box[0]
 noun_inked = painter('blue', noun)
 noun_tr = nouns_pt_br[nouns.index(noun)]
 noun_tr_inked = painter('red', noun_tr)
 
-noun2 = _(nouns)
+noun2 = set_box[1]
 noun2_inked = painter('blue', noun2)
 noun2_tr = nouns_pt_br[nouns.index(noun2)]
 noun2_tr_inked = painter('red', noun2_tr)
 
-noun3 = _(nouns)
+noun3 = set_box[2]
 noun3_inked = painter('blue', noun3)
 noun3_tr = nouns_pt_br[nouns.index(noun3)]
 noun3_tr_inked = painter('red', noun3_tr)
 
 if __name__ == '__main__':
     print(noun)
-    print(noun2)
-    print(noun3)
     print(noun_inked)
-    print(noun2_inked)
-    print(noun3_inked)
     print(noun_tr)
-    print(noun2_tr)
-    print(noun3_tr)
     print(noun_tr_inked)
+    print(noun2)
+    print(noun2_inked)
+    print(noun2_tr)
     print(noun2_tr_inked)
+    print(noun3)
+    print(noun3_inked)
+    print(noun3_tr)
     print(noun3_tr_inked)
     # print(len(nouns))
     # print(len(nouns_pt_br))

@@ -1,5 +1,8 @@
 
 
+from random import choice
+from metodos.bdd import painter
+
 wh_gl = [
     'How', 'What', 'When', 'Where', 'Which', 'Who', 'Whose', 'Why',
     'how', 'what', 'when', 'where', 'which', 'who', 'whose', 'why'
@@ -16,7 +19,24 @@ wh_l_pt_br = [
 wh_specific_u = ['How', 'Where', 'Who']
 wh_specific_l = ['how', 'where', 'who']
 
+set_box = set({})
+
+while len(set_box) < 1:
+    set_box.add(choice(wh_l))
+
+set_box = list(set_box)
+
+wh = set_box[0]
+wh_inked = painter('blue', wh)
+wh_tr = wh_l_pt_br[wh_l.index(wh)]
+wh_tr_inked = painter('red', wh_tr)
+
 if __name__ == '__main__':
     for word in zip(wh_l, wh_l_pt_br):
         print(word[0])
         print(word[1])
+
+    print(wh)
+    print(wh_inked)
+    print(wh_tr)
+    print(wh_tr_inked)

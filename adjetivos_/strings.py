@@ -17,7 +17,9 @@ input_message2 = '{}Clique após a seta, digite sua frase, aperte ENTER, ou apen
 controller = '{}Aperte ENTER ou qualquer outra tecla para continuar...{}'
 
 quiz_format = """
-    ==================== O QUE É {}{}{}? ==================== 
+    ====================
+    O QUE É {}? 
+    ==================== 
     1 - {}
     2 - {}
     3 - {}

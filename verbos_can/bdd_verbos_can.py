@@ -1,5 +1,8 @@
 
 
+from random import choice
+from metodos.bdd import painter
+
 # easy
 can_pst_easy = ["can", "can't", "cannot"]
 
@@ -53,5 +56,39 @@ could_pro_not_l = [
     'Could I not', 'Could you not', 'Could he not', 'Could she not', 'Could it not', 'Could we not', 'Could they not'
 ]
 
+"----------------------------------------------------------------------------------------------------------------------"
+set_box_past = set({})
+
+while len(set_box_past) < 1:
+    set_box_past.add(choice(could_past_l))
+
+set_box_past = list(set_box_past)
+
+could_past = set_box_past[0]
+could_past_inked = painter('blue', could_past)
+could_past_tr = could_past_l_pt_br[could_past_l.index(could_past)]
+could_past_tr_inked = painter('red', could_past_tr)
+"----------------------------------------------------------------------------------------------------------------------"
+set_box_present = set({})
+
+while len(set_box_present) < 1:
+    set_box_present.add(choice(can_present_l))
+
+set_box_present = list(set_box_present)
+
+can_present = set_box_present[0]
+can_present_inked = painter('blue', can_present)
+can_present_tr = can_present_l_pt_br[can_present_l.index(can_present)]
+can_present_tr_inked = painter('red', can_present_tr)
+
 if __name__ == '__main__':
+    # print(could_past)
+    # print(could_past_inked)
+    # print(could_past_tr)
+    # print(could_past_tr_inked)
+
+    # print(can_present)
+    # print(can_present_inked)
+    # print(can_present_tr)
+    # print(can_present_tr_inked)
     pass

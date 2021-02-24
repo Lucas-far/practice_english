@@ -1,5 +1,8 @@
 
 
+from random import choice
+from metodos.bdd import painter
+
 present = [
     'say', 'says', 'go', 'goes', 'get', 'gets', 'make', 'makes', 'know', 'knows', 'think', 'thinks', 'take', 'takes',
     'see', 'sees', 'come', 'comes', 'want', 'wants',
@@ -57,7 +60,7 @@ present_pt_br = [
 
     'acreditam/crêem', 'acredita/crê', 'mantêm/seguram', 'mantêm/segura', 'trazem', 'traz', 'acontecem/ocorrem',
     'acontece/ocorre', 'escrevem', 'escreve', 'fornecem/proporcionam', 'fornece/proporciona', 'sentam', 'senta',
-    'levantam/permanecem', 'levanta/permanece', 'perdem', 'perde', 'pagam', 'paga',
+    'ficam/suportam', 'fica/suporta', 'perdem', 'perde', 'pagam', 'paga',
 
     'conhecem/encontram', 'conhece/encontra', 'incluem', 'inclui', 'continuam', 'continua',
     'configuram/definem/estabelecem/põem', 'configura/define/estabelece/põe', 'aprendem', 'aprende', 'alteram/mudam',
@@ -95,9 +98,28 @@ present_1st_2nd_persons_pt_br = ['dizem/falam', 'vão', 'adquirem/conseguem/obte
 present_3rd_person = ['says', 'goes', 'gets', 'makes', 'knows', 'thinks', 'takes', 'sees', 'comes', 'wants', 'looks', 'uses', 'finds', 'gives', 'tells', 'works', 'calls', 'tries', 'asks', 'needs', 'feels', 'becomes', 'leaves', 'puts', 'means', 'keeps', 'lets', 'begins', 'seems', 'helps', 'talks', 'turns', 'starts', 'shows', 'hears', 'plays', 'runs', 'moves', 'likes', 'lives', 'believes', 'holds', 'brings', 'happens', 'writes', 'provides', 'sits', 'stands', 'loses', 'pays', 'meets', 'includes', 'continues', 'sets', 'learns', 'changes', 'leads', 'understands', 'watches', 'follows', 'stops', 'creates', 'speaks', 'reads', 'allows', 'adds', 'spends', 'grows', 'opens', 'walks', 'wins', 'offers', 'remembers', 'loves', 'considers', 'appears', 'buys', 'waits', 'serves', 'dies', 'sends', 'expects', 'builds', 'stays', 'falls', 'cuts', 'reaches', 'kills', 'remains', 'suggests', 'raises', 'passes', 'sells', 'requires', 'reports', 'decides', 'pulls', 'breaks', 'acquires', 'realizes', 'manages', 'develops', 'trusts', 'imagines', 'steps', 'regrets', 'manipulates', 'dreams', 'discusses', 'drinks', 'eats', 'skips', 'repeats', 'guesses', 'selects', 'clicks']
 present_3rd_person_pt_br = ['diz/fala', 'vem', 'adquire/consegue/obtem/pega', 'cria/faz', 'conhece/sabe', 'acha/pensa', 'leva/pega/toma', 'vê', 'chega/vêm', 'pretende/quer', 'olha/vê', 'usa', 'acha/encontra', 'dá', 'conta/diz', 'funciona/trabalha', 'chama/telefona', 'experimenta/tenta', 'pede/pergunta', 'necessita/precisa', 'sente', 'torna-se', 'abandona/deixa/sai', 'coloca/põe', 'quer dizer/significa', 'continua/guarda/mantêm', 'deixa/permite', 'começa/inicia', 'parece', 'ajuda/auxilia', 'conversa/fala', 'transforma/vira', 'começa/inicia', 'apresenta/mostra', 'escuta/ouvi', 'joga/toca', 'corre', 'move/mexe', 'gosta', 'mora/vive', 'acredita/crê', 'mantêm/segura', 'traz', 'acontece/ocorre', 'escreve', 'fornece/proporciona', 'senta', 'levanta/permanece', 'perde', 'paga', 'conhece/encontra', 'inclui', 'continua', 'configura/define/estabelece/põe', 'aprende', 'altera/muda', 'conduz/lidera', 'compreende/entende', 'olha/observa/vê', 'acompanha/segue', 'impede/para', 'cria', 'conversa/fala', 'lê', 'autoriza/permite', 'acrescenta/adiciona', 'gasta/passa', 'aumenta/cresce', 'abre', 'anda/caminha', 'ganha/vence', 'oferece/propõe', 'lembra/recorda', 'adora/ama', 'considera', 'aparece', 'compra', 'espera', 'serve', 'falece/morre', 'envia/manda', 'espera', 'constroi', 'fica/permanece', 'cai', 'corta', 'alcança/atinge/chega', 'mata', 'fica/permanece', 'sugeri', 'aumenta/cria alguém,algo/levanta', 'passa', 'vende', 'exige/necessita', 'relata/reporta', 'decide', 'puxa', 'rompe/quebra', 'adquire/compra/obtém', 'percebe/realiza', 'administra/gere', 'cresce/desenvolve', 'confia', 'imagina', 'pisa', 'arrepende/lamenta', 'manipula', 'sonha', 'debate/discute', 'bebe', 'come', 'pula/salta', 'repete', 'adivinha/supõe', 'seleciona', 'clica']
 
+set_box_present = set({})
+
+while len(set_box_present) < 1:
+    set_box_present.add(choice(present))
+
+set_box_present = list(set_box_present)
+
+verb_present = set_box_present[0]
+verb_present_inked = painter('blue', verb_present)
+verb_present_tr = present_pt_br[present.index(verb_present)]
+verb_present_tr_inked = painter('red', verb_present_tr)
 
 if __name__ == '__main__':
     print('\n')
+    # print(verb_present)
+    # print(verb_present_inked)
+    # print(verb_present_tr)
+    # print(verb_present_tr_inked)
+
+    # for words in zip(present, present_pt_br):
+    #     print(words[0])
+    #     print(words[1])
 
     # print(f"{len(pst) = }")
     # print(f"{len(pst_pt_br) = }")

@@ -1,11 +1,9 @@
 
 
-from random import choice
-from strings import *
-from metodos.bdd import (create_set, get_input_int, painter)
+from bdd_strings.strings import *
 
 # todo
-from metodos.bdd import choose_word_paint_word as _
+from metodos.bdd import choose_word_paint_word as _, create_set, get_input_int, painter, throw_input, greetings
 from whole_syntax import *
 # todo
 
@@ -68,8 +66,6 @@ while True:
         verb_present, verb_present_inked, verb_present_tr, verb_present_tr_inked = _(present, present_pt_br)
         verb_future, verb_future_inked, verb_future_tr, verb_future_tr_inked = _(future, future_pt_br)
 
-        skip = ' '
-
         all_inked_elements = [
             '    Adjetivo possessivo: ' + pa_inked + skip + pa_tr_inked,
             '    Pronome: ' + pr_inked + skip + pr_tr_inked,
@@ -104,11 +100,6 @@ while True:
 
         pick_five_inked_elements = create_set(pick_five, 4, all_inked_elements, True)
         pick_five_inked_elements.add(mandatory_nouns)
-
-        # print(pick_five_inked_elements)
-
-        # for word in all_inked_elements:
-        #     print(word)
         # todo
 
         empty_set = set({})
@@ -136,10 +127,13 @@ while True:
             print(f"{chosen_word_translation = }")
             print(f"{the_target_translation = }")
             print(f"{the_target_translation_inked = }")
+            # print(pick_five_inked_elements)
+            # for word in all_inked_elements:
+            #     print(word)
 
         # display_variables()
 
-        print(hello)
+        print(hello := greetings('treino de adjetivos', index1=3))
 
         answer = get_input_int(text=quiz_format.format(chosen_word_inked, *five_translations), start=1, limit=5)
 
@@ -159,20 +153,24 @@ while True:
         if answer == correct_answer_index:
             positive_score += 1
 
-            print(success.format(
-                blue, ink,
-                green, ink, positive_score + negative_score,
-                yellow, ink, blue, ink, positive_score, negative_score, red, ink
-            ))
+            print(success.format(blue, ink, green, ink, positive_score + negative_score, yellow, ink, blue, ink,
+                                 positive_score, negative_score, red, ink))
 
             input(input_message)
 
             # todo
+            vocabulary = throw_input(write_vocabulary)
+
+            while vocabulary != chosen_word:
+                print(typo.format(red, ink, blue, chosen_word, ink, red, ink))
+                vocabulary = throw_input(write_vocabulary)
+
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
+
             for word in pick_five_inked_elements:
                 print(word)
+
             print('\n')
-            # print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
             # todo
 
             sentence = input(input_message2)
@@ -185,21 +183,25 @@ while True:
         else:
             negative_score += 1
 
-            print(failure.format(
-                red, ink,
-                blue, ink, correct_answer_index, the_target_translation[0],
-                green, ink, positive_score + negative_score,
-                yellow, ink, blue, ink, positive_score, negative_score, red, ink
-            ))
+            print(failure.format(red, ink, blue, ink, correct_answer_index, the_target_translation[0], green, ink,
+                                 positive_score + negative_score, yellow, ink, blue, ink, positive_score,
+                                 negative_score, red, ink))
 
             input(input_message)
 
             # todo
+            vocabulary = throw_input(write_vocabulary)
+
+            while vocabulary != chosen_word:
+                print(typo.format(red, ink, blue, chosen_word, ink, red, ink))
+                vocabulary = throw_input(write_vocabulary)
+
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
+
             for word in pick_five_inked_elements:
                 print(word)
+
             print('\n')
-            # print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
             # todo
 
             sentence = input(input_message2)

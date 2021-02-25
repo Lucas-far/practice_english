@@ -25,6 +25,15 @@ can_not_verbo_presente = 'cannot know'
 could_verbo_presente = 'could know'
 could_not_verbo_presente = 'could not know'
 
+try_verbo_passado = 'tried to know'
+try_verbo_passado_negativo = "did not try to know / didn't try to know"
+try_verbo_presente = 'try to know'
+try_verbo_presente_3rd = 'tries to know'
+try_verbo_presente_negativo = "do not try to know / don't try to know"
+try_verbo_presente_negativo_3rd = "does not try to know / doesn't try to know"
+try_futuro = "will try to know"
+try_futuro_negativo = "will not try to know / won't try to know"
+
 # print(pronoun)
 # print(pronoun_inked)
 # print(pronoun_tr)
@@ -169,8 +178,6 @@ could_not_verbo_presente = 'could not know'
 # print(verb_future_inked)
 # print(verb_future_tr)
 # print(verb_future_tr_inked)
-
-obs = 'corrigir a conjugação de um tempo verbal que não lembro'
 
 "--------------------------------------------- LÓGICA NA CRIAÇÃO DE FRASES ---------------------------------------------"
 ""  # olhar para o substantivo, e ver se os verbos combinam

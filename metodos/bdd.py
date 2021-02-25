@@ -81,6 +81,29 @@ def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start:
     return the_input
 
 
+def greetings(algorithm_name: str = 'Name of the algorithm', index1: int = 0, index2: int = 7) -> str:
+    """
+    To receive a string and return it as the name of the algorithm
+
+    :param algorithm_name:
+    :param index1: goes from 0 to 6, and combine with prefix2, frozen as 7. EX: prefix = 0 & prefix2 = 7 = black
+    :param index2: must always be 7, if it is desired colors to work
+    :return: str
+    """
+
+    inks: tuple = (
+        '\033[1:30m', '\033[1:31m', '\033[1:32m', '\033[1:33m', '\033[1:34m', '\033[1:35m', '\033[1:36m', '\033[m'
+    )
+
+    the_message = f"""
+    ==================================================
+    Bem-vindo ao {inks[index1]}{algorithm_name.upper()}{inks[index2]}
+    ==================================================
+    """
+
+    return the_message
+
+
 def painter(color: str = 'blue', text: str = 'texto'):
     """"""
     # keys = conditions / values = actions of the conditions
@@ -207,6 +230,12 @@ def choose_word_paint_word(word_location, word_translation_location):
     word_translation_inked = painter('blue', word_translation)
 
     return word, word_inked, word_translation, word_translation_inked
+
+
+def throw_input(input_text):
+    """"""
+    the_input = input(input_text)
+    return the_input
 
 
 if __name__ == '__main__':

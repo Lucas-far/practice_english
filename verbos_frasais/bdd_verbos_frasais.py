@@ -1,6 +1,6 @@
 
 
-# go down, go up, go down, go right, go left, go forward
+# go down, go up, go down, go right, go left, go forward, try out, turn over
 phrasals_infinitive = [
     'to crop up/pop up', 'to go by', 'to go away', 'to go ahead'
 ]

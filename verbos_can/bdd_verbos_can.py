@@ -32,8 +32,11 @@ can_present_l_pt_br = ['consigo/posso', 'não consigo/posso', 'não consigo/poss
 could_past_l = ["could", "could not", "couldn't"]
 could_past_l_pt_br = ['conseguia/podia/poderia', 'não conseguia/podia/poderia', 'não conseguia/podia/poderia']
 
+can_not = ["cannot", "can't"]
+could_not = ["could not", "couldn't"]
+
 the_can_u = ["Can"]
-the_can_l = ["can"]
+can_l = ["can"]
 
 could_u = ["Could"]
 could_l = ["could"]

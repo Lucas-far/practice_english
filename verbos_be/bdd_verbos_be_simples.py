@@ -45,6 +45,12 @@ am_is_are_u = ['Am', 'Is', 'Are']
 
 am_is_are_l = ['am', 'is', 'are']
 
+am_is_are_not_l = [
+    "am not",
+    "is not", "isn't",
+    "are not", "aren't"
+]
+
 am_not = ['Am I not']
 
 is_not = ['Is he not', 'Is she not', 'Is it not', "Isn't he", "Isn't she", "Isn't it"]
@@ -58,6 +64,7 @@ am_u = ["Am"]
 am_l = ["am"]
 am_not_u = ["Am not"]
 am_not_l = ["am not"]
+am_hybrid_l = ["am", "am not"]
 
 is_u = ["Is"]
 is_l = ["is"]
@@ -65,6 +72,7 @@ is_not_u = ["Is not"]
 is_not_l = ["is not"]
 is_not_short_u = ["Isn't"]
 is_not_short_l = ["isn't"]
+is_hybrid_l = ["is", "is not", "isn't"]
 
 are_u = ["Are"]
 are_l = ["are"]
@@ -93,6 +101,8 @@ be_past_sgl_u = ["Was", "Was not", "Wasn't"]    # to be [ passado ] 1a e 3a pess
 be_past_sgl_l = ["was", "was not", "wasn't"]    # to be [ passado ] 1a e 3a pessoa, cacha baixa
 be_past_pl_u = ['Were', 'Were not', "Weren't"]  # to be [ passado ] 2a pessoa, cacha alta
 be_past_pl_l = ['were', 'were not', "weren't"]  # to be [ passado ] 2a pessoa, cacha baixa
+
+be_past_af = ['was', 'were']
 
 was_u = ['Was']               # to be [ passado ] 1a e 3a pessoa, cacha alta
 was_l = ['was']               # to be [ passado ] 1a e 3a pessoa, cacha baixa
@@ -124,6 +134,9 @@ will_not_u = ["Will not"]
 will_not_l = ["will not"]
 will_not_short_u = ["Won't"]
 will_not_short_l = ["won't"]
+
+will_be = ['will be']
+will_not_wont = ['will not be', "won't be"]
 
 "----------------------------------------------------------------------------------------------------------------------"
 set_box_past = set({})

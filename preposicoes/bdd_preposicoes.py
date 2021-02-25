@@ -5,7 +5,7 @@
 from metodos.bdd import data_collector as _, painter
 
 "------------------------------------------------------- GLOBAL -------------------------------------------------------"
-prepositions = [
+prepositions_l = [
     'about', 'above', 'across', 'after', 'against', 'ago', 'among',
     'around', 'as', 'at', 'before', 'behind', 'below',
     'between', 'by', 'down', 'during', 'for', 'from',
@@ -15,7 +15,7 @@ prepositions = [
     'without'
 ]
 
-prepositions_pt_br = [
+prepositions_l_pt_br = [
     'sobre/acerca de', 'acima/sobre (sem contato)', 'através', 'depois', 'contra', 'atrás', 'dentre/entre',
     'ao redor/em volta/por aí', 'como', 'em (sem contato)', 'diante de/perante', 'atrás/detrás', 'abaixo/sob',
     'entre/no meio de', 'junto a/perto de/por', 'abaixo', 'durante', 'para/por/durante', 'de/do/desde/a partir de',
@@ -117,9 +117,9 @@ up_ = ['up', 'acima/em cima/para cima']
 with_ = ['with', 'com']
 without_ = ['without', 'sem']
 
-preposition = _(prepositions)
+preposition = _(prepositions_l)
 preposition_inked = painter('blue', preposition)
-preposition_tr = prepositions_pt_br[prepositions.index(preposition)]
+preposition_tr = prepositions_l_pt_br[prepositions_l.index(preposition)]
 preposition_tr_inked = painter('red', preposition_tr)
 
 if __name__ == '__main__':

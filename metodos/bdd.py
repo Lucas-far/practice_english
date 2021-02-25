@@ -109,7 +109,7 @@ def var_printer(list_var_names: str, list_var_values: list):  # parameters as st
     return box
 
 
-def sentence_maker(*args):  # removed parameter: example
+def word_selector(*args):  # removed parameter: example
     """"""
     sentence = []
 
@@ -124,6 +124,13 @@ def data_collector(database):  # removed parameter: example
     the_data = choice(database)
     return the_data
 
+
+def data_collector_(args):  # removed parameter: example
+    """"""
+    all_data = []
+    for database in args:
+        all_data.append(choice(database))
+    return all_data
 
 
 def verify(*args, database: list):
@@ -192,16 +199,15 @@ def welcome(algorithm_name: str = 'Name of the algorithm', prefix: int = 0, pref
     {bricks}"""
 
 
+def choose_word_paint_word(word_location, word_translation_location):
+    """"""
+    word = choice(word_location)
+    word_inked = painter('green', word)
+    word_translation = word_translation_location[word_location.index(word)]
+    word_translation_inked = painter('blue', word_translation)
+
+    return word, word_inked, word_translation, word_translation_inked
+
+
 if __name__ == '__main__':
     x = '  '
-    from pronomes.bdd_pronomes import (pronouns_l, pronouns_pt_br)
-    pronoun = sentence_maker(pronouns_l)
-    print(pronoun)
-    pronoun_inked = painter('blue', pronoun)
-    print(pronoun_inked)
-    # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
-    # print(sentence3 := sentence_maker(pro_pl_u, x, the_have_l, x, ['bad'], x, nouns_pl))
-    # var = painter('cyan', 'python')
-    # print(var)
-    # var2 = 'Eu programo em {}'.format(var)
-    # print(var2)

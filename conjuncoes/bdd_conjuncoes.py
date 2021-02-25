@@ -10,8 +10,8 @@ conjunctions_l = [
 
 conjunctions_l_pt_br = [
     'e', 'que', 'mas/porém', 'ou', 'como/tão quanto', 'se', 'quando', 'do que', 'pois/porque', 'enquanto',
-    'aonde/onde', 'depois que', 'embora (final)', 'já que', 'até que', 'se', 'antes', 'embora (início)', 'nem',
-    'como', 'uma vez que', 'a menos que/a não ser', 'agora/já', 'exceto', 'caso contrário'
+    'aonde/onde', 'depois que', 'embora (fim da frase)', 'já que', 'até que', 'se', 'antes', 'embora (início da frase)',
+    'nem', 'como', 'uma vez que', 'a menos que/a não ser', 'agora/já', 'exceto', 'caso contrário'
 ]
 
 set_box = set({})

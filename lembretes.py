@@ -170,6 +170,8 @@ could_not_verbo_presente = 'could not know'
 # print(verb_future_tr)
 # print(verb_future_tr_inked)
 
+obs = 'corrigir a conjugação de um tempo verbal que não lembro'
+
 "--------------------------------------------- LÓGICA NA CRIAÇÃO DE FRASES ---------------------------------------------"
 ""  # olhar para o substantivo, e ver se os verbos combinam
 

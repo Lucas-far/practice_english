@@ -2,12 +2,67 @@
 
 from random import choice
 from strings import *
-from metodos.bdd import (create_set, get_input_int, painter)
+from metodos.bdd import (choose_word_paint_word as _, create_set, get_input_int, painter)
 
-# todo
-from metodos.bdd import choose_word_paint_word as _
-from whole_syntax import *
-# todo
+from adjetivos.bdd_adjetivos import (adjectives, adjectives_pt_br)
+
+from pronomes.bdd_pronomes import (
+    pronouns_l, pronouns_l_pt_br
+)
+
+from adjetivos_possessivos.bdd_adjetivos_possessivos import (
+    possessive_adjectives_l, possessive_adjectives_l_pt_br
+)
+
+from pronomes_possessivos.bdd_pronomes_possessivos import (
+    possessive_pronouns_l, possessive_pronouns_l_pt_br
+)
+
+from pronomes_demonstrativos.bdd_pronomes_demonstrativos import (
+    demonstrative_pronouns_l, demonstrative_pronouns_l_pt_br
+)
+
+from pronomes_reflexivos.bdd_pronomes_reflexivos import (
+    reflexive_pronouns_l, reflexive_pronouns_l_pt_br
+)
+
+from preposicoes.bdd_preposicoes import (
+    prepositions_l, prepositions_l_pt_br
+)
+
+from adverbios.bdd_adverbios import (
+    adverbs_ly, adverbs_ly_pt_br,
+    adverbs_frequency, adverbs_frequency_pt_br,
+    adverb_others, adverb_others_pt_br
+)
+
+from conjuncoes.bdd_conjuncoes import (
+    conjunctions_l, conjunctions_l_pt_br
+)
+
+from wh.bdd_wh import wh_l, wh_l_pt_br
+
+from substantivos.bdd_substantivos import (
+    nouns, nouns_pt_br
+)
+
+from verbos_be.bdd_verbos_be_simples import (be_past_l, be_past_l_pt_br)
+from verbos_be.bdd_verbos_be_simples import (be_present_l, be_present_l_pt_br)
+from verbos_be.bdd_verbos_be_simples import (be_future_l, be_future_l_pt_br)
+
+from verbos_can.bdd_verbos_can import (could_past_l, could_past_l_pt_br, can_present_l, can_present_l_pt_br)
+
+from verbos_do.bdd_verbos_do import (do_present_l, do_present_l_pt_br)
+from verbos_do.bdd_verbos_do import (do_past_l, do_past_l_pt_br)
+
+from verbos_have.bdd_verbos_have import (have_past_l, have_past_l_pt_br)
+from verbos_have.bdd_verbos_have import (have_present_l, have_present_l_pt_br)
+from verbos_have.bdd_verbos_have import (have_future_l, have_future_l_pt_br)
+
+from verbos_infinitivo.bdd_verbos_infinitivo import (verbs_infinitive, verbs_infinitive_pt_br)
+from verbos_passado.bdd_verbos_passado import (past, past_pt_br)
+from verbos_presente.bdd_verbos_presente import (present, present_pt_br)
+from verbos_futuro.bdd_verbos_futuro import (future, future_pt_br)
 
 black, red, green, yellow, blue, purple, cyan, ink = inks[0], inks[1], inks[2], inks[3], inks[4], inks[5], inks[6], inks[7]
 
@@ -18,16 +73,12 @@ while True:
 
     try:
 
-        # todo
         pa, pa_inked, pa_tr, pa_tr_inked = _(possessive_adjectives_l, possessive_adjectives_l_pt_br)
+
         pr, pr_inked, pr_tr, pr_tr_inked = _(pronouns_l, pronouns_l_pt_br)
         dp, dp_inked, dp_tr, dp_tr_inked = _(demonstrative_pronouns_l, demonstrative_pronouns_l_pt_br)
         pp, pp_inked, pp_tr, pp_tr_inked = _(possessive_pronouns_l, possessive_pronouns_l_pt_br)
         rp, rp_inked, rp_tr, rp_tr_inked = _(reflexive_pronouns_l, reflexive_pronouns_l_pt_br)
-
-        adv, adv_inked, adv_tr, adv_tr_inked = _(adverbs_frequency, adverbs_frequency_pt_br)
-        adv2, adv2_inked, adv2_tr, adv2_tr_inked = _(adverb_others, adverb_others_pt_br)
-        adv3, adv3_inked, adv3_tr, adv3_tr_inked = _(adverbs_ly, adverbs_ly_pt_br)
 
         conj, conj_inked, conj_tr, conj_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
         conj2, conj2_inked, conj2_tr, conj2_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
@@ -39,6 +90,15 @@ while True:
         prep, prep_inked, prep_tr, prep_tr_inked = _(prepositions_l, prepositions_l_pt_br)
 
         wh, wh_inked, wh_tr, wh_tr_inked = _(wh_l, wh_l_pt_br)
+
+        adj, adj_inked, adj_tr, adj_tr_inked = _(adjectives, adjectives_pt_br)
+        adj2, adj2_inked, adj2_tr, adj2_tr_inked = _(adjectives, adjectives_pt_br)
+        adj3, adj3_inked, adj3_tr, adj3_tr_inked = _(adjectives, adjectives_pt_br)
+
+        while adj == adj2 or adj == adj3 or adj2 == adj3:
+            adj, adj_inked, adj_tr, adj_tr_inked = _(adjectives, adjectives_pt_br)
+            adj2, adj2_inked, adj2_tr, adj2_tr_inked = _(adjectives, adjectives_pt_br)
+            adj3, adj3_inked, adj3_tr, adj3_tr_inked = _(adjectives, adjectives_pt_br)
 
         noun, noun_inked, noun_tr, noun_tr_inked = _(nouns, nouns_pt_br)
         noun2, noun2_inked, noun2_tr, noun2_tr_inked = _(nouns, nouns_pt_br)
@@ -68,48 +128,35 @@ while True:
         verb_present, verb_present_inked, verb_present_tr, verb_present_tr_inked = _(present, present_pt_br)
         verb_future, verb_future_inked, verb_future_tr, verb_future_tr_inked = _(future, future_pt_br)
 
-        skip = ' '
-
         all_inked_elements = [
-            '    Adjetivo possessivo: ' + pa_inked + skip + pa_tr_inked,
-            '    Pronome: ' + pr_inked + skip + pr_tr_inked,
-            '    Pronome demonstrativo: ' + dp_inked + skip + dp_tr_inked,
-            '    Pronome possessivo: ' + pp_inked + skip + pp_tr_inked,
-            '    Pronome reflexivo: ' + rp_inked + skip + rp_tr_inked,
-            '    Advérbio de frequência: ' + adv_inked + skip + adv_tr_inked,
-            '    Advérbio: ' + adv2_inked + skip + adv2_tr_inked,
-            '    Advérbio ly: ' + adv3_inked + skip + adv3_tr_inked,
-            '    Conjunção: ' + conj_inked + skip + conj_tr_inked + skip + '//' + skip + conj2_inked + skip + conj2_tr_inked,
-            '    Preposição: ' + prep_inked + skip + prep_tr_inked,
-            '    Palavra de dúvida: ' + wh_inked + skip + wh_tr_inked,
-            '    Verbo can: ' + can_inked + skip + can_tr_inked,
-            '    Verbo can (passado) ' + could_inked + skip + could_tr_inked,
-            '    Verbo to be (passado) ' + be_past_inked + skip + be_past_tr_inked,
-            '    Verbo to be (presente) ' + be_present_inked + skip + be_present_tr_inked,
-            '    Verbo to be (futuro) ' + be_future_inked + skip + be_future_tr_inked,
-            '    Verbo to do (passado) ' + do_past_inked + skip + do_past_tr_inked,
-            '    Verbo to do (presente) ' + do_present_inked + skip + do_present_tr_inked,
-            '    Verbo to have (passado) ' + have_past_inked + skip + have_past_tr_inked,
-            '    Verbo to have (presente) ' + have_present_inked + skip + have_present_tr_inked,
-            '    Verbo to have (futuro) ' + have_future_inked + skip + have_future_tr_inked,
-            '    Verbo no infinitivo ' + verb_inf_inked + skip + verb_inf_tr_inked,
-            '    Verbo no passado ' + verb_past_inked + skip + verb_past_tr_inked,
-            '    Verbo no presente ' + verb_present_inked + skip + verb_present_tr_inked,
-            '    Verbo no futuro ' + verb_future_inked + skip + verb_future_tr_inked,
+            pa_inked, pa_tr_inked,
+            pr_inked, pr_tr_inked,
+            dp_inked, dp_tr_inked,
+            pp_inked, pp_tr_inked,
+            rp_inked, rp_tr_inked,
+            conj_inked, conj_tr_inked,
+            conj2_inked, conj2_tr_inked,
+            prep_inked, prep_tr_inked,
+            wh_inked, wh_tr_inked,
+            adj_inked, adj_tr_inked, adj2_inked, adj2_tr_inked, adj3_inked, adj3_tr_inked,
+            noun_inked, noun_tr_inked, noun2_inked, noun2_tr_inked, noun3_inked, noun3_tr_inked,
+            can_inked, can_tr_inked,
+            could_inked, could_tr_inked,
+            be_past_inked, be_past_tr_inked,
+            be_present_inked, be_present_tr_inked,
+            be_future_inked, be_future_tr_inked,
+            do_past_inked, do_past_tr_inked,
+            do_present_inked, do_present_tr_inked,
+            have_past_inked, have_past_tr_inked,
+            have_present_inked, have_present_tr_inked,
+            have_future_inked, have_future_tr_inked,
+            verb_inf_inked, verb_inf_tr_inked,
+            verb_past_inked, verb_past_tr_inked,
+            verb_present_inked, verb_present_tr_inked,
+            verb_future_inked, verb_future_tr_inked,
         ]
 
-        mandatory_nouns = f'    Substantivo: {noun_inked} {noun_tr_inked} {noun2_inked} {noun2_tr_inked} {noun3_inked} {noun3_tr_inked}'
-
-        pick_five = set({})
-
-        pick_five_inked_elements = create_set(pick_five, 4, all_inked_elements, True)
-        pick_five_inked_elements.add(mandatory_nouns)
-
-        # print(pick_five_inked_elements)
-
-        # for word in all_inked_elements:
-        #     print(word)
-        # todo
+        # adj_inked, adj_tr_inked, adj2_inked, adj2_tr_inked, adj3_inked, adj3_tr_inked,
 
         empty_set = set({})
 
@@ -123,21 +170,6 @@ while True:
         chosen_word_translation = five_translations[chosen_word_index]
         the_target_translation = [chosen_word_translation]
         the_target_translation_inked = painter('yellow', the_target_translation[0])
-
-
-        def display_variables():
-            """"""
-            print(f"{five_words = }")
-            print(f"{five_indexes = }")
-            print(f"{five_translations = }")
-            print(f"{chosen_word = }")
-            print(f"{chosen_word_inked = }")
-            print(f"{chosen_word_index = }")
-            print(f"{chosen_word_translation = }")
-            print(f"{the_target_translation = }")
-            print(f"{the_target_translation_inked = }")
-
-        # display_variables()
 
         print(hello)
 
@@ -157,6 +189,7 @@ while True:
         correct_answer_index = sorted(conditions)[0]
 
         if answer == correct_answer_index:
+
             positive_score += 1
 
             print(success.format(
@@ -167,13 +200,7 @@ while True:
 
             input(input_message)
 
-            # todo
-            print(announcement.format(chosen_word_inked, the_target_translation_inked))
-            for word in pick_five_inked_elements:
-                print(word)
-            print('\n')
-            # print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
-            # todo
+            print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
 
             sentence = input(input_message2)
             # sentence_translation = do_translation(sentence, 'pt')  # comentar, caso API falhe
@@ -183,6 +210,7 @@ while True:
                 # txt_file.write(f"{sentence} -> {sentence_translation}\n")  # comentar, caso API falhe
 
         else:
+
             negative_score += 1
 
             print(failure.format(
@@ -194,13 +222,7 @@ while True:
 
             input(input_message)
 
-            # todo
-            print(announcement.format(chosen_word_inked, the_target_translation_inked))
-            for word in pick_five_inked_elements:
-                print(word)
-            print('\n')
-            # print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
-            # todo
+            print(hints.format(chosen_word_inked, the_target_translation_inked, *all_inked_elements))
 
             sentence = input(input_message2)
             # sentence_translation = do_translation(sentence, 'pt')  # comentar, caso API falhe

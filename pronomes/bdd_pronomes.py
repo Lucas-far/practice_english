@@ -9,9 +9,17 @@ pronouns = [
 
 pronouns_u = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
 
-pronouns_l = ['I', 'you', 'he', 'she', 'it', 'we', 'you', 'they']
+pronouns_l = [
+    'I',
+    'he', 'she', 'it',
+    'we', 'you', 'you', 'they'
+]
 
-pronouns_pt_br = ['eu', 'tu/você', 'ele', 'ela', 'isso', 'nós', 'vós/vocês', 'eles(as)']
+pronouns_l_pt_br = [
+    'eu',
+    'ele', 'ela', 'isso',
+    'nós', 'tu/você', 'vós/vocês', 'eles(as)'
+]
 
 pronouns_sgl_u = ['I', 'He', 'She', 'It']
 
@@ -19,7 +27,7 @@ pronouns_sgl_l = ['I', 'he', 'she', 'it']
 
 pronouns_sgl_is_u = ['He', 'She', 'It']
 
-pronouns_sgl_is_l = ['he', 'she', 'it']
+he_she_it_l = ['he', 'she', 'it']
 
 pronouns_pl_u = ['We', 'You', 'They']
 
@@ -46,7 +54,7 @@ they_ = ['they', 'eles(as)']
 
 pronoun = _(pronouns_l)
 pronoun_inked = painter('blue', pronoun)
-pronoun_tr = pronouns_pt_br[pronouns_l.index(pronoun)]
+pronoun_tr = pronouns_l_pt_br[pronouns_l.index(pronoun)]
 pronoun_tr_inked = painter('red', pronoun_tr)
 
 

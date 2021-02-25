@@ -47,7 +47,7 @@ adjectives_pt_br = [
 
     'estúpido', 'irrelevante', 'doce', 'com raiva/irritado(a)/zangado(a)', 'ambicioso(a)', 'indiferente',
     'maravilhoso(a)', 'idêntico(a)', 'esperto(a)/inteligente', 'entusiasmado(a)', 'vibrante', 'afirmativo(a)',
-    'negativo', 'compreensivo(a)', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'estranho(a)',
+    'negativo', 'compreensivo(a)', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'ímpar/estranho(a)/esquisito(a)',
     'digno(a)', 'flexível',
 
     'detestável', 'ligeiro(a)/rápido(a)', 'dourado(a)', 'fechado(a)'
@@ -103,18 +103,17 @@ adjectives_uncommon_and_article_pt_br = [
 ]
 
 
-
 if __name__ == '__main__':
     print('\n')
-    print(f'{len(adjectives) = }')
-    print(f'{len(adjectives_pt_br) = }')
-    print(f'{len(adjectives_and_article) = }')
+    # print(f'{len(adjectives) = }')
+    # print(f'{len(adjectives_pt_br) = }')
+    # print(f'{len(adjectives_and_article) = }')
 
-    print('\n')
-    for word in zip(adjectives, adjectives_and_article, adjectives_pt_br):
-        print(word[0])
-        print(word[1])
-        print(word[2])
+    # print('\n')
+    # for word in zip(adjectives, adjectives_and_article, adjectives_pt_br):
+    #     print(word[0])
+    #     print(word[1])
+    #     print(word[2])
 
     # print(var := [adjectives.count(word) for word in adjectives])
 

@@ -30,7 +30,7 @@ adverbs_ly = [
 adverbs_ly_pt_br = [
     'acidentalmente', 'na verdade', 'com raiva', 'ansiosamente', 'desajeitadamente/estranhamente', 'mal', 'cegamente',
     'orgulhosamente', 'ousadamente', 'corajosamente', 'brilhantemente', 'certamente', 'alegremente', 'claramente',
-    'timidamente', 'loucamente (doido)', 'desafiadoramente', 'habilmente', 'deliberadamente', 'devotadamente',
+    'timidamente', 'loucamente', 'desafiadoramente', 'habilmente', 'deliberadamente', 'devotadamente',
 
     'diretamente', 'duvidosamente', 'dramaticamente', 'obedientemente', 'ansiosamente', 'cedo', 'elegantemente',
     'enormemente', 'especialmente', 'uniformemente', 'exatamente', 'fielmente', 'finalmente',
@@ -39,7 +39,7 @@ adverbs_ly_pt_br = [
     'apressadamente/precipitadamente', 'honestamente', 'desesperadamente/desesperançosamente',
     'avidamente/famintamente', 'inocentemente', 'inquisitivamente', 'irritantemente',
     'ciumentamente', 'justamente', 'gentilmente', 'preguiçosamente', 'folgadamente/livremente/vagamente',
-    'loucamente (louco)', 'alegremente', 'mortalmente', 'misteriosamente', 'aproximadamente/quase', 'nervosamente',
+    'com loucura', 'alegremente', 'mortalmente', 'misteriosamente', 'aproximadamente/quase', 'nervosamente',
     'normalmente',
 
     'obedientemente', 'particularmente', 'perfeitamente', 'educadamente',

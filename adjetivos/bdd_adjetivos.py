@@ -12,6 +12,8 @@ TUTORIAL
     - Na var [ adjectives_uncommon_and_article_pt_br ] = inserir a versão da palavra com o artigo apropriado
 """
 
+from bdd_strings.strings import or_
+
 ##
 adjectives = [
     'cool', 'new', 'good', 'high', 'old', 'great', 'big', 'small', 'large', 'wide', 'young',
@@ -39,34 +41,34 @@ adjectives = [
 
 ##
 adjectives_pt_br = [
-    'fresco/legal', 'novo(a)', 'bom(a)', 'alto(a) (não humano)', 'velho(a)', 'ótimo(a)', 'grande', 'pequeno(a)',
-    'grande', 'amplo/grande', 'jovem/novo(a)', 'diferente', 'persistente', 'longo', 'pequeno', 'importante',
-    'atrente/tentador(a)', 'ruim/mau/má', 'persistente/tenaz', 'invisível',
+    'fresco / legal', 'novo(a)', 'bom(a)', 'alto(a) (não humano)', 'velho(a)', 'ótimo(a)', 'grande', 'pequeno(a)',
+    'grande', 'amplo / grande', 'jovem / novo(a)', 'diferente', 'persistente', 'longo', 'pequeno', 'importante',
+    'atraente / tentador(a)', 'ruim / mau / má', 'persistente / tenaz', 'invisível',
 
-    'real', 'certo/correto', 'liso/plano', 'único(a)', 'público', 'certo/seguro', 'baixo(a)', 'cedo/inicial', 'magro(a)',
-    'humano(a)', 'sadio/saudável', 'doente/doentio/insalubre', 'difícil/duro(a)', 'doente', 'melhor', 'sujo(a)',
-    'forte', 'possível', 'sonolento', 'hábil/habilidoso',
+    'real', 'certo / correto', 'liso / plano', 'único(a)', 'público', 'certo / seguro', 'baixo(a)', 'cedo / inicial', 'magro(a)',
+    'humano(a)', 'sadio / saudável', 'doente / doentio / insalubre', 'difícil / duro(a)', 'doente', 'melhor', 'sujo(a)',
+    'forte', 'possível', 'sonolento', 'hábil / habilidoso',
 
-    'gratuito(a)/livre', 'nojento/repugnante', 'verdadeiro(a)', 'escondido(a)/oculto(a)', 'manchado(a)',
-    'cheio/completo', 'especial', 'fácil', 'claro/evidente', 'confortável', 'desagradável/nojento(a)', 'desagradável',
-    'aberto(a)', 'desesperado(a)', 'difícil', 'disponível', 'provável', 'baixo(a)/curto(a)', 'solteiro(a)/único(a)',
+    'gratuito(a) / livre', 'nojento / repugnante', 'verdadeiro(a)', 'escondido(a) / oculto(a)', 'manchado(a)',
+    'cheio / completo', 'especial', 'fácil', 'claro / evidente', 'confortável', 'desagradável / nojento(a)', 'desagradável',
+    'aberto(a)', 'desesperado(a)', 'difícil', 'disponível', 'provável', 'baixo(a) / curto(a)', 'solteiro(a) / único(a)',
     'de cabeça para baixo',
 
-    'incomparável', 'errado(a)', 'privado(a)', 'brilhante', 'estrangeiro(a)', 'bom(a)/excelente', 'comum', 'pobre',
-    'natural', 'significativo', 'semelhante/similar/parecido', 'quente', 'morto(a)', 'demente', 'feliz', 'sério(a)',
-    'pronto(a)', 'simples', 'escondido(a)', 'despreocupado(a)/desinteressado(a)/indiferente',
+    'incomparável', 'errado(a)', 'privado(a)', 'brilhante', 'estrangeiro(a)', 'bom(a) / excelente', 'comum', 'pobre',
+    'natural', 'significativo', 'semelhante / similar / parecido', 'quente', 'morto(a)', 'demente', 'feliz', 'sério(a)',
+    'pronto(a)', 'simples', 'escondido(a)', 'despreocupado(a) / desinteressado(a) / indiferente',
 
     'silencioso(a)', 'surpreendente', 'perfeito', 'lento(a)', 'democrático(a)', 'escuro(a)', 'temporário(a)',
-    'provisório(a)', 'perto/próximo(a)', 'forte/pesado', 'religioso(a)', 'frio(a)', 'aliviado(a)', 'principal',
+    'provisório(a)', 'perto / próximo(a)', 'forte / pesado', 'religioso(a)', 'frio(a)', 'aliviado(a)', 'principal',
     'insistente', 'legal', 'enorme', 'famoso(a)', 'tradicional', 'divorciado(a)',
 
-    'estúpido', 'irrelevante', 'doce', 'com raiva/irritado(a)/zangado(a)', 'ambicioso(a)', 'indiferente',
-    'maravilhoso(a)', 'idêntico(a)', 'esperto(a)/inteligente', 'entusiasmado(a)', 'vibrante', 'afirmativo(a)',
-    'negativo', 'compreensivo(a)', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'ímpar/estranho(a)/esquisito(a)',
+    'estúpido', 'irrelevante', 'doce', 'com raiva / irritado(a) / zangado(a)', 'ambicioso(a)', 'indiferente',
+    'maravilhoso(a)', 'idêntico(a)', 'esperto(a) / inteligente', 'entusiasmado(a)', 'vibrante', 'afirmativo(a)',
+    'negativo', 'compreensivo(a)', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'ímpar / estranho(a) / esquisito(a)',
     'digno(a)', 'flexível',
 
-    'detestável', 'ligeiro(a)/rápido(a)', 'casado(a)', 'fechado(a)', 'interessante', 'interesado(a)', 'sórdido/vil',
-    'obcecado(a)', 'cauteloso(a)', 'prudente', 'alto/barulhento(a)'
+    'detestável', 'ligeiro(a) / rápido(a)', 'casado(a)', 'fechado(a)', 'interessante', 'interesado(a)', 'sórdido / vil',
+    'obcecado(a)', 'cauteloso(a)', 'prudente', 'alto / barulhento(a)'
 ]
 
 
@@ -104,16 +106,6 @@ adjectives_uncommon = [
     'straight', 'recent', 'certain', 'personal', 'medical', 'electrifying', 'current', 'central', 'physical',
     'general', 'batty', 'left', 'popular', 'environmental', 'financial', 'lifelong', 'past', 'various', 'entire',
     'final', 'cultural', 'bony', 'blazing'
-]
-
-##
-adjectives_uncommon_and_article_pt_br = [
-    'a legal', 'a national', 'an other', ' a whole', 'a political', 'a social', 'an able', 'a capable', 'a local',
-    'a late', 'a major', 'a grown', 'a torn', 'an economic', 'a military', 'a baggy', 'a faded', 'a punishable',
-    'a federal', 'an international', 'a stuck', 'a straight', 'a recent', 'a certain', 'a personal', 'a medical',
-    'an electrifying', 'a current', 'a central', 'a physical', 'a general', 'a batty', 'a left', 'a popular',
-    'an environmental', 'a financial', 'a lifelong', 'a past', 'a various', 'an entire', 'a final', 'a cultural',
-    'a bony', 'a blazing'
 ]
 
 ##
@@ -156,11 +148,12 @@ if __name__ == '__main__':
 
 
     "DESCOMENTAR PARA CHECAR ALINHAMENTO"
-    print('\n')
-    for word in zip(adjectives, adjectives_pt_br):
-        print(word[0])
-        print(word[1])
+    # print('\n')
+    # for word in zip(adjectives, adjectives_pt_br):
+    #     print(word[0])
+    #     print(word[1])
 
+    print(adjectives_pt_br[0])
     # print(var := [adjectives.count(word) for word in adjectives])
 
     # for word in adjectives:

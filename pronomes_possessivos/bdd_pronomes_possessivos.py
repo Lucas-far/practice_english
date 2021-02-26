@@ -4,7 +4,16 @@ from metodos.bdd import data_collector as _, painter
 
 possessive_pronouns_l = ['mine', 'yours', 'his', 'hers', 'its', 'ours', 'yours', 'theirs']
 
-possessive_pronouns_l_pt_br = ['meu/minha', 'seu/sua', 'dele', 'dela', 'desse/dessa', 'nosso(a)', 'seus/suas', 'deles(as)/desses']
+possessive_pronouns_l_pt_br = [
+    'meu/minha (final da frase)',
+    'seu/sua (final da frase)',
+    'dele (final da frase)',
+    'dela (final da frase)',
+    'desse/dessa (final da frase)',
+    'nosso(a) (final da frase)',
+    'seus/suas (final da frase)',
+    'deles(as)/desses (final da frase)'
+]
 
 mine_ = ['mine', 'meu/minha']
 yours_ = ['yours', 'seu(a)']

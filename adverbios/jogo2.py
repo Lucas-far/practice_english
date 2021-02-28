@@ -203,7 +203,7 @@ while True:
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
 
             for word in box_elements:
-                print(word)
+                print(four_spaces + word)
 
             print('\n')
 
@@ -232,7 +232,7 @@ while True:
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
 
             for word in box_elements:
-                print(word)
+                print(four_spaces + word)
 
             print('\n')
 

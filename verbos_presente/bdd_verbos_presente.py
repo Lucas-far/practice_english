@@ -41,55 +41,59 @@ present = [
 ]
 
 present_pt_br = [
-    'dizem/falam', 'diz/fala', 'vão', 'vem', 'adquirem/conseguem/obtem/pegam', 'adquire/consegue/obtem/pega',
-    'criam/fazem', 'cria/faz', 'conhecem/sabem', 'conhece/sabe', 'acham/pensam', 'acha/pensa', 'levam/pegam/tomam',
-    'leva/pega/toma', 'vêem', 'vê', 'chegam/vêm', 'chega/vêm', 'pretendem/querem', 'pretende/quer',
+    'dizem / falam', 'diz / fala', 'vão', 'vem', 'adquirem / conseguem / obtem / pegam',
+    'adquire / consegue / obtem / pega', 'criam / fazem', 'cria / faz', 'conhecem / sabem', 'conhece / sabe',
+    'acham / pensam', 'acha / pensa', 'levam / pegam / tomam', 'leva / pega / toma', 'vêem', 'vê', 'chegam / vêm',
+    'chega / vêm', 'pretendem / querem', 'pretende / quer',
 
-    'olham/vêem', 'olha/vê', 'usam', 'usa', 'acham/encontram', 'acha/encontra', 'dão', 'dá', 'contam/dizem',
-    'conta/diz', 'funcionam/trabalham', 'funciona/trabalha', 'chamam/telefonam', 'chama/telefona',
-    'experimentam/tentam', 'experimenta/tenta', 'pedem/perguntam', 'pede/pergunta', 'necessitam/precisam',
-    'necessita/precisa',
+    'olham / vêem', 'olha / vê', 'usam', 'usa', 'acham / encontram', 'acha / encontra', 'dão', 'dá', 'contam / dizem',
+    'conta / diz', 'funcionam / trabalham', 'funciona / trabalha', 'chamam / telefonam', 'chama / telefona',
+    'experimentam / tentam', 'experimenta / tenta', 'pedem / perguntam', 'pede / pergunta', 'necessitam / precisam',
+    'necessita / precisa',
 
-    'sentem', 'sente', 'tornam-se', 'torna-se', 'abandonam/deixam/saem', 'abandona/deixa/sai', 'colocam/põem',
-    'coloca/põe', 'querem dizer/significam', 'quer dizer/significa', 'continuam/guardam/mantêm',
-    'continua/guarda/mantêm', 'deixam/permitem', 'deixa/permite', 'começam/iniciam', 'começa/inicia', 'parecem',
-    'parece', 'ajudam/auxiliam', 'ajuda/auxilia',
+    'sentem', 'sente', 'tornam-se', 'torna-se', 'abandonam / deixam / saem', 'abandona / deixa / sai', 'colocam / põem',
+    'coloca / põe', 'querem dizer / significam', 'quer dizer / significa', 'continuam / guardam / mantêm',
+    'continua / guarda / mantêm', 'deixam / permitem', 'deixa / permite', 'começam / iniciam', 'começa / inicia',
+    'parecem', 'parece', 'ajudam / auxiliam', 'ajuda / auxilia',
 
-    'conversam/falam', 'conversa/fala', 'transformam/viram', 'transforma/vira', 'começam/iniciam', 'começa/inicia',
-    'apresentam/mostram', 'apresenta/mostra', 'escutam/ouvem', 'escuta/ouvi', 'jogam/tocam', 'joga/toca', 'correm',
-    'corre', 'movem/mexem', 'move/mexe', 'gostam', 'gosta', 'moram/vivem', 'mora/vive',
+    'conversam / falam', 'conversa / fala', 'transformam / viram', 'transforma / vira', 'começam / iniciam',
+    'começa / inicia', 'apresentam / mostram', 'apresenta / mostra', 'escutam / ouvem', 'escuta / ouvi',
+    'jogam / tocam', 'joga / toca', 'correm', 'corre', 'movem / mexem', 'move / mexe', 'gostam', 'gosta',
+    'moram / vivem', 'mora / vive',
 
-    'acreditam/crêem', 'acredita/crê', 'mantêm/seguram', 'mantêm/segura', 'trazem', 'traz', 'acontecem/ocorrem',
-    'acontece/ocorre', 'escrevem', 'escreve', 'fornecem/proporcionam', 'fornece/proporciona', 'sentam', 'senta',
-    'ficam/suportam', 'fica/suporta', 'perdem', 'perde', 'pagam', 'paga',
+    'acreditam / crêem', 'acredita / crê', 'mantêm / seguram', 'mantêm / segura', 'trazem', 'traz',
+    'acontecem / ocorrem', 'acontece / ocorre', 'escrevem', 'escreve', 'fornecem / proporcionam',
+    'fornece / proporciona', 'sentam', 'senta', 'ficam / suportam', 'fica / suporta', 'perdem', 'perde', 'pagam',
+    'paga',
 
-    'conhecem/encontram', 'conhece/encontra', 'incluem', 'inclui', 'continuam', 'continua',
-    'configuram/definem/estabelecem/põem', 'configura/define/estabelece/põe', 'aprendem', 'aprende', 'alteram/mudam',
-    'altera/muda', 'conduzem/lideram', 'conduz/lidera', 'compreendem/entendem', 'compreende/entende',
-    'olham/observam/vêem', 'olha/observa/vê', 'acompanham/seguem', 'acompanha/segue',
+    'conhecem / encontram', 'conhece / encontra', 'incluem', 'inclui', 'continuam', 'continua',
+    'configuram / definem / estabelecem / põem', 'configura / define / estabelece / põe', 'aprendem', 'aprende',
+    'alteram / mudam', 'altera / muda', 'conduzem / lideram', 'conduz / lidera', 'compreendem / entendem',
+    'compreende / entende', 'olham / observam / vêem', 'olha / observa / vê', 'acompanham / seguem',
+    'acompanha / segue',
 
-    'impedem/param', 'impede/para', 'criam', 'cria', 'conversam/falam', 'conversa/fala', 'lêem', 'lê',
-    'autorizam/permitem', 'autoriza/permite', 'acrescentam/adicionam', 'acrescenta/adiciona', 'gastam/passam',
-    'gasta/passa', 'aumentam/crescem', 'aumenta/cresce', 'abrem', 'abre', 'andam/caminham', 'anda/caminha',
+    'impedem / param', 'impede / para', 'criam', 'cria', 'conversam / falam', 'conversa / fala', 'lêem', 'lê',
+    'autorizam / permitem', 'autoriza / permite', 'acrescentam / adicionam', 'acrescenta / adiciona', 'gastam / passam',
+    'gasta / passa', 'aumentam / crescem', 'aumenta / cresce', 'abrem', 'abre', 'andam / caminham', 'anda / caminha',
 
-    'ganham/vencem', 'ganha/vence', 'oferecem/propõem', 'oferece/propõe', 'lembram/recordam', 'lembra/recorda',
-    'adoram/amam', 'adora/ama', 'consideram', 'considera', 'aparecem', 'aparece', 'compram', 'compra', 'esperam',
-    'espera', 'servem', 'serve', 'falecem/morrem', 'falece/morre',
+    'ganham / vencem', 'ganha / vence', 'oferecem / propõem', 'oferece / propõe', 'lembram / recordam',
+    'lembra / recorda', 'adoram / amam', 'adora / ama', 'consideram', 'considera', 'aparecem', 'aparece', 'compram',
+    'compra', 'esperam', 'espera', 'servem', 'serve', 'falecem / morrem', 'falece / morre',
 
-    'enviam/mandam', 'envia/manda', 'esperam', 'espera', 'constroem', 'constroi', 'ficam/permanecem', 'fica/permanece',
-    'caem', 'cai', 'cortam', 'corta', 'alcançam/atingem/chegam', 'alcança/atinge/chega', 'matam', 'mata',
-    'ficam/permanecem', 'fica/permanece', 'sugerem', 'sugere',
+    'enviam / mandam', 'envia / manda', 'esperam', 'espera', 'constroem', 'constroi', 'ficam / permanecem',
+    'fica / permanece', 'caem', 'cai', 'cortam', 'corta', 'alcançam / atingem / chegam', 'alcança / atinge / chega',
+    'matam', 'mata', 'ficam / permanecem', 'fica / permanece', 'sugerem', 'sugere',
 
-    'aumentam/criam alguém,algo/levantam', 'aumenta/cria alguém,algo/levanta', 'passam', 'passa', 'vendem', 'vende',
-    'exigem/necessitam', 'exige/necessita', 'relatam/reportam', 'relata/reporta', 'decidem', 'decide', 'puxam', 'puxa',
-    'rompem/quebram', 'rompe/quebra', 'adquirem/compram/obtém', 'adquire/compra/obtém', 'percebem/realizam',
-    'percebe/realiza',
+    'aumentam / criam alguém,algo / levantam', 'aumenta / cria alguém,algo / levanta', 'passam', 'passa', 'vendem',
+    'vende', 'exigem / necessitam', 'exige / necessita', 'relatam / reportam', 'relata / reporta', 'decidem', 'decide',
+    'puxam', 'puxa', 'rompem / quebram', 'rompe / quebra', 'adquirem / compram / obtém', 'adquire / compra / obtém',
+    'percebem / realizam', 'percebe / realiza',
 
-    'administram/gerem', 'administra/gere', 'crescem/desenvolvem', 'cresce/desenvolve', 'confiam', 'confia', 'imaginam',
-    'imagina', 'pisam', 'pisa', 'arrependem/lamentam', 'arrepende/lamenta', 'manipulam', 'manipula', 'sonham', 'sonha',
-    'debatem/discutem', 'debate/discute', 'bebem', 'bebe',
+    'administram / gerem', 'administra / gere', 'crescem / desenvolvem', 'cresce / desenvolve', 'confiam', 'confia',
+    'imaginam', 'imagina', 'pisam', 'pisa', 'arrependem / lamentam', 'arrepende / lamenta', 'manipulam', 'manipula',
+    'sonham', 'sonha', 'debatem / discutem', 'debate / discute', 'bebem', 'bebe',
 
-    'comem', 'come', 'pulam/saltam', 'pula/salta', 'repetem', 'repete', 'adivinham/supõem', 'adivinha/supõe',
+    'comem', 'come', 'pulam / saltam', 'pula / salta', 'repetem', 'repete', 'adivinham / supõem', 'adivinha / supõe',
     'selecionam', 'seleciona', 'clicam', 'clica'
 ]
 
@@ -114,32 +118,33 @@ present_1st_2nd_persons = [
 ]
 
 present_1st_2nd_persons_pt_br = [
-    'dizem/falam', 'vão', 'adquirem/conseguem/obtem/pegam', 'criam/fazem', 'conhecem/sabem', 'acham/pensam',
-    'levam/pegam/tomam', 'vêem', 'chegam/vêm', 'pretendem/querem', 'olham/vêem', 'usam', 'acham/encontram', 'dão',
-    'contam/dizem', 'funcionam/trabalham', 'chamam/telefonam', 'experimentam/tentam', 'pedem/perguntam',
-    'necessitam/precisam',
+    'dizem / falam', 'vão', 'adquirem / conseguem / obtem / pegam', 'criam / fazem', 'conhecem / sabem',
+    'acham / pensam', 'levam / pegam / tomam', 'vêem', 'chegam / vêm', 'pretendem / querem', 'olham / vêem', 'usam',
+    'acham / encontram', 'dão', 'contam / dizem', 'funcionam / trabalham', 'chamam / telefonam',
+    'experimentam / tentam', 'pedem / perguntam', 'necessitam / precisam',
 
-    'sentem', 'tornam-se', 'abandonam/deixam/saem', 'colocam/põem', 'significam', 'continuam/guardam/mantêm',
-    'deixam/permitem', 'começam/iniciam', 'parecem', 'ajudam/auxiliam', 'conversam/falam', 'transformam/viram',
-    'começam/iniciam', 'apresentam/mostram', 'escutam/ouvem', 'jogam/tocam', 'correm', 'movem/mexem', 'gostam',
-    'moram/vivem',
+    'sentem', 'tornam-se', 'abandonam / deixam / saem', 'colocam / põem', 'significam', 'continuam / guardam / mantêm',
+    'deixam / permitem', 'começam / iniciam', 'parecem', 'ajudam / auxiliam', 'conversam / falam',
+    'transformam / viram', 'começam / iniciam', 'apresentam / mostram', 'escutam / ouvem', 'jogam / tocam', 'correm',
+    'movem / mexem', 'gostam', 'moram / vivem',
 
-    'acreditam/crêem', 'mantêm/seguram', 'trazem', 'acontecem/ocorrem', 'escrevem', 'fornecem/proporcionam', 'sentam',
-    'levantam/permanecem', 'perdem', 'pagam', 'conhecem/encontram', 'incluem', 'continuam',
-    'configuram/definem/estabelecem/põem', 'aprendem', 'alteram/mudam', 'conduzem/lideram', 'compreendem/entendem',
-    'olham/observam/vêem', 'acompanham/seguem',
+    'acreditam / crêem', 'mantêm / seguram', 'trazem', 'acontecem / ocorrem', 'escrevem', 'fornecem / proporcionam',
+    'sentam', 'levantam / permanecem', 'perdem', 'pagam', 'conhecem / encontram', 'incluem', 'continuam',
+    'configuram / definem / estabelecem / põem', 'aprendem', 'alteram / mudam', 'conduzem / lideram',
+    'compreendem / entendem', 'olham / observam / vêem', 'acompanham / seguem',
 
-    'impedem/param', 'criam', 'conversam/falam', 'lêem', 'autorizam/permitem', 'acrescentam/adicionam', 'gastam/passam',
-    'aumentam/crescem', 'abrem', 'andam/caminham', 'ganham/vencem', 'oferecem/propõem', 'lembram/recordam',
-    'adoram/amam', 'consideram', 'aparecem', 'compram', 'esperam', 'servem', 'falecem/morrem',
+    'impedem / param', 'criam', 'conversam / falam', 'lêem', 'autorizam / permitem', 'acrescentam / adicionam',
+    'gastam / passam', 'aumentam / crescem', 'abrem', 'andam / caminham', 'ganham / vencem', 'oferecem / propõem',
+    'lembram / recordam', 'adoram / amam', 'consideram', 'aparecem', 'compram', 'esperam', 'servem', 'falecem / morrem',
 
-    'enviam/mandam', 'esperam', 'constroem', 'ficam/permanecem', 'caem', 'cortam', 'alcançam/atingem/chegam', 'matam',
-    'ficam/permanecem', 'sugerem', 'aumentam/criam alguém,algo/levantam', 'passam', 'vendem', 'exigem/necessitam',
-    'relatam/reportam', 'decidem', 'puxam', 'rompem/quebram', 'adquirem/compram/obtém', 'percebem/realizam',
+    'enviam / mandam', 'esperam', 'constroem', 'ficam / permanecem', 'caem', 'cortam', 'alcançam / atingem / chegam',
+    'matam', 'ficam / permanecem', 'sugerem', 'aumentam / criam alguém,algo / levantam', 'passam', 'vendem',
+    'exigem / necessitam', 'relatam / reportam', 'decidem', 'puxam', 'rompem / quebram', 'adquirem / compram / obtém',
+    'percebem / realizam',
 
-    'administram/gerem', 'crescem/desenvolvem', 'confiam', 'imaginam', 'pisam', 'arrependem/lamentam', 'manipulam',
-    'sonham', 'debatem/discutem', 'bebem', 'comem', 'pulam/saltam', 'repetem', 'adivinham/supõem', 'selecionam',
-    'clicam'
+    'administram / gerem', 'crescem / desenvolvem', 'confiam', 'imaginam', 'pisam', 'arrependem / lamentam',
+    'manipulam', 'sonham', 'debatem / discutem', 'bebem', 'comem', 'pulam / saltam', 'repetem', 'adivinham / supõem',
+    'selecionam', 'clicam'
 ]
 
 present_3rd_person = [
@@ -163,28 +168,31 @@ present_3rd_person = [
 ]
 
 present_3rd_person_pt_br = [
-    'diz/fala', 'vem', 'adquire/consegue/obtem/pega', 'cria/faz', 'conhece/sabe', 'acha/pensa', 'leva/pega/toma',
-    'vê', 'chega/vêm', 'pretende/quer', 'olha/vê', 'usa', 'acha/encontra', 'dá', 'conta/diz', 'funciona/trabalha',
-    'chama/telefona', 'experimenta/tenta', 'pede/pergunta', 'necessita/precisa',
+    'diz / fala', 'vem', 'adquire / consegue / obtem / pega', 'cria / faz', 'conhece / sabe', 'acha / pensa',
+    'leva / pega / toma', 'vê', 'chega / vêm', 'pretende / quer', 'olha / vê', 'usa', 'acha / encontra', 'dá',
+    'conta / diz', 'funciona / trabalha', 'chama / telefona', 'experimenta / tenta', 'pede / pergunta',
+    'necessita / precisa',
 
-    'sente', 'torna-se', 'abandona/deixa/sai', 'coloca/põe', 'quer dizer/significa', 'continua/guarda/mantêm',
-    'deixa/permite', 'começa/inicia', 'parece', 'ajuda/auxilia', 'conversa/fala', 'transforma/vira', 'começa/inicia',
-    'apresenta/mostra', 'escuta/ouvi', 'joga/toca', 'corre', 'move/mexe', 'gosta', 'mora/vive',
+    'sente', 'torna-se', 'abandona / deixa / sai', 'coloca / põe', 'quer dizer / significa',
+    'continua / guarda / mantêm', 'deixa / permite', 'começa / inicia', 'parece', 'ajuda / auxilia', 'conversa / fala',
+    'transforma / vira', 'começa / inicia', 'apresenta / mostra', 'escuta / ouvi', 'joga / toca', 'corre',
+    'move / mexe', 'gosta', 'mora / vive',
 
-    'acredita/crê', 'mantêm/segura', 'traz', 'acontece/ocorre', 'escreve', 'fornece/proporciona', 'senta',
-    'levanta/permanece', 'perde', 'paga', 'conhece/encontra', 'inclui', 'continua', 'configura/define/estabelece/põe',
-    'aprende', 'altera/muda', 'conduz/lidera', 'compreende/entende', 'olha/observa/vê', 'acompanha/segue',
+    'acredita / crê', 'mantêm / segura', 'traz', 'acontece / ocorre', 'escreve', 'fornece / proporciona', 'senta',
+    'levanta / permanece', 'perde', 'paga', 'conhece / encontra', 'inclui', 'continua',
+    'configura / define / estabelece / põe', 'aprende', 'altera / muda', 'conduz / lidera', 'compreende / entende',
+    'olha / observa / vê', 'acompanha / segue',
 
-    'impede/para', 'cria', 'conversa/fala', 'lê', 'autoriza/permite', 'acrescenta/adiciona', 'gasta/passa',
-    'aumenta/cresce', 'abre', 'anda/caminha', 'ganha/vence', 'oferece/propõe', 'lembra/recorda', 'adora/ama',
-    'considera', 'aparece', 'compra', 'espera', 'serve', 'falece/morre',
+    'impede / para', 'cria', 'conversa / fala', 'lê', 'autoriza / permite', 'acrescenta / adiciona', 'gasta / passa',
+    'aumenta / cresce', 'abre', 'anda / caminha', 'ganha / vence', 'oferece / propõe', 'lembra / recorda',
+    'adora / ama', 'considera', 'aparece', 'compra', 'espera', 'serve', 'falece / morre',
 
-    'envia/manda', 'espera', 'constroi', 'fica/permanece', 'cai', 'corta', 'alcança/atinge/chega', 'mata',
-    'fica/permanece', 'sugeri', 'aumenta/cria alguém,algo/levanta', 'passa', 'vende', 'exige/necessita',
-    'relata/reporta', 'decide', 'puxa', 'rompe/quebra', 'adquire/compra/obtém', 'percebe/realiza',
+    'envia / manda', 'espera', 'constroi', 'fica / permanece', 'cai', 'corta', 'alcança / atinge / chega', 'mata',
+    'fica / permanece', 'sugeri', 'aumenta / cria alguém,algo / levanta', 'passa', 'vende', 'exige / necessita',
+    'relata / reporta', 'decide', 'puxa', 'rompe / quebra', 'adquire / compra / obtém', 'percebe / realiza',
 
-    'administra/gere', 'cresce/desenvolve', 'confia', 'imagina', 'pisa', 'arrepende/lamenta', 'manipula', 'sonha',
-    'debate/discute', 'bebe', 'come', 'pula/salta', 'repete', 'adivinha/supõe', 'seleciona', 'clica'
+    'administra / gere', 'cresce / desenvolve', 'confia', 'imagina', 'pisa', 'arrepende / lamenta', 'manipula', 'sonha',
+    'debate / discute', 'bebe', 'come', 'pula / salta', 'repete', 'adivinha / supõe', 'seleciona', 'clica'
 ]
 
 # set_box_present = set({})
@@ -201,12 +209,19 @@ present_3rd_person_pt_br = [
 
 if __name__ == '__main__':
     print('\n')
+
+    for words in zip(present_1st_2nd_persons, present_3rd_person):
+        print(words)
+
+    print('\n')
+
+    print(f"{len(present)} é igual a {len(present_1st_2nd_persons) + len(present_3rd_person)}? {len(present) == len(present_1st_2nd_persons) + len(present_3rd_person)}")
+
+    print('\n')
+
     print(f"{len(present_1st_2nd_persons_pt_br) = }")
     print(f"{len(present_3rd_person_pt_br) = }")
-    for word in zip(present_1st_2nd_persons, present_3rd_person):
-        print(word[0])
-        print(word[1])
-    print(present_1st_2nd_persons[100 - 1])
+
     # print(verb_present)
     # print(verb_present_inked)
     # print(verb_present_tr)

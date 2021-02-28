@@ -32,7 +32,7 @@ while True:
         adv_frame = titles['adv'] + adv_inked + skip + adv_tr_inked
 
         adv_f, adv_f_inked, adv_f_tr, adv_f_tr_inked = _(adverbs_frequency, adverbs_frequency_pt_br)
-        adv_f_frame = titles['adv_f'] + adv_inked + skip + adv_tr_inked
+        adv_f_frame = titles['adv_f'] + adv_f_inked + skip + adv_f_tr_inked
 
         adv_ly, adv_ly_inked, adv_ly_tr, adv_ly_tr_inked = _(adverbs_ly, adverbs_ly_pt_br)
         adv_ly_frame = titles['adv_ly'] + adv_ly_inked + skip + adv_ly_tr_inked

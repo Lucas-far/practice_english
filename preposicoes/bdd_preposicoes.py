@@ -16,15 +16,17 @@ prepositions_l = [
 ]
 
 prepositions_l_pt_br = [
-    'sobre/acerca de', 'acima/sobre (sem contato)', 'através', 'depois', 'contra', 'atrás', 'dentre/entre',
-    'ao redor/em volta/por aí', 'como', 'em (sem contato)', 'diante de/perante', 'atrás/detrás', 'abaixo/sob',
-    'entre/no meio de', 'junto a/perto de/por', 'abaixo', 'durante', 'para/por/durante', 'de/do/desde/a partir de',
-    'em (contato dentro)', 'em frente a/na frente de', 'em/dentro/para dentro', 'como', 'ao lado de/próximo de', 'de',
-    'em (contato fora)', 'fora/para fora', 'acima/sobre (contato)', 'a partir de/desde', 'através de', 'para',
-    'em direção a', 'debaixo/embaixo/por baixo', 'embaixo/por baixo de/sob', 'até', 'acima/em cima/para cima', 'com',
-    'sem'
+    'sobre / acerca de', 'acima / sobre (sem contato)', 'através', 'depois', 'contra', 'atrás', 'dentre / entre',
+    'ao redor / em volta / por aí', 'como', 'em (sem contato)', 'diante de / perante', 'atrás / detrás', 'abaixo / sob',
+    'entre / no meio de', 'junto a / perto de / por', 'abaixo', 'durante', 'para / por / durante',
+    'de / do / desde / a partir de', 'em (contato dentro)', 'em frente a / na frente de', 'em / dentro / para dentro',
+    'como', 'ao lado de / próximo de', 'de', 'em (contato fora)', 'fora / para fora', 'acima / sobre (contato)',
+    'a partir de / desde', 'através de', 'para', 'em direção a', 'debaixo / embaixo / por baixo',
+    'embaixo / por baixo de / sob', 'até', 'acima / em cima / para cima', 'com', 'sem'
 ]
 "------------------------------------------------------ DIREÇÃO -------------------------------------------------------"
+"OBS"  # todas as preposições em [ prepositions_direction_place ] estão em [ prepositions_l ]
+
 prepositions_direction_place = [
     'above', 'across', 'among', 'at', 'behind', 'below',
     'between', 'by', 'down', 'from', 'in',
@@ -33,10 +35,10 @@ prepositions_direction_place = [
 ]
 
 prepositions_direction_place_pt_br = [
-    'acima/sobre (sem contato)', 'através', 'dentre/entre', 'em (sem contato)', 'atrás/detrás', 'abaixo/sob',
-    'entre/no meio de', 'junto a/perto de/por', 'abaixo', 'de/do/desde/a partir de', 'em (contato dentro)',
-    'em frente a/na frente de', 'em (contato fora)', 'acima/sobre (contato)', 'através de', 'para', 'em direção a',
-    'debaixo/embaixo/por baixo', 'acima/em cima/para cima'
+    'acima / sobre (sem contato)', 'através', 'dentre / entre', 'em (sem contato)', 'atrás / detrás', 'abaixo / sob',
+    'entre / no meio de', 'junto a / perto de / por', 'abaixo', 'de / do / desde / a partir de', 'em (contato dentro)',
+    'em frente a / na frente de', 'em (contato fora)', 'acima / sobre (contato)', 'através de', 'para', 'em direção a',
+    'debaixo / embaixo / por baixo', 'acima / em cima / para cima'
 ]
 "-------------------------------------------------------- TEMPO -------------------------------------------------------"
 prepositions_time = [
@@ -45,18 +47,21 @@ prepositions_time = [
 ]
 
 prepositions_time_pt_br = [
-    'em (contato fora)', 'atrás', 'em (sem contato)', 'diante de/perante', 'junto a/perto de/por', 'para/por/durante',
-    'de/do/desde/a partir de', 'em (contato dentro)', 'a partir de/desde', 'para', 'até', 'depois'
+    'em (contato fora)', 'atrás', 'em (sem contato)', 'diante de / perante', 'junto a / perto de / por',
+    'para / por / durante', 'de / do / desde / a partir de', 'em (contato dentro)', 'a partir de / desde', 'para',
+    'até', 'depois'
 ]
 "------------------------------------------------------- CURTAS -------------------------------------------------------"
+"OBS"  # todas as preposições em [ preposition_others ] estão em [ prepositions_l ]
+
 preposition_others = [
     'like', 'out', 'around', 'into', 'as', 'without', 'of', 'during', 'with', 'next to',
     'underneath', 'against', 'about'
 ]
 
 preposition_others_pt_br = [
-    'como', 'para fora/fora', 'ao redor/em volta/por aí', 'em/dentro/para dentro', 'como', 'sem', 'de', 'durante',
-    'com', 'ao lado de/próximo de', 'embaixo/por baixo de/sob', 'contra', 'sobre/acerca de'
+    'como', 'para fora / fora', 'ao redor / em volta / por aí', 'em / dentro / para dentro', 'como', 'sem', 'de',
+    'durante', 'com', 'ao lado de / próximo de', 'embaixo / por baixo de / sob', 'contra', 'sobre / acerca de'
 ]
 "------------------------------------------------------- FRASAIS ------------------------------------------------------"
 # preposititons_phrasal_upper = [index.replace(index, index[0].upper() + index[1:]) for index in preposititons_phrasal_lower]
@@ -78,81 +83,81 @@ prepositions_phrasal_pt_br = [
     'fora de', 'no que diz respeito ao(s)'
 ]
 
-about_ = ['about', 'sobre/acerca de']
-above_ = ['above', 'acima/sobre (sem contato)']
+about_ = ['about', 'sobre / acerca de']
+above_ = ['above', 'acima / sobre (sem contato)']
 across_ = ['across', 'através']
 after_ = ['after', 'depois']
 against_ = ['against', 'contra']
 ago_ = ['ago', 'atrás']
-among_ = ['among', 'dentre/entre']
-around_ = ['around', 'ao redor/em volta/por aí']
+among_ = ['among', 'dentre / entre']
+around_ = ['around', 'ao redor / em volta / por aí']
 as_ = ['as', 'como']
 at_ = ['at', 'em (sem contato)']
-before_ = ['before', 'diante de/perante']
-behind_ = ['behind', 'atrás/detrás']
-below_ = ['below', 'abaixo/sob']
-between_ = ['between', 'entre/no meio de']
-by_ = ['by', 'junto a/perto de/por']
+before_ = ['before', 'diante de / perante']
+behind_ = ['behind', 'atrás / detrás']
+below_ = ['below', 'abaixo / sob']
+between_ = ['between', 'entre / no meio de']
+by_ = ['by', 'junto a / perto de / por']
 down_ = ['down', 'abaixo']
 during_ = ['during', 'durante']
-for_ = ['for', 'para/por/durante']
-from_ = ['from', 'de/do/desde/a partir de']
+for_ = ['for', 'para / por / durante']
+from_ = ['from', 'de / do / desde / a partir de']
 in_ = ['in', 'em (contato dentro)']
-in_front_of_ = ['in front of', 'em frente a/na frente de']
-into_ = ['into', 'em/dentro/para dentro']
+in_front_of_ = ['in front of', 'em frente a / na frente de']
+into_ = ['into', 'em / dentro / para dentro']
 like_ = ['like', 'como']
-next_to_ = ['next to', 'ao lado de/próximo de']
+next_to_ = ['next to', 'ao lado de / próximo de']
 of_ = ['of', 'de']
 on_ = ['on', 'em (contato fora)']
-out_ = ['out', 'para fora/fora']
-over_ = ['over', 'acima/sobre (contato)']
-since_ = ['since', 'a partir de/desde']
+out_ = ['out', 'para fora / fora']
+over_ = ['over', 'acima / sobre (contato)']
+since_ = ['since', 'a partir de / desde']
 through_ = ['through', 'através de']
 to_ = ['to', 'para']
 towards_ = ['towards', 'em direção a']
-under_ = ['under', 'debaixo/embaixo/por baixo']
-underneath_ = ['underneath', 'embaixo/por baixo de/sob']
+under_ = ['under', 'debaixo / embaixo / por baixo']
+underneath_ = ['underneath', 'embaixo / por baixo de / sob']
 until_ = ['until', 'até']
-up_ = ['up', 'acima/em cima/para cima']
+up_ = ['up', 'acima / em cima / para cima']
 with_ = ['with', 'com']
 without_ = ['without', 'sem']
 
-preposition = _(prepositions_l)
-preposition_inked = painter('blue', preposition)
-preposition_tr = prepositions_l_pt_br[prepositions_l.index(preposition)]
-preposition_tr_inked = painter('red', preposition_tr)
+# preposition = _(prepositions_l)
+# preposition_inked = painter('blue', preposition)
+# preposition_tr = prepositions_l_pt_br[prepositions_l.index(preposition)]
+# preposition_tr_inked = painter('red', preposition_tr)
 
 if __name__ == '__main__':
     print('\n')
-    print(preposition)
-    print(preposition_inked)
-    print(preposition_tr)
-    print(preposition_tr_inked)
-    # var = set(prepositions_time).intersection(set(preposition_others))
-    # print(var)
 
-    # print(bricks)
-    #
-    # print(f'{len(prep) = }')
-    # print(f'{len(prep_pt_br) = }')
-    # print(bricks)
-    # print(f'{len(prep_main) = }')
-    # print(f'{len(prep_main_pt_br) = }')
-    # print(bricks)
     print(f'{len(prepositions_direction_place) = }')
     print(f'{len(prepositions_direction_place_pt_br) = }')
 
-    print('\n')
     print(f'{len(prepositions_time) = }')
     print(f'{len(prepositions_time_pt_br) = }')
 
-    print('\n')
     print(f'{len(preposition_others) = }')
     print(f'{len(preposition_others_pt_br) = }')
 
-    var = {*prepositions_direction_place, *prepositions_time, *preposition_others}
-    print(len(var))
-    print(var)
+    # for words in zip(prepositions_l, prepositions_l_pt_br):
+    #     print(words)
+
+    var = set(preposition_others).intersection(set(prepositions_l))
+    print(len(var), var)
+    # var2 = set(prepositions_direction_place).difference(set(prepositions_l))
+    # print(var2)
+
+    # print(preposition)
+    # print(preposition_inked)
+    # print(preposition_tr)
+    # print(preposition_tr_inked)
+
+    # var = set(prepositions_time).intersection(set(preposition_others))
+    # print(var)
+
+    # var = {*prepositions_direction_place, *prepositions_time, *preposition_others}
+    # print(len(var))
+    # print(var)
 
     # print(f'{len(prep_short) = }')
     # print(f'{len(prep_short_pt_br) = }')

@@ -45,14 +45,14 @@ adjectives_pt_br = [
     'grande', 'amplo / grande', 'jovem / novo(a)', 'diferente', 'persistente', 'longo', 'pequeno', 'importante',
     'atraente / tentador(a)', 'ruim / mau / má', 'persistente / tenaz', 'invisível',
 
-    'real', 'certo / correto', 'liso / plano', 'único(a)', 'público', 'certo / seguro', 'baixo(a)', 'cedo / inicial', 'magro(a)',
-    'humano(a)', 'sadio / saudável', 'doente / doentio / insalubre', 'difícil / duro(a)', 'doente', 'melhor', 'sujo(a)',
-    'forte', 'possível', 'sonolento', 'hábil / habilidoso',
+    'real', 'certo / correto', 'liso / plano', 'único(a)', 'público', 'certo / seguro', 'baixo(a)', 'cedo / inicial',
+    'magro(a)', 'humano(a)', 'sadio / saudável', 'doente / doentio / insalubre', 'difícil / duro(a)', 'doente',
+    'melhor', 'sujo(a)', 'forte', 'possível', 'sonolento', 'hábil / habilidoso',
 
     'gratuito(a) / livre', 'nojento / repugnante', 'verdadeiro(a)', 'escondido(a) / oculto(a)', 'manchado(a)',
-    'cheio / completo', 'especial', 'fácil', 'claro / evidente', 'confortável', 'desagradável / nojento(a)', 'desagradável',
-    'aberto(a)', 'desesperado(a)', 'difícil', 'disponível', 'provável', 'baixo(a) / curto(a)', 'solteiro(a) / único(a)',
-    'de cabeça para baixo',
+    'cheio / completo', 'especial', 'fácil', 'claro / evidente', 'confortável', 'desagradável / nojento(a)',
+    'desagradável', 'aberto(a)', 'desesperado(a)', 'difícil', 'disponível', 'provável', 'baixo(a) / curto(a)',
+    'solteiro(a) / único(a)', 'de cabeça para baixo',
 
     'incomparável', 'errado(a)', 'privado(a)', 'brilhante', 'estrangeiro(a)', 'bom(a) / excelente', 'comum', 'pobre',
     'natural', 'significativo', 'semelhante / similar / parecido', 'quente', 'morto(a)', 'demente', 'feliz', 'sério(a)',
@@ -71,15 +71,6 @@ adjectives_pt_br = [
     'obcecado(a)', 'cauteloso(a)', 'prudente', 'alto / barulhento(a)'
 ]
 
-
-
-
-
-
-
-
-
-
 ##
 adjectives_ble = [
     'recognizable', 'unexplainable', 'crashable', 'unrecognizable', 'reachable', 'understandable', 'incomprehensible',
@@ -91,13 +82,6 @@ adjectives_ble_pt_br = [
     'reconhecível', 'inexplicável', 'quebrável', 'irreconhecível', 'alcançável', 'compreensível', 'incompreensível',
     'administrável', 'moldável'
 ]
-
-
-
-
-
-
-
 
 ##
 adjectives_uncommon = [
@@ -118,15 +102,6 @@ adjectives_uncommon_pt_br = [
     'vários(as)', 'inteiro(a)', 'final', 'cultural', 'ossudo(a)/esquelético(a)', 'ardente/em chamas/resplandecente'
 ]
 
-
-
-
-
-
-
-
-
-
 ##
 adjectives_color = [
     'red', 'blue', 'green', 'black', 'white', 'golden'
@@ -138,14 +113,11 @@ adjectives_color_pt_br = [
 ]
 
 
-
 if __name__ == '__main__':
     print('\n')
 
     print(f'{len(adjectives) = }')
     print(f'{len(adjectives_pt_br) = }')
-
-
 
     "DESCOMENTAR PARA CHECAR ALINHAMENTO"
     # print('\n')
@@ -153,7 +125,7 @@ if __name__ == '__main__':
     #     print(word[0])
     #     print(word[1])
 
-    print(adjectives_pt_br[0])
+    # print(adjectives_pt_br[0])
     # print(var := [adjectives.count(word) for word in adjectives])
 
     # for word in adjectives:

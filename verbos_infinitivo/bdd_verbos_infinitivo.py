@@ -32,33 +32,33 @@ verbs_infinitive = [
 # 'ser / estar / ficar', 'possuir / ter', 'fazer',
 verbs_infinitive_pt_br = [
     'dizer / falar', 'ir', 'adquirir / conseguir / obter / pegar', 'criar / fazer', 'conhecer / saber', 'achar / pensar',
-    'levar / pegar / tomar', 'ver', 'chegar / vir', 'pretender / querer', 'olhar / ver', 'usar', 'achar / encontrar', 'dar',
-    'contar / dizer', 'funcionar / trabalhar', 'chamar / telefonar', 'experimentar / tentar', 'pedir / perguntar',
-    'necessitar / precisar',
+    'levar / pegar / tomar', 'ver', 'chegar / vir', 'pretender / querer', 'olhar / ver', 'usar', 'achar / encontrar',
+    'dar', 'contar / dizer', 'funcionar / trabalhar', 'chamar / telefonar', 'experimentar / tentar',
+    'pedir / perguntar', 'necessitar / precisar',
 
     'sentir', 'tornar-se', 'abandonar / deixar / sair', 'colocar / pôr', 'querer dizer / significar',
-    'continuar / guardar / manter', 'deixar / permitir', 'começar / iniciar', 'parecer', 'ajudar / auxiliar', 'conversar / falar',
-    'transformar / virar', 'começar / iniciar', 'apresentar / mostrar', 'escutar / ouvir', 'jogar / tocar', 'correr',
-    'mover / mexer', 'gostar', 'morar / viver',
+    'continuar / guardar / manter', 'deixar / permitir', 'começar / iniciar', 'parecer', 'ajudar / auxiliar',
+    'conversar / falar', 'transformar / virar', 'começar / iniciar', 'apresentar / mostrar', 'escutar / ouvir',
+    'jogar / tocar', 'correr', 'mover / mexer', 'gostar', 'morar / viver',
 
-    'acreditar / crer', 'manter / segurar', 'trazer', 'acontecer / ocorrer', 'escrever', 'fornecer / proporcionar', 'sentar',
-    'levantar / permanecer', 'perder', 'pagar', 'conhecer / encontrar / reunir', 'incluir', 'continuar',
-    'configurar / definir / estabelecer / pôr', 'aprender', 'alterar / mudar', 'conduzir / liderar', 'compreender / entender',
-    'olhar / observar / ver', 'acompanhar / seguir',
-
-
-    'impedir / parar', 'criar', 'conversar / falar', 'ler', 'autorizar / permitir', 'acrescentar / adicionar', 'gastar / passar',
-    'aumentar / crescer', 'abrir', 'andar / caminhar', 'ganhar / vencer', 'oferecer / propor', 'lembrar / recordar',
-    'adorar / amar', 'considerar', 'aparecer', 'comprar', 'esperar', 'servir', 'falecer / morrer',
-
-    'enviar / mandar', 'esperar', 'construir', 'ficar / permanecer', 'cair', 'cortar', 'alcançar / atingir / chegar a', 'matar',
-    'ficar / permanecer', 'sugerir', 'aumentar / criar alguém,algo / levantar', 'passar', 'vender', 'exigir / necessitar',
-    'relatar / reportar', 'decidir', 'puxar', 'romper / quebrar', 'adquirir / comprar / obter', 'perceber / realizar',
+    'acreditar / crer', 'manter / segurar', 'trazer', 'acontecer / ocorrer', 'escrever', 'fornecer / proporcionar',
+    'sentar', 'levantar / permanecer', 'perder', 'pagar', 'conhecer / encontrar / reunir', 'incluir', 'continuar',
+    'configurar / definir / estabelecer / pôr', 'aprender', 'alterar / mudar', 'conduzir / liderar',
+    'compreender / entender', 'olhar / observar / ver', 'acompanhar / seguir',
 
 
-    'administrar / gerir', 'crescer / desenvolver', 'confiar', 'imaginar', 'pisar', 'arrepender / lamentar', 'manipular',
-    'sonhar', 'debater / discutir', 'beber', 'comer', 'pular / saltar', 'ver', 'repetir', 'conhecer / saber',
-    'adivinhar / supor', 'selecionar', 'clicar',
+    'impedir / parar', 'criar', 'conversar / falar', 'ler', 'autorizar / permitir', 'acrescentar / adicionar',
+    'gastar / passar', 'aumentar / crescer', 'abrir', 'andar / caminhar', 'ganhar / vencer', 'oferecer / propor',
+    'lembrar / recordar', 'adorar / amar', 'considerar', 'aparecer', 'comprar', 'esperar', 'servir', 'falecer / morrer',
+
+    'enviar / mandar', 'esperar', 'construir', 'ficar / permanecer', 'cair', 'cortar', 'alcançar / atingir / chegar a',
+    'matar', 'ficar / permanecer', 'sugerir', 'aumentar / criar alguém,algo / levantar', 'passar', 'vender',
+    'exigir / necessitar', 'relatar / reportar', 'decidir', 'puxar', 'romper / quebrar', 'adquirir / comprar / obter',
+    'perceber / realizar',
+
+    'administrar / gerir', 'crescer / desenvolver', 'confiar', 'imaginar', 'pisar', 'arrepender / lamentar',
+    'manipular', 'sonhar', 'debater / discutir', 'beber', 'comer', 'pular / saltar', 'ver', 'repetir',
+    'conhecer / saber', 'adivinhar / supor', 'selecionar', 'clicar',
 ]
 
 # set_box_infinitive = set({})

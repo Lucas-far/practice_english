@@ -3,6 +3,20 @@
 from random import choice
 from metodos.bdd import painter
 
+"----------------------------------------------------- PRINCIPAIS -----------------------------------------------------"
+can_present_l = ["can", "cannot", "can't"]
+
+can_present_l_pt_br = ['consigo / posso', 'não consigo / não posso', 'não consigo / não posso']
+
+could_past_l = ["could", "could not", "couldn't"]
+
+could_past_l_pt_br = [
+    'conseguia / podia / poderia',
+    'não conseguia / não podia / não poderia',
+    'não conseguia / não podia / não poderia'
+]
+"----------------------------------------------------------------------------------------------------------------------"
+
 # easy
 can_pst_easy = ["can", "can't", "cannot"]
 
@@ -25,12 +39,6 @@ can = [
 ]
 
 can_u = ["Can", "Cannot", "Can't", "Could", "Could not", "Couldn't"]
-
-can_present_l = ["can", "cannot", "can't"]
-can_present_l_pt_br = ['consigo/posso', 'não consigo/posso', 'não consigo/posso']
-
-could_past_l = ["could", "could not", "couldn't"]
-could_past_l_pt_br = ['conseguia/podia/poderia', 'não conseguia/podia/poderia', 'não conseguia/podia/poderia']
 
 can_not = ["cannot", "can't"]
 could_not = ["could not", "couldn't"]

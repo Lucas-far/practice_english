@@ -1,8 +1,43 @@
 
 
+""""""
 # from random import choice
 # from metodos.bdd import painter
 
+"----------------------------------------------------- PRINCIPAIS -----------------------------------------------------"
+do_present_l = [
+    "does", "does not", "doesn't",
+    "do", "do not", "don't"
+]
+
+do_present_l_pt_br = [
+    'ênfase (ex: does talk = falo)', 'não', 'não',
+    'ênfase (ex: do talk = falam) ', 'não', 'não'
+]
+
+do_past_l = ["did", "did not", "didn't"]
+
+do_past_l_pt_br = ['ênfase (ex: did talk = falei)', 'não', 'não']
+
+"------------------------------------------------------ PASSADO -------------------------------------------------------"
+did = [
+    "did", "did not", "didn't",
+    "Did", "Did not", "Didn't",
+]
+
+did_past_gl_u = ["Did", "Did not", "Didn't"]
+
+did_past_gl_l = ["did", "did not", "didn't"]
+
+did_u = ["Did"]
+did_not_u = ["Did not"]
+did_not_short_u = ["Didn't"]
+
+did_l = ["did"]
+did_not_l = ["did not"]
+did_not_short_l = ["didn't"]
+
+"------------------------------------------------------ PRESENTE ------------------------------------------------------"
 do = [
     "does", "does not", "doesn't",
     "Does", "Does not", "Doesn't",
@@ -10,10 +45,17 @@ do = [
     "Do", "Do not", "Don't"
 ]
 
-do_u = ["Does", "Does not", "Doesn't", "Do", "Do not", "Don't"]
+do_pst_gl_u = ["Does", "Does not", "Doesn't", "Do", "Do not", "Don't"]
 
-do_present_l = ["does", "does not", "doesn't", "do", "do not", "don't"]
-do_present_l_pt_br = ['ênfase (ex: does talk = falo)', 'não', 'não', 'ênfase (ex: do talk = falam) ', 'não', 'não']
+do_pst_gl_l = ["does", "does not", "doesn't", "do", "do not", "don't"]
+
+do_pst_1st_2nd_u = ["Do", "Do not", "Don't"]
+
+do_pst_1st_2nd_l = ["do", "do not", "don't"]
+
+do_pst_3rd_u = ["Does", "Does not", "Doesn't"]
+
+do_pst_3rd_l = ["does", "does not", "doesn't"]
 
 does_l = ["does"]
 does_not_l = ["does not"]
@@ -23,30 +65,13 @@ does_u = ["Does"]
 does_not_u = ["Does not"]
 does_not_short_u = ["Doesn't"]
 
-the_do_l = ["do"]
-do_not_l = ["do not"]
-do_not_short_l = ["don't"]
-
-the_do_u = ["Do"]
+do_u = ["Do"]
 do_not_u = ["Do not"]
 do_not_short_u = ["Don't"]
 
-
-"------------------------------------------------ VERBO DO NO PASSADO -------------------------------------------------"
-do_past_l = ["did", "did not", "didn't"]
-do_past_l_pt_br = ['ênfase (ex: did talk = falei)', 'não', 'não']
-
-did_l = ["does"]
-did_not_l = ["does not"]
-did_not_short_l = ["doesn't"]
-
-"------------------------------------------------- VERBO DO NO FUTURO -------------------------------------------------"
-do_future_l = ["will do", "will not do", "won't do"]
-do_future_l_pt_br = ['farei', 'não farei', 'não farei']
-
-will_do_l = ["will do"]
-will_not_do_l = ["does not"]
-will_not_do_short_l = ["doesn't"]
+do_l = ["do"]
+do_not_l = ["do not"]
+do_not_short_l = ["don't"]
 
 # "----------------------------------------------------------------------------------------------------------------------"
 # set_box_past = set({})

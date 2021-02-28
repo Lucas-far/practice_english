@@ -30,62 +30,69 @@ future = [
 ]
 
 future_pt_br = [
-    'direi/falarei', 'irei', 'adquirirei/conseguirei/obterei/pegarei', 'criarei/farei', 'conhecerei/saberei',
-    'acharei/pensarei', 'levarei/pegarei/tomarei', 'verei', 'chegarei/virei', 'pretenderei/quererei', 'olharei/verei',
-    'usarei', 'acharei/encontrarei', 'darei', 'contarei/direi', 'funcionarei/trabalharei', 'chamarei/telefonarei',
-    'experimentarei/tentarei', 'pedirei/perguntarei', 'necessitarei/precisarei',
+    'direi / falarei', 'irei', 'adquirirei / conseguirei / obterei / pegarei', 'criarei / farei',
+    'conhecerei / saberei', 'acharei / pensarei', 'levarei / pegarei / tomarei', 'verei', 'chegarei / virei',
+    'pretenderei / quererei', 'olharei / verei', 'usarei', 'acharei / encontrarei', 'darei', 'contarei / direi',
+    'funcionarei / trabalharei', 'chamarei / telefonarei', 'experimentarei / tentarei', 'pedirei / perguntarei',
+    'necessitarei / precisarei',
 
-    'sentirei', 'tornarei', 'abandonarei/deixarei/sairei', 'colocarei/porei', 'significarei',
-    'continuarei/guardarei/manterei', 'deixarei/permitirei', 'começarei/iniciarei', 'parecerei', 'ajudarei/auxiliarei',
-    'conversarei/falarei', 'transformarei/virarei', 'começarei/iniciarei', 'apresentarei/mostrarei',
-    'escutarei/ouvirei', 'jogarei/tocarei', 'correrei', 'moverei/mexerei', 'gostarei', 'morarei/viverei',
+    'sentirei', 'tornarei', 'abandonarei / deixarei / sairei', 'colocarei / porei', 'significarei',
+    'continuarei / guardarei / manterei', 'deixarei / permitirei', 'começarei / iniciarei', 'parecerei',
+    'ajudarei / auxiliarei', 'conversarei / falarei', 'transformarei / virarei', 'começarei / iniciarei',
+    'apresentarei / mostrarei', 'escutarei / ouvirei', 'jogarei / tocarei', 'correrei', 'moverei / mexerei',
+    'gostarei', 'morarei / viverei',
 
-    'acreditarei/crerei', 'manterei/segurarei', 'trarei', 'acontecerei/ocorrerei', 'escreverei',
-    'fornecerei/proporcionarei', 'sentarei', 'levantarei/permanecerei', 'perderei', 'pagarei', 'conhecerei/encontrarei',
-    'incluirei', 'continuarei', 'configurarei/definirei/estabelecerei/porei', 'aprenderei', 'alterarei/mudarei',
-    'conduzirei/liderarei', 'compreenderei/entenderei', 'olharei/observarei/verei', 'acompanharei/seguirei',
+    'acreditarei / crerei', 'manterei / segurarei', 'trarei', 'acontecerei / ocorrerei', 'escreverei',
+    'fornecerei / proporcionarei', 'sentarei', 'levantarei / permanecerei', 'perderei', 'pagarei',
+    'conhecerei / encontrarei', 'incluirei', 'continuarei', 'configurarei / definirei / estabelecerei / porei',
+    'aprenderei', 'alterarei / mudarei', 'conduzirei / liderarei', 'compreenderei / entenderei',
+    'olharei / observarei / verei', 'acompanharei / seguirei',
 
-    'impedirei/pararei', 'criarei', 'conversarei/falarei', 'lerei', 'autorizarei/permitirei',
-    'acrescentarei/adicionarei', 'gastarei/passarei', 'aumentarei/crescerei', 'abrirei', 'andarei/caminharei',
-    'ganharei/vencerei', 'oferecerei/proporei', 'lembrarei/recordarei', 'adorarei/amarei', 'considerarei', 'aparecerei',
-    'comprarei', 'esperarei', 'servirei', 'falecerei/morrerei',
+    'impedirei / pararei', 'criarei', 'conversarei / falarei', 'lerei', 'autorizarei / permitirei',
+    'acrescentarei / adicionarei', 'gastarei / passarei', 'aumentarei / crescerei', 'abrirei', 'andarei / caminharei',
+    'ganharei / vencerei', 'oferecerei / proporei', 'lembrarei / recordarei', 'adorarei / amarei', 'considerarei',
+    'aparecerei', 'comprarei', 'esperarei', 'servirei', 'falecerei / morrerei',
 
-    'enviarei/mandarei', 'esperarei', 'construirei', 'ficarei/suportarei', 'cairei', 'cortarei',
-    'alcançarei/atingirei/chegarei a', 'matarei', 'ficarei/permanecerei', 'irei sugerir',
-    'aumentarei/criarei alguém,algo/levantarei', 'passarei', 'venderei', 'exigirei/necessitarei',
-    'relatarei/reportarei', 'decidirei', 'puxarei', 'romperei/quebrarei', 'adquirirei/comprarei/obterei',
-    'perceberei/realizarei',
+    'enviarei / mandarei', 'esperarei', 'construirei', 'ficarei / suportarei', 'cairei', 'cortarei',
+    'alcançarei / atingirei / chegarei a', 'matarei', 'ficarei / permanecerei', 'irei sugerir',
+    'aumentarei / criarei alguém,algo / levantarei', 'passarei', 'venderei', 'exigirei / necessitarei',
+    'relatarei / reportarei', 'decidirei', 'puxarei', 'romperei / quebrarei', 'adquirirei / comprarei / obterei',
+    'perceberei / realizarei',
 
-    'administrarei/irei gerir', 'crescerei/desenvolverei', 'confiarei', 'imaginarei',
-    'pisarei', 'arrependerei/lamentarei', 'manipularei', 'sonharei', 'debaterei/discutirei', 'beberei', 'comerei',
-    'pularei/saltarei', 'repetirei', 'adivinharei/irei supor', 'selecionarei', 'clicarei'
+    'administrarei / irei gerir', 'crescerei / desenvolverei', 'confiarei', 'imaginarei',
+    'pisarei', 'arrependerei / lamentarei', 'manipularei', 'sonharei', 'debaterei / discutirei', 'beberei', 'comerei',
+    'pularei / saltarei', 'repetirei', 'adivinharei / irei supor', 'selecionarei', 'clicarei'
 ]
 
-set_box_future = set({})
-
-while len(set_box_future) < 1:
-    set_box_future.add(choice(future))
-
-set_box_future = list(set_box_future)
-
-verb_future = set_box_future[0]
-verb_future_inked = painter('blue', verb_future)
-verb_future_tr = future_pt_br[future.index(verb_future)]
-verb_future_tr_inked = painter('red', verb_future_tr)
+# set_box_future = set({})
+#
+# while len(set_box_future) < 1:
+#     set_box_future.add(choice(future))
+#
+# set_box_future = list(set_box_future)
+#
+# verb_future = set_box_future[0]
+# verb_future_inked = painter('blue', verb_future)
+# verb_future_tr = future_pt_br[future.index(verb_future)]
+# verb_future_tr_inked = painter('red', verb_future_tr)
 
 if __name__ == '__main__':
     print('\n')
-    print(future[120 - 1])
+
     # print(verb_future)
     # print(verb_future_inked)
     # print(verb_future_tr)
     # print(verb_future_tr_inked)
 
-    # print(f"{len(future) = }")
-    # print(f"{len(future_pt_br) = }")
+    for words in zip(future, future_pt_br):
+        print(words)
 
-    # for words in zip(future, future_pt_br):
-    #     print(words)
+    print('\n')
+
+    print(f"{len(future) = }")
+    print(f"{len(future_pt_br) = }")
+
+
 
     # for words in fut.values():
     #     print(f"'{words[0]}',")

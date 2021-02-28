@@ -5,6 +5,33 @@
 from random import choice
 from metodos.bdd import painter
 
+"----------------------------------------------------- PRINCIPAIS -----------------------------------------------------"
+be_past_l = [
+    'was', 'was not', "wasn't",
+    'were', 'were not', "weren't"
+]
+
+be_past_l_pt_br = [
+    'fui / era / estava', 'não fui / não era / não estava', 'não fui / não era / não estava',
+    'foram / eram / estavam', 'não foram / não eram / não estavam', 'não foram / não eram / não estavam'
+]
+
+be_present_l = [
+    "am", "am not",
+    "is", "is not", "isn't",
+    "are", "are not", "aren't"
+]
+
+be_present_l_pt_br = [
+    'sou / estou', 'não sou / não estou',
+    'é / está', 'não é / não está', 'não é / não está',
+    'são / estão', 'não são / não estão', 'não são / não estão'
+]
+
+be_future_l = ['will be', 'will not be', "won't be"]
+
+be_future_l_pt_br = ['será / estará', 'não será / não estara', 'não será / não estara']
+
 "--------------------------------------------- VARS PARA PROJETO DE JOGO ----------------------------------------------"
 # fácil -> cacha baixa -> sem negação
 be_pst_easy = ['am', 'is', 'are']
@@ -27,19 +54,6 @@ be_pst = [
 
 # global -> cacha alta
 be_pst_u = ["Am", "Is", "Are", "Am not", "Is not", "Are not", "Isn't", "Aren't"]
-
-# global -> cacha baixa
-be_present_l = [
-    "am", "am not",
-    "is", "is not", "isn't",
-    "are", "are not", "aren't"
-]
-
-be_present_l_pt_br = [
-    'sou/estou', 'não sou/estou',
-    'é/está', 'não é/está', 'não é/está',
-    'são/estão', 'não são/estão', 'não são/estão'
-]
 
 am_is_are_u = ['Am', 'Is', 'Are']
 
@@ -90,12 +104,7 @@ be_past = [
 
 be_past_u = ['Was', 'Was not', "Wasn't", 'Were', 'Were not', "Weren't"]  # to be [ passado ] global, cacha alta
 
-be_past_l = ['was', 'was not', "wasn't", 'were', 'were not', "weren't"]  # to be [ passado ] global, cacha baixa
 
-be_past_l_pt_br = [
-    'fui/era/estava', 'não fui/era/estava', 'não fui/era/estava', 'foram/eram/estavam',
-    'não foram/eram/estavam', 'não foram/eram/estavam'
-]
 
 be_past_sgl_u = ["Was", "Was not", "Wasn't"]    # to be [ passado ] 1a e 3a pessoa, cacha alta
 be_past_sgl_l = ["was", "was not", "wasn't"]    # to be [ passado ] 1a e 3a pessoa, cacha baixa
@@ -119,10 +128,6 @@ were_not_short_u = ["Weren't"]  # to be [ passado ] 2a pessoa, cacha alta, nega�
 were_not_short_l = ["weren't"]  # to be [ passado ] 2a pessoa, cacha baixa, negação curta
 
 "--------------------------------------------------- FUTURE SIMPLE ----------------------------------------------------"
-be_future_l = ['will be', 'will not be', "won't be"]
-
-be_future_l_pt_br = ['será/estará', 'não será/estara', 'não será/estara']
-
 be_future_sgl_u = ["Was", "Was not", "Wasn't"]
 be_future_sgl_l = ["was", "was not", "wasn't"]
 be_future_pl_u = ['Were', 'Were not', "Weren't"]

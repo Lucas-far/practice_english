@@ -37,14 +37,14 @@ while True:
         adv_ly, adv_ly_inked, adv_ly_tr, adv_ly_tr_inked = _(adverbs_ly, adverbs_ly_pt_br)
         adv_ly_frame = titles['adv_ly'] + adv_ly_inked + skip + adv_ly_tr_inked
 
-        conj, conj_inked, conj_tr, conj_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
-        conj2, conj2_inked, conj2_tr, conj2_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
-        conj_frame = titles['conj'] + f'( {conj_inked} * {conj_tr_inked} ) -> ( {conj2_inked} * {conj2_tr_inked} )'
-
-        while conj == conj2:
-            conj, conj_inked, conj_tr, conj_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
-            conj2, conj2_inked, conj2_tr, conj2_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
-            conj_frame = titles['conj'] + f'( {conj_inked} * {conj_tr_inked} ) -> ( {conj2_inked} * {conj2_tr_inked} )'
+        # conj, conj_inked, conj_tr, conj_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
+        # conj2, conj2_inked, conj2_tr, conj2_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
+        # conj_frame = titles['conj'] + f'( {conj_inked} * {conj_tr_inked} ) -> ( {conj2_inked} * {conj2_tr_inked} )'
+        #
+        # while conj == conj2:
+        #     conj, conj_inked, conj_tr, conj_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
+        #     conj2, conj2_inked, conj2_tr, conj2_tr_inked = _(conjunctions_l, conjunctions_l_pt_br)
+        #     conj_frame = titles['conj'] + f'( {conj_inked} * {conj_tr_inked} ) -> ( {conj2_inked} * {conj2_tr_inked} )'
 
         prep, prep_inked, prep_tr, prep_tr_inked = _(prepositions_l, prepositions_l_pt_br)
         prep_frame = titles['prep'] + prep_inked + skip + prep_tr_inked
@@ -110,8 +110,8 @@ while True:
         verb_past, verb_past_inked, verb_past_tr, verb_past_tr_inked = _(past, past_pt_br)
         chosen_verb_past = titles['verb_past'] + verb_past_inked + skip + verb_past_tr_inked
 
-        # verb_present, verb_present_inked, verb_present_tr, verb_present_tr_inked = _(present, present_pt_br)
-        # chosen_verb_present = titles['verb_pst'] + verb_present_inked + skip + verb_present_tr_inked
+        verb_present, verb_present_inked, verb_present_tr, verb_present_tr_inked = _(present, present_pt_br)
+        chosen_verb_present = titles['verb_pst'] + verb_present_inked + skip + verb_present_tr_inked
 
         verb_future, verb_future_inked, verb_future_tr, verb_future_tr_inked = _(future, future_pt_br)
         chosen_verb_future = titles['verb_fut'] + verb_future_inked + skip + verb_future_tr_inked
@@ -120,7 +120,6 @@ while True:
             pr_frame, dp_frame, pp_frame, rp_frame,
             pa_frame,
             adv_frame, adv_f_frame, adv_ly_frame,
-            conj_frame,
             prep_frame,
             wh_frame,
             can_frame, could_frame,
@@ -129,15 +128,18 @@ while True:
             have_past_frame, have_present_frame, have_future_frame
         ]
 
-        box = [mandatory_adjectives, mandatory_nouns, chosen_verb_infinitive, chosen_verb_past, chosen_verb_future]
+        box = [
+            mandatory_adjectives, mandatory_nouns, chosen_verb_infinitive, chosen_verb_past, chosen_verb_present,
+            chosen_verb_future
+        ]
         box = set(box)
         box_elements = sorted(list(create_set(box, 10, all_inked_elements, True)), key=len)
 
         empty_set = set({})
 
-        five_words = list(create_set(empty_set, 5, present, True))  # function create_set()
-        five_indexes = [present.index(word) for word in five_words]
-        five_translations = [present_pt_br[index] for index in five_indexes]
+        five_words = list(create_set(empty_set, 5, conjunctions_l, True))  # function create_set()
+        five_indexes = [conjunctions_l.index(word) for word in five_words]
+        five_translations = [conjunctions_l_pt_br[index] for index in five_indexes]
 
         chosen_word = choice(five_words)
         chosen_word_inked = painter('blue', chosen_word)
@@ -164,7 +166,7 @@ while True:
 
         # display_variables()
 
-        print(hello := greetings('treino de verbos no presente', index1=3))
+        print(hello := greetings('treino de conjunções', index1=3))
 
         answer = get_input_int(text=quiz_format.format(chosen_word_inked, *five_translations), start=1, limit=5)
 

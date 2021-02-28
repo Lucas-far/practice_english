@@ -32,7 +32,7 @@ while True:
         adv_frame = titles['adv'] + adv_inked + skip + adv_tr_inked
 
         adv_f, adv_f_inked, adv_f_tr, adv_f_tr_inked = _(adverbs_frequency, adverbs_frequency_pt_br)
-        adv_f_frame = titles['adv_f'] + adv_inked + skip + adv_tr_inked
+        adv_f_frame = titles['adv_f'] + adv_f_inked + skip + adv_f_tr_inked
 
         adv_ly, adv_ly_inked, adv_ly_tr, adv_ly_tr_inked = _(adverbs_ly, adverbs_ly_pt_br)
         adv_ly_frame = titles['adv_ly'] + adv_ly_inked + skip + adv_ly_tr_inked
@@ -164,7 +164,7 @@ while True:
 
         # display_variables()
 
-        print(hello := greetings('treino de adjetivos', index1=3))
+        print(hello := greetings('treino de substantivos', index1=3))
 
         answer = get_input_int(text=quiz_format.format(chosen_word_inked, *five_translations), start=1, limit=5)
 
@@ -198,7 +198,7 @@ while True:
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
 
             for word in box_elements:
-                print(word)
+                print(four_spaces + word)
 
             print('\n')
 
@@ -227,7 +227,7 @@ while True:
             print(announcement.format(chosen_word_inked, the_target_translation_inked))
 
             for word in box_elements:
-                print(word)
+                print(four_spaces + word)
 
             print('\n')
 

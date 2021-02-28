@@ -179,8 +179,7 @@ try_futuro_negativo = "will not try to know / won't try to know"
 # print(verb_future_tr)
 # print(verb_future_tr_inked)
 
-"--------------------------------------------- LÓGICA NA CRIAÇÃO DE FRASES ---------------------------------------------"
-""  # olhar para o substantivo, e ver se os verbos combinam
+obs = 'Bdd para substantivos com terminação ty: RESPONSABILITY, RELAYABILITY, OPORTUNITY'
 
 if __name__ == '__main__':
     pass

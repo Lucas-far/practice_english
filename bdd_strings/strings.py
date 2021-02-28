@@ -42,6 +42,9 @@ type_your_sentence = f'    {inks[5]}Clique após a seta, digite sua frase, apert
 
 write_vocabulary = '    Clique após a seta e escreva a palavra alvo CORRETAMENTE -> '
 
+
+write_vocabulary_type2 = '    Clique após a seta e escreva a alternativa em INGLÊS, CORRETAMENTE -> '
+
 typo = '    {}A palavra{} {}{}{} {}foi escrita incorretamente. Tente novamente{}'
 
 titles = {

@@ -119,7 +119,7 @@ adverb_others_pt_br = [
     'já / sempre / nunca / jamais', 'rapidamente / velozmente',
     'adiante / para a frente', 'ademais / além disso', 'duramente', 'aqui, cá', 'como / quão', 'dentro',
     'de fato / na verdade', 'de fato / realmente', 'em vez / em vez disso', 'somente', 'mais tarde', 'menos', 'menos',
-    'igualmente / também', 'talvez', 'enquanto isso / entretanto', 'mais', 'mais',
+    'igualmente / também', 'talvez', 'enquanto isso / entretanto', 'mais', 'o mais',
 
     'muito', 'ainda assim / mesmo assim / porém / todavia', 'apesar disso', 'agora / já', 'fora', 'outrora / uma vez',
     'de outro modo', 'fora', 'através / sobre', 'talvez', 'bastante / muito', 'assim / tão / então / portanto',

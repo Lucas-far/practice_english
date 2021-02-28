@@ -14,14 +14,14 @@ pronouns_to_be_simple = [
 ]
 
 pronouns_to_be_simple_pt_br = [
-    'Eu', 'Eu fui/era/estava', 'Eu sou/estou', 'Eu serei/estarei', 'Eu não fui/era/estava', 'Eu não sou/estou', 'Eu não serei/estarei', 'Eu não fui/era/estava', 'Eu não serei/estarei',
-    'Você', 'Você foi/era/estava', 'Você é/está', 'Você será/estará', 'Você não foi/era/estava', 'Você não é/está', 'Você não será/estará', 'Você não foi/era/estava', 'Você não é/está', 'Você não será/estará',
-    'Ele', 'Ele foi/era/estava', 'Ele é/está', 'Ele será/estará', 'Ele não foi/era/estava', 'Ele não é/está', 'Ele não será/estará', 'Ele não foi/era/estava', 'Ele não é/está', 'Ele não será/estará',
-    'Ela', 'Ela foi/era/estava', 'Ela é/está', 'Ela será/estará', 'Ela não foi/era/estava', 'Ela não é/está', 'Ela não será/estará', 'Ela não foi/era/estava',  'Ela não é/está', 'Ela não será/estará',
-    'Isso', 'Isso foi/era/estava', 'Isso é/está', 'Isso será/estará', 'Isso não foi/era/estava', 'Isso não é/está', 'Isso não será/estará', 'Isso não foi/era/estava', 'Isso não é/está', 'Isso não será/estará',
-    'Nós', 'Nós fomos/eramos/estavamos', 'Nós somos/estamos', 'Nós seremos/estaremos', 'Nós não fomos/eramos/estavamos', 'Nós não somos/estamos', 'Nós não seremos/estaremos', 'Nós não fomos/eramos/estavamos', 'Nós não somos/estamos', 'Nós não seremos/estaremos',
-    'Vocês', 'Vocês foram/eram/estavam', 'Vocês são/estão', 'Vocês serão/estarão', 'Vocês não foram/eram/estavam', 'Vocês não são/estão', 'Vocês não serão/estarão', 'Vocês não foram/eram/estavam', 'Vocês não são/estão', 'Vocês não serão/estarão',
-    'Eles(as)', 'Eles(as) foram/eram/estavam', 'Eles(as) são/estão', 'Eles(as) serão/estarão', 'Eles(as) não foram/eram/estavam', 'Eles(as) não são/estão', 'Eles(as) não serão/estarão', 'Eles(as) não foram/eram/estavam', 'Eles(as) não são/estão', 'Eles(as) não serão/estarão'
+    'Eu', 'Eu fui/era/estava', 'Eu sou/estou', 'Eu serei/estarei', 'Eu não fui/era/estava', 'Eu não sou/estou', 'Eu não serei/estarei', 'Eu não fui/era/estava (abreviado)', 'Eu não serei/estarei (abreviado)',
+    'Você', 'Você foi/era/estava', 'Você é/está', 'Você será/estará', 'Você não foi/era/estava', 'Você não é/está', 'Você não será/estará', 'Você não foi/era/estava (abreviado)', 'Você não é/está (abreviado)', 'Você não será/estará (abreviado)',
+    'Ele', 'Ele foi/era/estava', 'Ele é/está', 'Ele será/estará', 'Ele não foi/era/estava', 'Ele não é/está', 'Ele não será/estará', 'Ele não foi/era/estava (abreviado)', 'Ele não é/está (abreviado)', 'Ele não será/estará (abreviado)',
+    'Ela', 'Ela foi/era/estava', 'Ela é/está', 'Ela será/estará', 'Ela não foi/era/estava', 'Ela não é/está', 'Ela não será/estará', 'Ela não foi/era/estava (abreviado)',  'Ela não é/está (abreviado)', 'Ela não será/estará (abreviado)',
+    'Isso', 'Isso foi/era/estava', 'Isso é/está', 'Isso será/estará', 'Isso não foi/era/estava', 'Isso não é/está', 'Isso não será/estará', 'Isso não foi/era/estava (abreviado)', 'Isso não é/está (abreviado)', 'Isso não será/estará (abreviado)',
+    'Nós', 'Nós fomos/eramos/estavamos', 'Nós somos/estamos', 'Nós seremos/estaremos', 'Nós não fomos/eramos/estavamos', 'Nós não somos/estamos', 'Nós não seremos/estaremos', 'Nós não fomos/eramos/estavamos (abreviado)', 'Nós não somos/estamos (abreviado)', 'Nós não seremos/estaremos (abreviado)',
+    'Vocês', 'Vocês foram/eram/estavam', 'Vocês são/estão', 'Vocês serão/estarão', 'Vocês não foram/eram/estavam', 'Vocês não são/estão', 'Vocês não serão/estarão', 'Vocês não foram/eram/estavam (abreviado)', 'Vocês não são/estão (abreviado)', 'Vocês não serão/estarão (abreviado)',
+    'Eles(as)', 'Eles(as) foram/eram/estavam', 'Eles(as) são/estão', 'Eles(as) serão/estarão', 'Eles(as) não foram/eram/estavam', 'Eles(as) não são/estão', 'Eles(as) não serão/estarão', 'Eles(as) não foram/eram/estavam (abreviado)', 'Eles(as) não são/estão (abreviado)', 'Eles(as) não serão/estarão (abreviado)'
 ]
 
 pronouns = [
